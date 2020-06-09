@@ -1,0 +1,291 @@
+[
+    {
+        "id": "8372056",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "name" : "Plaid Blazer",
+        "original" : "",
+        "price" : "99.90",
+        "description" : "Blazer with lapel collar and long sleeves. Front pockets. Front button closure.",
+        "page" : "https://www.zara.com/ca/en/plaid-blazer-p08372056.html?v1=54658054&v2=1445747",
+        "categories" : "women, outer, blazer, jacket",
+        "images" : [
+            "http://localhost:8080/zara/zara_outer1.1.jpg",
+            "http://localhost:8080/zara/zara_outer1.2.jpg",
+            "http://localhost:8080/zara/zara_outer1.3.jpg",
+            "http://localhost:8080/zara/zara_outer1.4.jpg"
+        ],
+        "menugroup": "outer"
+    },
+    {
+        "id": "2761040",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "name" : "Blazer with Rolled-up Sleeves",
+        "original" : "",
+        "price" : "119.00",
+        "description" : "Blazer with lapel collar and rolled-up below the elbow length sleeves. Front flap pockets.",
+        "page" : "https://www.zara.com/ca/en/blazer-with-rolled-up-sleeves-p02761040.html?v1=39664218&v2=1445747",
+        "categories" : "women, outer, blazer, jacket",
+        "images" : [
+            "http://localhost:8080/zara/zara_outer2.1.jpg",
+            "http://localhost:8080/zara/zara_outer2.2.jpg",
+            "http://localhost:8080/zara/zara_outer2.3.jpg",
+            "http://localhost:8080/zara/zara_outer2.4.jpg"
+        ],
+        "menugroup": "outer"
+    },
+    {
+        "id": "5070954",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "name" : "Faux Suede Dress",
+        "original" : "",
+        "price" : "39.90",
+        "description" : "Round neck mini dress with short sleeves. Front welt pockets.",
+        "page" : "https://www.zara.com/ca/en/faux-suede-dress-p05070954.html?v1=52141833&v2=1445652",
+        "categories" : "women, mini, dress, suede",
+        "images" : [
+            "http://localhost:8080/zara/zara_dress2.1.jpg",
+            "http://localhost:8080/zara/zara_dress2.2.jpg",
+            "http://localhost:8080/zara/zara_dress2.3.jpg",
+            "http://localhost:8080/zara/zara_dress2.4.jpg"
+        ],
+        "menugroup": "dress"
+    },
+    {
+        "id": "0264164",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "name" : "T-Shirt with Text",
+        "original" : "",
+        "price" : "15.90",
+        "description" : "Round neck T-shirt with short sleeves. Front text detail.",
+        "page" : "https://www.zara.com/ca/en/t-shirt-with-text-p00264161.html?v1=51049325&v2=1445717#origin=similar",
+        "categories" : "women, t-shirt, tshirt, shirt, text, top",
+        "images" : [
+            "http://localhost:8080/zara/zara_tshirt1.1.jpg",
+            "http://localhost:8080/zara/zara_tshirt1.2.jpg",
+            "http://localhost:8080/zara/zara_tshirt1.3.jpg",
+            "http://localhost:8080/zara/zara_tshirt1.4.jpg"
+        ],
+        "menugroup": "top"
+    },
+    {
+        "id": "9123067",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "name" : "Belted Denim Shorts",
+        "original" : "",
+        "price" : "39.90",
+        "description" : "High-waisted shorts. Front pockets. Cuffed hem. Tied self belt. Front zip and button closure.",
+        "page" : "https://www.zara.com/ca/en/belted-denim-shorts-p09123067.html?v1=41005021&v2=1445920",
+        "categories" : "women, denim, short, shorts, pants",
+        "images" : [
+            "http://localhost:8080/zara/zara_pants1.1.jpg",
+            "http://localhost:8080/zara/zara_pants1.2.jpg",
+            "http://localhost:8080/zara/zara_pants1.3.jpg",
+            "http://localhost:8080/zara/zara_pants1.4.jpg"
+        ],
+        "menugroup": "pants"
+    },
+    {
+        "id": "8197006",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "name" : "Hi Rise Denim Shorts",
+        "original" : "",
+        "price" : "35.90",
+        "description" : "High-waisted five pocket shorts in slightly stretchy fabric. Frayed hem. Front zip and metal button closure.",
+        "page" : "https://www.zara.com/ca/en/hi-rise-denim-shorts-p08197006.html?v1=56616608&v2=1445920#origin=similar",
+        "categories" : "women, denim, short, shorts, hi-rise, hirise, pants",
+        "images" : [
+            "http://localhost:8080/zara/zara_pants2.1.jpg",
+            "http://localhost:8080/zara/zara_pants2.2.jpg",
+            "http://localhost:8080/zara/zara_pants2.3.jpg",
+            "http://localhost:8080/zara/zara_pants2.4.jpg"
+        ],
+        "menugroup": "pants"
+    },
+    {
+        "id": "3427003",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "name" : "Faux Leather Jacket",
+        "original" : "",
+        "price" : "79.90",
+        "description" : "Jacket with lapel collar and long sleeves. Front metal zip pockets. Epaulettes and straps at hem. Front metal zip closure.",
+        "page" : "https://www.zara.com/ca/en/faux-leather-jacket-p03427003.html?v1=52136028&v2=1445720",
+        "categories" : "women, jacket, leather, outer",
+        "images" : [
+            "http://localhost:8080/zara/zara_outer3.1.jpg",
+            "http://localhost:8080/zara/zara_outer3.2.jpg",
+            "http://localhost:8080/zara/zara_outer3.3.jpg",
+            "http://localhost:8080/zara/zara_outer3.4.jpg"
+        ],
+        "menugroup": "outer"
+    },
+    {
+        "id": "6147021",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "name" : "Z1975 Baggy Jeans",
+        "original" : "45.90",
+        "price" : "25.99",
+        "description" : "Mid-rise jeans with front pockets and back patch pockets. Tonal seam detail. Front zip and metal button closure.",
+        "page" : "https://www.zara.com/ca/en/z1975-baggy-jeans-p06147021.html?v1=42555599&v2=1511729",
+        "categories" : "women, pants, baggy, jeans",
+        "images" : [
+            "http://localhost:8080/zara/zara_pants3.1.jpg",
+            "http://localhost:8080/zara/zara_pants3.2.jpg",
+            "http://localhost:8080/zara/zara_pants3.3.jpg",
+            "http://localhost:8080/zara/zara_pants3.4.jpg"
+        ],
+        "menugroup": "pants"
+    },
+    {
+        "id": "13641510",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "name" : "Jute Trim Tied Flat Leather Sandals",
+        "original" : "",
+        "price" : "49.90",
+        "description" : "Flat leather slide sandals available in various colors. Leather upper. Thin crossed straps at front with toe loop. Jute lined insole. Tie closure around ankle.",
+        "page" : "https://www.zara.com/ca/en/jute-trim-tied-flat-leather-sandals-p13641510.html?v1=51045503&v2=1445725",
+        "categories" : "women, shoes, sandal, flat",
+        "images" : [
+            "http://localhost:8080/zara/zara_shoes1.1.jpg",
+            "http://localhost:8080/zara/zara_shoes1.2.jpg",
+            "http://localhost:8080/zara/zara_shoes1.3.jpg",
+            "http://localhost:8080/zara/zara_shoes1.4.jpg"
+        ],
+        "menugroup": "shoes"
+    },
+    {
+        "id": "16667510",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "name" : "Raffia CrossBody Bag",
+        "original" : "",
+        "price" : "45.90",
+        "description" : "Natural colored crossbody bag. Raffia exterior. Woven circular tab at interior of flap. Side tie detail. Crossbody shoulder strap. Lined interior. Magnetic closure.",
+        "page" : "https://www.zara.com/ca/en/raffia-crossbody-bag-p16667510.html?v1=55218884&v2=1445798",
+        "categories" : "women, bag, crossbody, latan",
+        "images" : [
+            "http://localhost:8080/zara/zara_bag1.1.jpg",
+            "http://localhost:8080/zara/zara_bag1.2.jpg",
+            "http://localhost:8080/zara/zara_bag1.3.jpg",
+            "http://localhost:8080/zara/zara_bag1.4.jpg"
+        ],
+        "menugroup": "bag"
+    },
+    {
+        "id": "856310003",
+        "brandlogo" : "http://localhost:8080/hm/hm.png",
+        "name" : "Crinkled Dress",
+        "original" : "",
+        "price" : "14.99",
+        "description" : "Calf-length dress in crinkled jersey. Narrow, adjustable shoulder straps, smocked bodice with ruffle trim, and flared, softly draped skirt. Unlined.",
+        "page" : "https://www2.hm.com/en_us/productpage.0856310003.html",
+        "categories" : "women, dress, midi, crinkled",
+        "images" : [
+            "http://localhost:8080/hm/hm_dress1.1.jpeg",
+            "http://localhost:8080/hm/hm_dress1.2.jpeg",
+            "http://localhost:8080/hm/hm_dress1.3.jpeg",
+            "http://localhost:8080/hm/hm_dress1.4.jpeg"
+        ],
+        "menugroup": "dress"
+    },
+    {
+        "id": "821336002",
+        "brandlogo" : "http://localhost:8080/hm/hm.png",
+        "name" : "Linen-blend Dress",
+        "original" : "",
+        "price" : "29.99",
+        "description" : "Calf-length dress in a woven linen and cotton blend. Gentle V-neck, narrow, adjustable shoulder straps, buttons full length of front, and smocking at back. Gathered seam at waist for added volume and soft draping. Lined.",
+        "page" : "https://www2.hm.com/en_us/productpage.0821336002.html",
+        "categories" : "women, dress, midi, linen",
+        "images" : [
+            "http://localhost:8080/hm/hm_dress2.1.jpeg",
+            "http://localhost:8080/hm/hm_dress2.2.jpeg",
+            "http://localhost:8080/hm/hm_dress2.3.jpeg",
+            "http://localhost:8080/hm/hm_dress2.4.jpeg"
+        ],
+        "menugroup": "dress"
+    },
+    {
+        "id": "817353009",
+        "brandlogo" : "http://localhost:8080/hm/hm.png",
+        "name" : "Puff-sleeved Dress",
+        "original" : "",
+        "price" : "24.99",
+        "description" : "Short dress in woven fabric with a V-neck. Buttons at front, short puff sleeves with smocked trim, and a seam at waist. Unlined.",
+        "page" : "https://www2.hm.com/en_us/productpage.0817353009.html",
+        "categories" : "women, dress, mini, puff",
+        "images" : [
+            "http://localhost:8080/hm/hm_dress3.1.jpeg",
+            "http://localhost:8080/hm/hm_dress3.2.jpeg",
+            "http://localhost:8080/hm/hm_dress3.3.jpeg",
+            "http://localhost:8080/hm/hm_dress3.4.jpeg"
+        ],
+        "menugroup": "dress"
+    },
+    {
+        "id": "838920001",
+        "brandlogo" : "http://localhost:8080/hm/hm.png",
+        "name" : "Patterned Dress",
+        "original" : "",
+        "price" : "29.99",
+        "description" : "Calf-length dress in crêped viscose fabric. V-neck, buttons full length of front, and short sleeves with a small opening and ties at cuffs. Two slits at hem. Unlined.",
+        "page" : "https://www2.hm.com/en_us/productpage.0838920001.html",
+        "categories" : "women, dress, midi, dotted",
+        "images" : [
+            "http://localhost:8080/hm/hm_dress4.1.jpeg",
+            "http://localhost:8080/hm/hm_dress4.2.jpeg",
+            "http://localhost:8080/hm/hm_dress4.3.jpeg",
+            "http://localhost:8080/hm/hm_dress4.4.jpeg"
+        ],
+        "menugroup": "dress"
+    },
+    {
+        "id": "873158002",
+        "brandlogo" : "http://localhost:8080/hm/hm.png",
+        "name" : "Cotton T-shirt",
+        "original" : "",
+        "price" : "12.99",
+        "description" : "T-shirt in soft cotton jersey. Round neckline and short sleeves with sewn cuffs.",
+        "page" : "https://www2.hm.com/en_us/productpage.0873158002.html",
+        "categories" : "women, t-shirt, tshirt, top",
+        "images" : [
+            "http://localhost:8080/hm/hm_tshirt1.1.jpeg",
+            "http://localhost:8080/hm/hm_tshirt1.2.jpeg",
+            "http://localhost:8080/hm/hm_tshirt1.3.jpeg",
+            "http://localhost:8080/hm/hm_tshirt1.4.jpeg"
+        ],
+        "menugroup": "top"
+    },
+    {
+        "id": "865921001",
+        "brandlogo" : "http://localhost:8080/hm/hm.png",
+        "name" : "Ribbed Top",
+        "original" : "",
+        "price" : "12.99",
+        "description" : "Fitted top in ribbed jersey with decorative buttons at front and short sleeves. Can be worn off shoulder. Polyester content is recycled.",
+        "page" : "https://www2.hm.com/en_us/productpage.0865921002.html",
+        "categories" : "women, t-shirt, tshirt, off-shoulder, top",
+        "images" : [
+            "http://localhost:8080/hm/hm_tshirt2.1.jpeg",
+            "http://localhost:8080/hm/hm_tshirt2.2.jpeg",
+            "http://localhost:8080/hm/hm_tshirt2.3.jpeg",
+            "http://localhost:8080/hm/hm_tshirt2.4.jpeg"
+        ],
+        "menugroup": "top"
+    },
+    {
+        "id": "711053027",
+        "brandlogo" : "http://localhost:8080/hm/hm.png",
+        "name" : "Long T-Shirt",
+        "original" : "",
+        "price" : "9.99",
+        "description" : "Long T-shirt in soft, cotton-blend jersey. Short sleeves with sewn cuffs.",
+        "page" : "https://www2.hm.com/en_us/productpage.0711053027.html",
+        "categories" : "women, t-shirt, tshirt, long, top",
+        "images" : [
+            "http://localhost:8080/hm/hm_tshirt3.1.jpeg",
+            "http://localhost:8080/hm/hm_tshirt3.2.jpeg",
+            "http://localhost:8080/hm/hm_tshirt3.3.jpeg",
+            "http://localhost:8080/hm/hm_tshirt3.4.jpeg"
+        ],
+        "menugroup": "top"
+    }
+]

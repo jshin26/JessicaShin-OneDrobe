@@ -1,0 +1,35 @@
+
+
+// VARIABLES-font color
+$black:#323232;
+$silver: #afafaf;
+$mercury: #e1e1e1;
+$alabaster: #fafafa;
+
+$yellow: #ffd64d;
+
+$white: #fff;
+
+
+// COMMON
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: 'AvenirNext', sans-serif;
+    font-weight: 400;
+    color: $black;
+}
+
+.btn {
+    @include font (14px, 20px, 'AvenirNext', 600); 
+    background-color: $yellow;
+    color: $white;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+}
+.btn--white {
+    background-color: $white;
+    color: $yellow;
+}
