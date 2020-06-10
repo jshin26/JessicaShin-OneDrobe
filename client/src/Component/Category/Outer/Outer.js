@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import './Outer.scss';
 import ProductCard from '../../ProductCard/ProductCard';
 
 const API_URL="http://localhost:8080/"
@@ -17,7 +16,7 @@ class Outer extends React.Component {
         axios
             .get(API_URL)
             .then(response => {
-                console.log(response);
+                // console.log(response);
                 this.setState({
                     productData: response.data
                 })
@@ -28,7 +27,7 @@ class Outer extends React.Component {
         return(
             <div>
                 <ProductCard 
-                    cardList={this.state.productData}                    
+                    cardList={this.state.productData.filter(content => content.menugroup === "outer")}                    
                 />
             </div>
         )
@@ -36,5 +35,3 @@ class Outer extends React.Component {
 }
 
 export default Outer;
-
-// .filter(content => content.menugroup === "outer")

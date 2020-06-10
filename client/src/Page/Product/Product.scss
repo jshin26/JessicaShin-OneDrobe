@@ -1,4 +1,16 @@
+
+// IMPORTS
+
+@import '../../Style/fonts';
+@import '../../Style/mixins';
+@import '../../Style/variable';
+
+
 .search {
     display: flex;
     flex-direction: column;
+}
+
+.main {
+    margin-top: 10%;
 }

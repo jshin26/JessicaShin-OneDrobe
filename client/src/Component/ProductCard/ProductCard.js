@@ -23,7 +23,7 @@ const ProductCardComp = (props) => {
                 <p className="card__name">{name}</p>
                 <div className="card__pricebox">
                     <p className="card__original">{original}</p>
-                    <p className="card__price">{price}</p>
+                    <p className="card__price">$ {price}</p>
                 </div>
             </div>
 

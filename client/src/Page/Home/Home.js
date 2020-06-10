@@ -5,9 +5,9 @@ import './Home.scss';
 
 const Home = () => {
     return (
-        <div>
+        <section className="home">
             Home
-        </div>
+        </section>
     )
 }
 

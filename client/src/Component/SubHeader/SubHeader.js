@@ -14,13 +14,14 @@ const SubHeader = () => {
             </div>
 
             <div className="subheader__nav">
-                <NavLink className="subheader__link" to="/product/outer">Outer</NavLink>
-                <NavLink className="subheader__link" to="/product/top">Top</NavLink>
-                <NavLink className="subheader__link" to="/product/pants">Pants</NavLink>
-                <NavLink className="subheader__link" to="/product/skirt">Skirt</NavLink>
-                <NavLink className="subheader__link" to="/product/dress">Dress</NavLink>
-                <NavLink className="subheader__link" to="/product/shoes">Shoes</NavLink>
-                <NavLink className="subheader__link" to="/product/bag">Bag</NavLink>
+                <NavLink className="subheader__link" exact to="/product/">result</NavLink>
+                <NavLink className="subheader__link" to="/product/outer">outer</NavLink>
+                <NavLink className="subheader__link" to="/product/top">top</NavLink>
+                <NavLink className="subheader__link" to="/product/pants">pants</NavLink>
+                <NavLink className="subheader__link" to="/product/skirt">skirt</NavLink>
+                <NavLink className="subheader__link" to="/product/dress">dress</NavLink>
+                <NavLink className="subheader__link" to="/product/shoes">shoes</NavLink>
+                <NavLink className="subheader__link" to="/product/bag">bag</NavLink>
             </div>
         </section>
     )

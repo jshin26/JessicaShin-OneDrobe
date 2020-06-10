@@ -1,14 +1,37 @@
 import React from 'react';
-import './Skirts.scss';
+import axios from 'axios';
+import ProductCard from '../../ProductCard/ProductCard';
 
-// Skirt
+const API_URL="http://localhost:8080/"
 
-const Skirts = () => {
-    return (
-        <div>
-            Skirts
-        </div>
-    )
+// Skirts
+
+class Skirt extends React.Component {
+
+    state={
+        productData: []
+    }
+
+    componentDidMount () {
+        axios
+            .get(API_URL)
+            .then(response => {
+                
+                this.setState({
+                    productData: response.data
+                })
+            })
+    }
+
+    render() {
+        return(
+            <div>
+                <ProductCard 
+                    cardList={this.state.productData.filter(content => content.menugroup === "skirt")}                    
+                />
+            </div>
+        )
+    }
 }
 
-export default Skirts;
+export default Skirt;
