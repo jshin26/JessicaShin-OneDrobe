@@ -1,0 +1,40 @@
+[
+    {
+        "id": "20200611",
+        "author": "Odessa Paloma Parker",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandpage" : "https://www.aritzia.com/",
+        "name" : "Aki Dress",
+        "original" : "",
+        "price" : "120",
+        "description" : "This is a V-neck mini dress with a pointed collar, puff sleeves and a cinched elastic waist. It's made with fluid, flowy fabric. This version comes in a polka dot print that was designed in-house.",
+        "page" : "https://www.aritzia.com/en/product/aki-dress/78168.html?dwvar_78168_color=15170",
+        "categories" : "women, dress, mini, puff",
+        "images" : [
+            "http://localhost:8080/aritzia/dress2.1.jpg",
+            "http://localhost:8080/aritzia/dress2.2.jpg",
+            "http://localhost:8080/aritzia/dress2.3.jpg",
+            "http://localhost:8080/aritzia/dress2.4.jpg"
+        ],
+        "menugroup": "dress"
+    },
+    {
+        "id": "456789",
+        "brand": "ARITZIA",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandpage" : "https://www.aritzia.com/",
+        "name" : "Aki Dress",
+        "original" : "",
+        "price" : "120",
+        "description" : "This is a V-neck mini dress with a pointed collar, puff sleeves and a cinched elastic waist. It's made with fluid, flowy fabric. This version comes in a polka dot print that was designed in-house.",
+        "page" : "https://www.aritzia.com/en/product/aki-dress/78168.html?dwvar_78168_color=15170",
+        "categories" : "women, dress, mini, puff",
+        "images" : [
+            "http://localhost:8080/aritzia/dress2.1.jpg",
+            "http://localhost:8080/aritzia/dress2.2.jpg",
+            "http://localhost:8080/aritzia/dress2.3.jpg",
+            "http://localhost:8080/aritzia/dress2.4.jpg"
+        ],
+        "menugroup": "dress"
+    }
+]

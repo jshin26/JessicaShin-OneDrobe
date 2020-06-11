@@ -28,7 +28,6 @@ class Product extends React.Component {
     }
 
     updateSearch = (event) => {
-        console.log(event.target.value)
         this.setState({search: event.target.value})
     }
     
@@ -45,6 +44,16 @@ class Product extends React.Component {
             })
     }
 
+    shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
+
+
     render() {
 
         let productInfo=this.state.productData.filter((res) => {            
@@ -56,6 +65,8 @@ class Product extends React.Component {
                 ||  res.description.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
             ) {return res}
         })
+        this.shuffleArray(productInfo);
+        
         return (
             <BrowserRouter>
                 <div className="search">

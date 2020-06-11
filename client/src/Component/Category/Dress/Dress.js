@@ -23,11 +23,23 @@ class Dress extends React.Component {
             })
     }
 
+    shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
+
     render() {
+
+        let filtered = this.state.productData.filter(content => content.menugroup === "dress")
+        this.shuffleArray(filtered)
         return(
             <div>
                 <ProductCard 
-                    cardList={this.state.productData.filter(content => content.menugroup === "dress")}                    
+                    cardList={filtered}
                 />
             </div>
         )

@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-import uuidv4 from 'uuid';
 import './ProductDetail.scss';
 
 import backIcon from '../../Asset/back-arrow.svg';
@@ -128,11 +127,11 @@ class ProductDetail extends React.Component {
                         <p className="detail__description">{this.state.productData.description}</p>
                         <p className="detail__price">$ {this.state.productData.price}</p>
                         
-                        <a className="detail__brand-a" href={this.state.productData.brandpage} target="_blank">
+                        <a className="detail__brand-a" href={this.state.productData.brandpage} target="_blank" rel="noopener noreferrer">
                             <img className="detail__brand-logo" src={this.state.productData.brandlogo} alt={this.state.productData.brand}/>
                         </a>
 
-                        <a className="detail__brand-a" href={this.state.productData.page} target="_blank">
+                        <a className="detail__brand-a" href={this.state.productData.page} target="_blank" rel="noopener noreferrer">
                             <button className="detail__brand-btn btn">click to view in {this.state.productData.brand}</button>
                         </a>
 

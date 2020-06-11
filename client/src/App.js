@@ -6,7 +6,7 @@ import Header from './Component/Header/Header';
 import Home from './Page/Home/Home';
 import About from './Page/About/About';
 import Product from './Page/Product/Product';
-import Favourite from './Page/Favourite/Favourite';
+import StyleLog from './Page/StyleLog/StyleLog';
 
 // APP
 
@@ -24,7 +24,7 @@ function App () {
               <Route path="/" exact component={Home} />
               <Route path="/about" exact component={About} />
               <Route path="/product" exact component={Product} />
-              {/* <Route path="/favourites" exact component={Favourite} /> */}
+              <Route path="/log" exact component={StyleLog} />
             </div>
         </Switch>
       </div>
