@@ -21,7 +21,8 @@
     }
     &__nav {
         display: flex;
-        flex-direction: column;    
+        flex-direction: column;
+        overflow: hidden;
     }
     &__link {
         @include font (24px, 32px, 'AvenirNext', 600);
@@ -33,6 +34,9 @@
         &:link,
         &:visited {
             color: $black;
+        }
+        &:hover {
+            transform: scale(1.2)
         }
     }
 }

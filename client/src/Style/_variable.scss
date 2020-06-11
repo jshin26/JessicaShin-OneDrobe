@@ -7,6 +7,11 @@ $mercury: #e1e1e1;
 $alabaster: #fafafa;
 
 $yellow: #ffd64d;
+$orange: #f9794e;
+$red: #f94e4e;
+
+$pink: #f94ea3;
+$blue: 	#000080;
 
 $white: #fff;
 
@@ -28,6 +33,11 @@ body {
     border-radius: 4px;
     border-style: none;
     cursor: pointer;
+    &:hover {
+        background-color: $white;
+        color: $yellow;
+        border: 2px solid $black;
+    }
 }
 .btn--white {
     background-color: $white;

@@ -1,15 +1,20 @@
 import React from 'react';
+
 import { NavLink } from 'react-router-dom';
 import './SubHeader.scss';
+import searchIcon from '../../Asset/Icon-search.svg';
 
 // SubHeader
 
-const SubHeader = () => {
+const SubHeader = (props) => {
+    
+    let {search, updateSearch} = props
     return (
         <section className="subheader">
             <div className="subheader__search">
                 <form className="subheader__search-form" >
-                    <input className="subheader__search-input" type="text" placeholder="What are you looking for?"/>
+                    <img src={searchIcon} alt="search-icon"/>
+                    <input className="subheader__search-input" value={search} onChange={updateSearch} type="text" placeholder="What are you looking for?"/>
                 </form>
             </div>
 

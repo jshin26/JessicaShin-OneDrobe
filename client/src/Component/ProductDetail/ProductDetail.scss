@@ -1,0 +1,87 @@
+
+// IMPORTS
+
+@import '../../Style/fonts';
+@import '../../Style/mixins';
+@import '../../Style/variable';
+
+
+.detail {
+    padding: 0 20px;
+    margin-top: 6.5%;
+    &__link {
+        text-decoration: none;
+        display: flex;
+        margin-bottom: 28px;
+        &:link,
+        &:visited {
+            color: $black;
+        }
+        &-img {
+            margin-right: 24px;
+        }
+        &-back {
+
+        }
+    }
+    &__main {
+        display: flex;
+
+    }
+    &__dots {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+    &__dot {
+        width: 4%;
+        margin-left: 16px;
+    }
+    &__img {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-img {
+            width: 60%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    &__detail {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0 0 40px;
+    }
+    &__name {
+        @include font (48px, 66px, 'AvenirNext', 700);
+        margin: 0;
+    }
+    &__description {
+        @include font (18px, 32px, 'AvenirNext', 400);
+        width: 50%;
+    }
+    &__price {
+        @include font (20px, 32px, 'AvenirNext', 600);
+        margin-bottom: 40px;
+    }
+    &__brand {
+        &-a {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        &-logo {
+            width: 20%;
+            
+        }
+        &-btn {
+            @include font (20px, 32px, 'AvenirNext', 600);
+            padding: 14px;
+        }
+    }
+}

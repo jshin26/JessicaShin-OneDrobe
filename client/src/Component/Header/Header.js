@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './Header.scss';
-// import backicon from '../../Asset/back-arrow.svg';
 
 import logo from '../../Asset/logo.png';
+import ChatModal from '../ChatModal/ChatModal';
 
 // HEADER
 
@@ -24,6 +24,8 @@ const Header =() =>{
                     <NavLink className="side__link" exact to="/favourites">favourites</NavLink>
     
                 </nav>
+
+                {/* <ChatModal /> */}
     
             </div>
         )

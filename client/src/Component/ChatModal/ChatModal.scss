@@ -1,0 +1,30 @@
+
+// IMPORTS
+
+@import '../../Style/fonts';
+@import '../../Style/mixins';
+@import '../../Style/variable';
+
+.modal {
+    position: absolute;
+    top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    background-color: $white;
+    overflow: auto;
+    &:focus {
+        outline: none;
+    }
+}
+.overlay {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparentize($color: #000000, $amount: 0.5);
+}
+.ReactModal__Body--open {
+    overflow: hidden;
+}
