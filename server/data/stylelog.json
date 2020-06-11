@@ -1,40 +1,25 @@
 [
     {
         "id": "20200611",
-        "author": "Odessa Paloma Parker",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
-        "brandpage" : "https://www.aritzia.com/",
-        "name" : "Aki Dress",
-        "original" : "",
-        "price" : "120",
-        "description" : "This is a V-neck mini dress with a pointed collar, puff sleeves and a cinched elastic waist. It's made with fluid, flowy fabric. This version comes in a polka dot print that was designed in-house.",
-        "page" : "https://www.aritzia.com/en/product/aki-dress/78168.html?dwvar_78168_color=15170",
-        "categories" : "women, dress, mini, puff",
-        "images" : [
-            "http://localhost:8080/aritzia/dress2.1.jpg",
-            "http://localhost:8080/aritzia/dress2.2.jpg",
-            "http://localhost:8080/aritzia/dress2.3.jpg",
-            "http://localhost:8080/aritzia/dress2.4.jpg"
-        ],
-        "menugroup": "dress"
+        "author": "Erica Ngao",
+        "authorimg" : "http://localhost:8080/log/user.svg",
+        "authorpage" : "https://www.ellecanada.com/author/erica-ngao",
+        "title" : "15 Canadian Brands Donating Proceeds to Fight Anti-Black Racism",
+        "description" : "In addition to shopping from Black-owned businesses, calling on major retailers to pledge 15 percent of shelf space to Black-owned businesses and donating directly to Black organizations and groups in Canada, you can also choose to shop from brands that are donating proceeds from their sales to groups fighting anti-Black racism. Here’s a list of Canadian designers, brands and shops that are currently donating part or all of their sales. The Canadian designer will be donating 20 percent of net sales to the NAACP, the United State’s largest grassroots-based civil rights organization.",
+        "page" : "https://www.ellecanada.com/fashion/shopping/canadian-brands-donating-proceeds-from-sales-to-fight-racism",
+        "image" : "http://localhost:8080/log/branddonating.jpg",
+        "date": "JUN 4 2020"
+
     },
     {
-        "id": "456789",
-        "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
-        "brandpage" : "https://www.aritzia.com/",
-        "name" : "Aki Dress",
-        "original" : "",
-        "price" : "120",
-        "description" : "This is a V-neck mini dress with a pointed collar, puff sleeves and a cinched elastic waist. It's made with fluid, flowy fabric. This version comes in a polka dot print that was designed in-house.",
-        "page" : "https://www.aritzia.com/en/product/aki-dress/78168.html?dwvar_78168_color=15170",
-        "categories" : "women, dress, mini, puff",
-        "images" : [
-            "http://localhost:8080/aritzia/dress2.1.jpg",
-            "http://localhost:8080/aritzia/dress2.2.jpg",
-            "http://localhost:8080/aritzia/dress2.3.jpg",
-            "http://localhost:8080/aritzia/dress2.4.jpg"
-        ],
-        "menugroup": "dress"
+        "id": "20200610",
+        "author": "Erica Ngao",
+        "authorimg" : "http://localhost:8080/log/erica.jpg",
+        "authorpage" : "https://www.ellecanada.com/author/erica-ngao",
+        "title" : "Indigenous Fashion Week Toronto Partners With Simons on Capsule Collection",
+        "description" : "The myth of the lone genius continues to prevail in the fashion world, but Sage Paul is turning that notion on its head. During her childhood in a mostly Indigenous community (she is an urban Denesuliné tskwe and a member of the English River First Nation), the moms would gather the kids together for lessons in making traditional regalia and crafts. For the artist and designer, that sense of community is the anchor in everything she does – and she does a lot. From working on costumes for award-winning choreographer Nova Bhattacharya to teaching a course on contemporary Indigenous fashion (which she also created) at her alma mater, Paul is always looking for ways to make things fit together. The next piece of the puzzle? Indigenous Fashion Week Toronto (IFWTO), a multi-day showcase of fashion and art of which Paul is a co-founder and the artistic director. Although it’s currently postponed due to the pandemic, the event is far from your traditional fashion week. In addition to four runway shows (featuring 23 designers from Canada and abroad), there’s a marketplace, an art exhibit, lectures and workshops. “I really wanted an artistic platform that respects and values the work that designers create,” says Paul. In this spirit, the chosen designers are paid artist fees rather than the other way around.",
+        "page" : "https://www.ellecanada.com/fashion/shopping/indigenous-fashion-week-toronto-simons-capsule-collection",
+        "image" : "http://localhost:8080/log/indifw.jpg",
+        "date" : "MAY 28 2020"
     }
 ]

@@ -52,6 +52,7 @@
         align-items: center;
         text-decoration: none;
         padding: 10px; 
+        cursor: pointer;
         &:hover {
             background-color: $yellow;            
         }
@@ -60,7 +61,8 @@
         }
         &-btn {
             @include font (24px, 36px, 'AvenirNext', 600);
-                       
+            cursor: pointer;
+                   
             background-color: transparent;
             border: none;            
         }

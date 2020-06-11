@@ -22,7 +22,7 @@ const Header =() =>{
                     <NavLink className="side__link" exact to="/about">about</NavLink>
                     <NavLink className="side__link" exact to="/product">search</NavLink>
                     {/* <NavLink className="side__link" exact to="/favourites">favourites</NavLink> */}
-                    <NavLink className="side__link" exact to="/log">style log</NavLink>
+                    <NavLink className="side__link" exact to="/log">#stylelog</NavLink>
     
                 </nav>
 

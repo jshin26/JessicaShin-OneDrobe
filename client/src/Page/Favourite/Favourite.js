@@ -11,7 +11,7 @@ const API_URL="http://localhost:8080";
 const ProductCardComp = (props) => {
 
     let { cardlinks, brandlogo, image, name, original, price, deleteHandler, id } = props;
-    console.log(id)
+
     return (
 
         <div className="card">
@@ -36,31 +36,6 @@ const ProductCardComp = (props) => {
         </div>
 
 
-    )
-}
-
-const ProductCard = (props) => {
-    let { cardList, deleteHandler } = props;
-
-    return(
-        <section className="main">
-
-            {cardList.map((content) =>{
-                return <ProductCardComp 
-                    key={content.id}
-                    id={content.id}
-                    value={content.id}
-                    name={content.name}
-                    image={content.images[0]}
-                    brandlogo={content.brandlogo}
-                    original={content.original}
-                    price={content.price}
-                    cardlinks={`/${content.id}`}
-                    deleteHandler={deleteHandler}                   
-                />
-            })}
-
-        </section>
     )
 }
 
@@ -107,12 +82,24 @@ class Favourite extends React.Component {
 
     render() {
         return (
-            <div>
-                <ProductCard 
-                    cardList={this.state.favourites}
-                    deleteHandler={this.deleteHandler}                  
+            <section className="main">
+
+            {this.state.favourites.map((content) =>{
+                return <ProductCardComp 
+                    key={content.id}
+                    id={content.id}
+                    value={content.id}
+                    name={content.name}
+                    image={content.images[0]}
+                    brandlogo={content.brandlogo}
+                    original={content.original}
+                    price={content.price}
+                    cardlinks={`/${content.id}`}
+                    deleteHandler={this.deleteHandler}                   
                 />
-            </div>
+            })}
+
+        </section>
         )
       }
 }
