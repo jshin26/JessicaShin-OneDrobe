@@ -8,11 +8,9 @@
 
 .side {
     background: $white;
-    // position: fixed;
+    position: relative;
     display: flex;
     flex-direction: column;
-    // border-right: 5px solid $yellow;
-    // width: 350px;
     height: 100%;
     &__logo {
         &-img {
@@ -39,6 +37,12 @@
             transform: scale(1.2)
         }
     }
+}
+
+.chatmodal {
+    width:100%;
+    position: absolute;
+    bottom: -120px;
 }
 
 // .active {

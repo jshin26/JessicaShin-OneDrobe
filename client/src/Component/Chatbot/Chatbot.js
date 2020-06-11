@@ -4,31 +4,58 @@ import ChatBot from 'react-simple-chatbot';
 
 
 const theme = {
-    background: "#ffd64d",
+    background: "#fff",
+    // borderRadius: "5px",
     // fontFamily: 'AvenirNext',
-    // headerBgColor: "",
+    headerBgColor: "#fff",
     // headerFontColor: '',
     // headerFontSize: '',
-    // botBubbleColor: '',
-    // botFontColor: '',
-    // userBubbleColor: '',
-    // userFontColor: '',
+    botBubbleColor: "#ffd64d",
+    botFontColor: "#000",
+    userBubbleColor: '#fff',
+    userFontColor: '#000',
+    userBubbleBackgroundColor: "#000"
 }
 
 const steps = [
     {
         id: '1',
-        message: 'Welcome to onedrobe! Do you need help?',
-        end: true
-    }
+        message: 'Welcome to onedrobe!',
+        trigger: '2'
+      },
+      {
+          id: '2',
+          options: [
+            {
+                label: '1. What is onedrobe?',
+                trigger: 'question1'
+            },
+            {
+                label: '2. Can I buy through onedrobe',
+                trigger: 'question2'
+            }
+        ],
+      },
+      {
+        id: 'question1',
+        message: 'Once drobe is ...',
+        end: true,
+      },
+      {
+        id: 'question2',
+        message: 'Sorry...',
+        end: true,
+      }
 ]
 
 class ChatComp extends React.Component {
     render() {
         return (
-            <ChatBot style={{backgroundColor: "#ffd64d"}}
-                steps={steps}
-            />
+            <ThemeProvider theme={theme}>
+                <ChatBot
+                    steps={steps}
+                />
+            </ThemeProvider>
         )
     }
 }

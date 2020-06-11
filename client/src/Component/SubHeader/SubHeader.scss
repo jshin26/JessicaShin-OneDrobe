@@ -16,6 +16,7 @@
     &__search {
         display: flex;
         justify-content: center;
+        align-items: center;
         &-form {
             width: 60%;
             display: flex;            
@@ -42,6 +43,28 @@
                 @include font(18px, 20px, 'AvenirNext', 400);    
                 // color: $black;               
             }
+        }
+    }
+    &__fav {
+        @include font (20px, 20px, 'AvenirNext', 600);
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-left: 70px;
+        padding: 0 5px;
+        &-text {
+            margin-right: 10px;
+        }
+        &-img {
+            width: 30px;
+        }
+        &:link,
+        &:visited {
+            color: black;
+        }
+        &:hover {            
+            border-bottom: 3px solid $white;
+            
         }
     }
     &__nav {

@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import uuidv4 from 'uuid';
 import './ProductDetail.scss';
 
 import backIcon from '../../Asset/back-arrow.svg';
@@ -78,6 +79,26 @@ class ProductDetail extends React.Component {
         })
     } 
 
+    favHandle = (e) => {
+        e.preventDefault();
+        console.log("working?", this.state.productData);
+        axios
+            .post(`${API_URL}/favourites/fav`, {
+                "id" : this.state.productData.id,
+                "name" : this.state.productData.name,
+                "brand": this.state.productData.brand,
+                "brandlogo" : this.state.productData.brandlogo,
+                "brandpage" : this.state.productData.brandpage,                
+                "original" : this.state.productData.original,
+                "price" : this.state.productData.price,
+                "description" : this.state.productData.description,
+                "page" : this.state.productData.page,
+                "categories" : this.state.productData.categories,
+                "images" : this.state.productData.images,
+                "menugroup": this.state.productData.menugroup
+            })
+    }
+
     render() {
         return (
 
@@ -113,7 +134,9 @@ class ProductDetail extends React.Component {
 
                         <a className="detail__brand-a" href={this.state.productData.page} target="_blank">
                             <button className="detail__brand-btn btn">click to view in {this.state.productData.brand}</button>
-                        </a>                        
+                        </a>
+
+                        <button onClick={this.favHandle}>add to fav</button>
         
                     </div>
                 </div>

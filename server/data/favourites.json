@@ -1,0 +1,40 @@
+[
+    {
+        "id": "8372056",
+        "brand": "ZARA",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "brandpage" : "https://www.zara.com/ca/",
+        "name" : "Plaid Blazer",
+        "original" : "",
+        "price" : "99.90",
+        "description" : "Blazer with lapel collar and long sleeves. Front pockets. Front button closure.",
+        "page" : "https://www.zara.com/ca/en/plaid-blazer-p08372056.html?v1=54658054&v2=1445747",
+        "categories" : "women, outer, blazer, jacket",
+        "images" : [
+            "http://localhost:8080/zara/zara_outer1.1.jpg",
+            "http://localhost:8080/zara/zara_outer1.2.jpg",
+            "http://localhost:8080/zara/zara_outer1.3.jpg",
+            "http://localhost:8080/zara/zara_outer1.4.jpg"
+        ],
+        "menugroup": "outer"
+    },
+    {
+        "id": "77910",
+        "brand": "ARITZIA",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandpage" : "https://www.aritzia.com/",
+        "name" : "Leather Shopper Bag",
+        "original" : "148",
+        "price" : "73.99",
+        "description" : "This is a mini shopper bag with a leather cord handle and an adjustable, detachable shoulder strap. It's made from smooth, 100% genuine cow leather with a subtle texture.",
+        "page" : "https://www.aritzia.com/en/product/leather-shopper-bag/77910.html?dwvar_77910_color=18131",
+        "categories" : "women, bag, leather, shopper, mini",
+        "images" : [
+            "http://localhost:8080/aritzia/bag2.1.jpg",
+            "http://localhost:8080/aritzia/bag2.2.jpg",
+            "http://localhost:8080/aritzia/bag2.3.jpg",
+            "http://localhost:8080/aritzia/bag2.4.jpg"
+        ],
+        "menugroup": "bag"
+    }
+]

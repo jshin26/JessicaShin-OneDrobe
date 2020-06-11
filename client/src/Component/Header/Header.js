@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './Header.scss';
 
-import logo from '../../Asset/logo.png';
+import logo from '../../Asset/logo_transparent.png';
 import ChatModal from '../ChatModal/ChatModal';
 
 // HEADER
@@ -21,11 +21,14 @@ const Header =() =>{
                     <NavLink className="side__link" exact to="/">home</NavLink>
                     <NavLink className="side__link" exact to="/about">about</NavLink>
                     <NavLink className="side__link" exact to="/product">search</NavLink>
-                    <NavLink className="side__link" exact to="/favourites">favourites</NavLink>
+                    {/* <NavLink className="side__link" exact to="/favourites">favourites</NavLink> */}
+                    <NavLink className="side__link" exact to="/log">style log</NavLink>
     
                 </nav>
 
-                {/* <ChatModal /> */}
+                <div className="chatmodal">
+                    <ChatModal />
+                </div>
     
             </div>
         )

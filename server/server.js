@@ -3,7 +3,8 @@ const app = express();
 const cors = require('cors');
 
 const port = process.env.PORT || 8080;
-const productRoute = require('./routes/product')
+const productRoute = require('./routes/product');
+const favouritesRoute = require('./routes/favourites');
 
 app.use(cors());
 app.use(express.json());
@@ -12,6 +13,8 @@ app.use(express.static('asset'));
 
 app.use('/product', productRoute);
 app.use('/', productRoute);
+
+app.use('/favourites', favouritesRoute)
 
 app.listen(port, () => {
     console.log('Server is running on 8080')

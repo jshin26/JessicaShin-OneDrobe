@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './SubHeader.scss';
 import searchIcon from '../../Asset/Icon-search.svg';
+import fav from '../../Asset/heart.svg';
 
 // SubHeader
 
@@ -16,6 +17,11 @@ const SubHeader = (props) => {
                     <img src={searchIcon} alt="search-icon"/>
                     <input className="subheader__search-input" value={search} onChange={updateSearch} type="text" placeholder="What are you looking for?"/>
                 </form>
+
+                <Link className="subheader__fav" exact to="/favourites">
+                    <p className="subheader__fav-text">favourites</p>
+                    <img className="subheader__fav-img" src={fav} alt="favourites link"/>
+                </Link>
             </div>
 
             <div className="subheader__nav">

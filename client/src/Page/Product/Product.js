@@ -13,7 +13,8 @@ import Dress from '../../Component/Category/Dress/Dress';
 import Shoes from '../../Component/Category/Shoes/Shoes';
 import Bag from '../../Component/Category/Bag/Bag';
 import ProductDetail from '../../Component/ProductDetail/ProductDetail';
-import {ProductCardComp } from '../../Component/ProductCard/ProductCard'
+import {ProductCardComp } from '../../Component/ProductCard/ProductCard';
+import Favourite from '../Favourite/Favourite'
 
 const API_URL="http://localhost:8080";
 
@@ -79,6 +80,7 @@ class Product extends React.Component {
                                     })}
                                 </div>
                             </Route>
+                            <Route path="/favourites" exact component={Favourite} />
                             <Route path="/product/outer" exact component={Outer} />
                             <Route path="/product/top" exact component={Top} />
                             <Route path="/product/pants" exact component={Pants} />

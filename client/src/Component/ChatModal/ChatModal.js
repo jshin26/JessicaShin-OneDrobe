@@ -2,7 +2,7 @@ import React from 'react';
 import ReactModal from 'react-modal';
 
 import './ChatModal.scss';
-import chat from '../../Asset/chat.png';
+import chat from '../../Asset/chat.svg';
 import Chatbot from '../Chatbot/Chatbot';
 
 class ChatModal extends React.Component {
@@ -23,8 +23,9 @@ class ChatModal extends React.Component {
 
     render () {
         return (
-            <>
-                <button onClick={this.handleOpenModal} >
+            <div className="modal-ctn">
+                <button className="modal__btn" onClick={this.handleOpenModal} >
+                    <p>need help?</p>
                     <img src={chat} alt="chat icon" />
                 </button>
 
@@ -40,7 +41,7 @@ class ChatModal extends React.Component {
                     <button onClick={this.handleCloseModal}>Close</button>
 
                 </ReactModal>
-            </>
+            </div>
         )
     }
 }
