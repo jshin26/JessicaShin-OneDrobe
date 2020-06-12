@@ -7,8 +7,7 @@
 
 
 .search {
-    display: flex;
-    flex-direction: column;
+    @include flex (column);
 }
 
 .main {
@@ -16,9 +15,8 @@
 
 }
 #search {
-    display: flex;
+    @include flex (row, space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 16px;
     margin-top: 6.5%;
 }

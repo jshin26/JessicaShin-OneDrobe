@@ -7,10 +7,9 @@
 
 
 .side {
+    @include flex (column);
     background: $white;
     position: relative;
-    display: flex;
-    flex-direction: column;
     height: 100%;
     &__logo {
         &-img {
@@ -18,8 +17,7 @@
         }
     }
     &__nav {
-        display: flex;
-        flex-direction: column;
+        @include flex (column);
         overflow: hidden;
     }
     &__link {
@@ -44,12 +42,3 @@
     position: absolute;
     bottom: -200px;
 }
-
-// .active {
-//     background-color: $yellow;
-//     &:link,
-//     &:visited {
-//         color: black;
-//         background-color: $yellow;
-//     }
-// }

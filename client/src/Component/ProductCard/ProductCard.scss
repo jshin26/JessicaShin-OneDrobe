@@ -9,32 +9,23 @@
 // Product Card
 
 .card {
+    @include flex (column, center, center);
     border: 2px solid $silver;
     width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
     padding: 15px 15px;
-    margin-bottom: 50px;
-    margin-right: 8px;
+    margin: 0 8px 50px 0;
     box-sizing: border-box;
     &:link,
     &:visited {
         color: $black;
     }
     &--top {
+        @include flex (row, space-between, center);
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     &__brand {
         width: 35%;
-    }
-    &__like {
-
     }
     &__img {
         width: 85%;
@@ -43,17 +34,14 @@
         object-position: center;
     }
     &__detail {
+        @include flex (row, space-between, center);
         width:100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     &__name {
         margin: 0;
     }
     &__pricebox {
-        display: flex;
-        flex-direction: column;
+        @include flex (column);
     }
     &__original {
         color: $red;
@@ -66,8 +54,7 @@
 }
 
 .main {
-    display: flex;
+    @include flex (row, space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 16px;
 }

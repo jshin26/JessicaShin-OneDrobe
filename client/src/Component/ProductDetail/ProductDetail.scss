@@ -20,18 +20,13 @@
         &-img {
             margin-right: 24px;
         }
-        &-back {
-
-        }
     }
     &__main {
         display: flex;
-
     }
     &__dots {
+        @include flex (row, center);
         width: 100%;
-        display: flex;
-        justify-content: center;
         margin-bottom: 32px;
     }
     &__dot {
@@ -39,10 +34,8 @@
         margin-left: 16px;
     }
     &__img {
+        @include flex (column, center, center);
         width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         &-img {
             width: 60%;
             object-fit: cover;
@@ -50,10 +43,8 @@
         }
     }
     &__detail {
+        @include flex (column, "", center);
         width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin: 40px 0 0 40px;
     }
     &__name {
@@ -70,14 +61,12 @@
     }
     &__brand {
         &-a {
+            @include flex (row, center, center);
             margin-bottom: 40px;
-            display: flex;
-            justify-content: center;
             text-decoration: none;
         }
         &-logo {
-            width: 20%;
-            
+            width: 20%;            
         }
         &-btn {
             @include font (20px, 32px, 'AvenirNext', 600);
