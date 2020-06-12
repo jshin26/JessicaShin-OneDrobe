@@ -665,7 +665,7 @@
     {
         "id": "71481",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Little Cropped Jacket",
         "original" : "",
@@ -684,7 +684,7 @@
     {
         "id": "78099",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Palo Alto Teddy Jacket",
         "original" : "178",
@@ -703,7 +703,7 @@
     {
         "id": "74847",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Renzo Pant",
         "original" : "",
@@ -722,7 +722,7 @@
     {
         "id": "77535",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "New Paperbag Pant",
         "original" : "",
@@ -741,7 +741,7 @@
     {
         "id": "77450",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Vito Linen Pant",
         "original" : "",
@@ -760,7 +760,7 @@
     {
         "id": "78517",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Troubadour Skirt",
         "original" : "160",
@@ -779,7 +779,7 @@
     {
         "id": "77093",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Sculpt Knit Scallop Skirt",
         "original" : "",
@@ -798,7 +798,7 @@
     {
         "id": "78149",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Lady Skirt",
         "original" : "",
@@ -817,7 +817,7 @@
     {
         "id": "78123",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Sidonie Dress",
         "original" : "",
@@ -836,7 +836,7 @@
     {
         "id": "78168",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Aki Dress",
         "original" : "",
@@ -855,7 +855,7 @@
     {
         "id": "75472",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Jubilee Dress",
         "original" : "198",
@@ -874,7 +874,7 @@
     {
         "id": "71371",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Mini Jute Bucket",
         "original" : "",
@@ -893,7 +893,7 @@
     {
         "id": "77910",
         "brand": "ARITZIA",
-        "brandlogo" : "http://localhost:8080/aritzia/aritzia.svg",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Leather Shopper Bag",
         "original" : "148",

@@ -11,13 +11,15 @@ app.use(cors());
 app.use(express.json());
 
 app.use(express.static('asset'));
+app.use('/uploads', express.static('uploads'));
 
 app.use('/product', productRoute);
 app.use('/', productRoute);
 
 app.use('/favourites', favouritesRoute);
 
-app.use('/log', stylelogRoute)
+app.use('/log', stylelogRoute);
+
 
 app.listen(port, () => {
     console.log('Server is running on 8080')

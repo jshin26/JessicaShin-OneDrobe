@@ -69,8 +69,7 @@ class LogComp extends React.Component {
                     <p className="modal__read-desc">
                         {this.state.show && this.props.description}
                     </p>
-                </div>
-                
+                </div>                
             </section>
         )
     }
@@ -80,7 +79,7 @@ class StyleLog extends React.Component {
     state={
         logs: [],
         showModal: false,
-        pictures: []
+        selectedImage: null
     }
 
     componentDidMount () {
@@ -89,6 +88,16 @@ class StyleLog extends React.Component {
             .then(response => {          
                 this.setState({
                     logs: response.data
+                })
+            })            
+            .catch(err => {
+                console.log(err)
+            })
+        axios
+            .get(`${API_URL}/log/log`)
+            .then(response => {          
+                this.setState({
+                    selectedImage: response.data.image
                 })
             })            
             .catch(err => {
@@ -107,18 +116,23 @@ class StyleLog extends React.Component {
         })
     }
 
-    onDrop = (picture) => {
+    onChangeHandler = (e) => {
+        console.log(e)
         this.setState({
-            pictures: this.state.pictures.concat(picture)
+            selectedImage: e,
+            loaded: 0
         })
     }
 
     postNewlog = (e) =>{
-        // e.preventDefault();
+        e.preventDefault();
         if (!e.target.author.value || !e.target.title.value || !e.target.description.value) {
             alert ('please fill in the blanks');
             e.preventDefault();
         } else {
+            console.log(this.state.selectedImage);
+            const data = new FormData()
+            data.append('image', this.state.selectedImage)
             axios
                 .post(`${API_URL}/log/log`, {
                     "id": uuidv4(),
@@ -126,7 +140,7 @@ class StyleLog extends React.Component {
                     "title" : e.target.title.value,
                     "description" : e.target.description.value,
                     "date" : Date.now(),
-                    "image" : mask
+                    "image" : data
                 })
                 .then(res=> {
                     console.log(res)
@@ -185,11 +199,13 @@ class StyleLog extends React.Component {
                                 <ImageUploader 
                                     withIcon={true}
                                     buttonText='Choose images'
-                                    onChange={this.onDrop}
+                                    onChange={this.onChangeHandler}
                                     imgExtension={['.jpg', '.png', 'gif']}
                                     maxFileSize={5242880}                                
                                     className="log-modal__upload"
+                                    name="image"
                                 />
+                                {/* <input type="file" name="image" onChange={this.onChangeHandler}></input> */}
                                 <div className="log-modal__btnbox">
                                     <button className="log-modal__btn btn btn--white" onClick={this.handleCloseModal}>cancel</button>
                                     <button className="log-modal__btn btn" type="submit">submit</button>

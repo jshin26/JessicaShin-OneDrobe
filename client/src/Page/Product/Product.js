@@ -56,14 +56,16 @@ class Product extends React.Component {
 
     render() {
 
-        let productInfo=this.state.productData.filter((res) => {            
+        let productInfo = this.state.productData.filter((res) => {            
             if (this.state.search === "") {
                 return this.state.productData
             } else if (
                     res.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
                 ||  res.categories.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
                 ||  res.description.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
-            ) {return res}
+            ) {
+                return res
+            }
         })
         this.shuffleArray(productInfo);
         

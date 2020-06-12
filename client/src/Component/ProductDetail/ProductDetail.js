@@ -80,7 +80,6 @@ class ProductDetail extends React.Component {
 
     favHandle = (e) => {
         e.preventDefault();
-        console.log("working?", this.state.productData);
         axios
             .post(`${API_URL}/favourites/fav`, {
                 "id" : this.state.productData.id,
@@ -123,20 +122,21 @@ class ProductDetail extends React.Component {
                     </div>
         
                     <div className="detail__detail">                        
-                        <h2 className="detail__name">{this.state.productData.name}</h2>
+                        <div className="detail__detail--flex">
+                            <h2 className="detail__name">{this.state.productData.name}</h2>
+                            
+                        </div>
                         <p className="detail__description">{this.state.productData.description}</p>
                         <p className="detail__price">$ {this.state.productData.price}</p>
                         
-                        <a className="detail__brand-a" href={this.state.productData.brandpage} target="_blank" rel="noopener noreferrer">
-                            <img className="detail__brand-logo" src={this.state.productData.brandlogo} alt={this.state.productData.brand}/>
-                        </a>
-
                         <a className="detail__brand-a" href={this.state.productData.page} target="_blank" rel="noopener noreferrer">
-                            <button className="detail__brand-btn btn">click to view in {this.state.productData.brand}</button>
+                            <img className="detail__brand-logo" src={this.state.productData.brandlogo} alt={this.state.productData.brand}/>
+                            {/* <p>(you can view product detail in {this.state.productData.brand} site by clicking logo)</p> */}
                         </a>
 
-                        <button onClick={this.favHandle}>add to fav</button>
-        
+                        <button className="detail__fav btn" onClick={this.favHandle}>
+                            <p className="detail__fav-text">add to fav</p>
+                        </button>
                     </div>
                 </div>
 
@@ -146,5 +146,3 @@ class ProductDetail extends React.Component {
 }
 
 export default ProductDetail;
-
-// { brandlogo, brand, name, description, price, page }
