@@ -84,11 +84,8 @@
     }
     &__fav {
         @include flex (row, center, center);
-        width: 30%;
-        &-heart {
-            width: 32px;
-            margin-left: 12px;
+        p {
+            margin-right: 24px;
         }
-
     }
 }

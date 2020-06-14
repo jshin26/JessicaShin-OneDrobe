@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './Favourite.scss';
 
+import close from '../../Asset/close.png';
+
 const API_URL="http://localhost:8080";
 
 
@@ -14,22 +16,24 @@ const ProductCardComp = (props) => {
 
     return (
 
-        <div className="card">
-            <button onClick={(event) => deleteHandler(event, id)} value={id}>delete</button>
-            <Link  to={cardlinks}>
+        <div className="fav">
+            <button className="fav__btn" onClick={(event) => deleteHandler(event, id)} value={id}>
+                <img src={close} alt="delete from fav"/>
+            </button>
+            <Link  to={cardlinks} className="fav__link">
     
-                <div className="card--top">
-                    <img className="card__brand" src={brandlogo} alt={brandlogo}/>
+                <div className="fav--top">
+                    <img className="fav__brand" src={brandlogo} alt={brandlogo}/>
                     
                 </div>
                 
-                <img className="card__img" src={image} alt={name}/>
+                <img className="fav__img" src={image} alt={name}/>
                 
-                <div className="card__detail">
-                    <p className="card__name">{name}</p>
-                    <div className="card__pricebox">
-                        <p className="card__original">{original}</p>
-                        <p className="card__price">$ {price}</p>
+                <div className="fav__detail">
+                    <p className="fav__name">{name}</p>
+                    <div className="fav__pricebox">
+                        <p className="fav__original">{original}</p>
+                        <p className="fav__price">$ {price}</p>
                     </div>
                 </div>
             </Link>

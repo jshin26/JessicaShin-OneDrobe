@@ -66,3 +66,80 @@
         transform: scale(1.5)
     }
 }
+
+// .home {
+//     @include flex (column, center, center);
+//     width: 100%;
+//     background-color: $yellow;
+//     &__title {
+//         @include font (40px, 66px, 'AvenirNext', 700);
+//     }
+//     &__container {
+//         width: 60%;
+//     }
+//     &__hero1 {
+//         background-image: url('../../Asset/searchbg.png');
+//         width: 100%;        
+//         background-position: center;
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         position: sticky;
+//         top: 0;
+//         &-inside {
+//             background-image: url('../../Asset/search.png');
+//             background-position: center;
+//             background-size: contain;
+//             background-repeat: no-repeat;
+//             width: 100%;
+//             height: 480px;
+//         }
+//     }
+//     &__hero2 {
+//         background-image: url('../../Asset/hero2.jpg');
+//         background-position: center;
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         width: 100%;
+//         height: 480px;
+//     }
+//     &__hero3 {
+//         background-image: url('../../Asset/hero3.png');
+//         background-position: center;
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         width: 100%;
+//         height: 480px;
+//     }
+//     &__search {
+//         @include flex (row, center, center);
+//         margin-top: 52px;
+//         background-color: $white;
+//         border-radius: 10px;
+//         border: 4px solid $white;
+//         text-decoration: none;
+//         padding: 10px; 
+//         cursor: pointer;
+//         &:hover {
+//             background-color: $yellow;            
+//         }
+//         &-icon {
+//             margin-right: 16px;
+//         }
+//         &-btn {
+//             @include font (24px, 36px, 'AvenirNext', 600);
+//             cursor: pointer;
+                    
+//             background-color: transparent;
+//             border: none;            
+//         }
+//     }
+// }
+
+// @keyframes showsearch {
+//     0% {
+//         transform: translate(0, 480px)
+//     }
+//     100% {
+//         transform: translate(0, 0)
+//     }
+// }

@@ -2,8 +2,8 @@
     {
         "id": "none",
         "brand": "",
-        "brandlogo" : "http://localhost:8080/logo_transparent.png",
-        "brandpage" : "https://www.zara.com/ca/",
+        "brandlogo" : "",
+        "brandpage" : "",
         "name" : "add to favourites!",
         "original" : "",
         "price" : "",

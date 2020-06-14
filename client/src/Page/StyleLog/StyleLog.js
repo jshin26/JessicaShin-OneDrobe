@@ -3,6 +3,7 @@ import ReactModal from 'react-modal';
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 import ImageUploader from 'react-images-upload';
+import Typical from 'react-typical';
 
 import mask from '../../Asset/mask.jpg';
 import plus from '../../Asset/plus1.svg';
@@ -181,7 +182,17 @@ class StyleLog extends React.Component {
                         overlayClassName="log-overlay"
                     >
                         <div className="log-modal--inner">
-                            <h2 className="log-modal__title">join #stylelog</h2>
+                            <Typical 
+                                loop={Infinity}
+                                wrapper="h2"
+                                className="log-modal__title"
+                                steps={[
+                                    'join #stylelog',
+                                    1800,
+                                    'share your trends',
+                                    1500
+                                ]}
+                            />
                             <form className="log-modal__form" onSubmit={this.postNewlog}>
                                 <div className="log-modal__form-box">
                                     <label className="log-modal__label">username</label>

@@ -73,6 +73,10 @@ class Home extends React.Component {
             })
         } 
     }
+    appear = (e) => {
+        e.preventDefault();
+        console.log('hi')
+    }
 
     render () {
         return (
@@ -85,6 +89,24 @@ class Home extends React.Component {
                     <img className="home__img" src={this.state.image} alt="hero"/>
                     <button className="home__button next" onClick={this.clickNext}><img src={next} alt="next"/></button>
                 </div>
+
+                {/* <h1 className="home__title">"Search more than 50 brands, with just one click"</h1>
+                <div className="home__container">
+                    <div className="home__hero1">
+                        
+                        <div className="home__hero1-inside"></div>
+                        
+                    </div>
+                </div>
+
+                <div className="home__container">
+                    <div className="home__hero2"></div>
+                </div>
+
+                <div className="home__container">
+                    <div className="home__hero3"></div>
+                </div> */}
+
                 <Link exact to="/product" className="home__search">
                     <img className="home__search-icon" src={searchIcon} alt="search-icon"/>
                     <button className="home__search-btn" >click to search now</button>

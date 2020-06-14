@@ -2,9 +2,11 @@ import React from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import './ProductDetail.scss';
+import Switch from 'react-switch';
 
 import backIcon from '../../Asset/back-arrow.svg';
 import dotIcon from '../../Asset/dot.svg';
+import heart from '../../Asset/heart.svg'
 
 const API_URL="http://localhost:8080";
 
@@ -14,6 +16,7 @@ class ProductDetail extends React.Component {
         productData: [],
         changeimage: [],
         images: [],
+        checked: false,
     }
 
     fetchProductData = (url) => {
@@ -78,9 +81,12 @@ class ProductDetail extends React.Component {
         })
     } 
 
-    favHandle = (e) => {
-        e.preventDefault();
-        axios
+    favHandle = (e, productID) => {
+        const check = this.state.checked;
+        this.setState({checked: !check});
+
+        if (e === true) {
+            axios
             .post(`${API_URL}/favourites/fav`, {
                 "id" : this.state.productData.id,
                 "name" : this.state.productData.name,
@@ -95,6 +101,22 @@ class ProductDetail extends React.Component {
                 "images" : this.state.productData.images,
                 "menugroup": this.state.productData.menugroup
             })
+        } else if (e === false) {
+            axios.delete(`${API_URL}/favourites/fav/${productID}`,)
+       
+            .then(() => {
+                axios
+                    .get(`${API_URL}/favourites/fav`)
+                    .then(response => {                
+                        this.setState({
+                            favourites: response.data
+                        })
+                    })            
+                    .catch(err => {
+                        console.log(err)
+                    })
+            })
+        }
     }
 
     render() {
@@ -118,7 +140,6 @@ class ProductDetail extends React.Component {
                             <img className="detail__dot" onClick={this.slideImageFour} src={dotIcon} alt="next"/>
                         </div>
                         <img className="detail__img-img" src={this.state.images} alt="details"/>
-                        {/* <img className="detail__img-icon" src={nextIcon} alt="next arrow" onClick={this.slideImage}/> */}
                     </div>
         
                     <div className="detail__detail">                        
@@ -131,12 +152,20 @@ class ProductDetail extends React.Component {
                         
                         <a className="detail__brand-a" href={this.state.productData.page} target="_blank" rel="noopener noreferrer">
                             <img className="detail__brand-logo" src={this.state.productData.brandlogo} alt={this.state.productData.brand}/>
-                            {/* <p>(you can view product detail in {this.state.productData.brand} site by clicking logo)</p> */}
                         </a>
 
-                        <button className="detail__fav btn" onClick={this.favHandle}>
-                            <p className="detail__fav-text">add to fav</p>
-                        </button>
+                        <div className="detail__fav">
+                            <p>add to favourite</p>
+                            <Switch                                
+                                onChange={(e) => this.favHandle(e, this.state.productData.id)}
+                                checked={this.state.checked}
+                                uncheckedIcon={false}
+                                checkedIcon={false}
+                                value={this.state.checked ? true : false}
+                                name="fav"
+                                onColor="#ffd64d"
+                            />
+                        </div>
                     </div>
                 </div>
 
