@@ -4,7 +4,6 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './Product.scss';
 
 import SubHeader from '../../Component/SubHeader/SubHeader';
-// import MainSearch from '../../Component/Category/MainSearch/MainSearch';
 import Outer from '../../Component/Category/Outer/Outer';
 import Top from '../../Component/Category/Top/Top';
 import Pants from '../../Component/Category/Pants/Pants';

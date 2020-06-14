@@ -7,8 +7,11 @@
 
 
 .detail {
-    padding: 0 20px;
-    margin-top: 6.5%;
+    width: 100%;
+    @include desktop {
+        padding: 0 20px;
+        margin-top: 6.5%;
+    }
     &__link {
         text-decoration: none;
         display: flex;
@@ -22,7 +25,10 @@
         }
     }
     &__main {
-        display: flex;
+        @include flex (column, center);
+        @include desktop {
+            display: flex;
+        }
     }
     &__dots {
         @include flex (row, center);
@@ -34,30 +40,46 @@
         margin-left: 16px;
     }
     &__img {
-        @include flex (column, center, center);
-        width: 50%;
+        width: 100%;
+        @include desktop {
+            @include flex (column, center, center);
+            width: 50%;
+        }
         &-img {
-            width: 70%;
+            width: 100%;
             object-fit: cover;
             object-position: center;
+            @include desktop {
+                width: 70%;
+            }
         }
     }
     &__detail {
         @include flex (column, "", center);
-        width: 50%;
-        margin: 40px 0 0 40px;
+        width:100%;
+        @include desktop {
+            width: 50%;
+            margin: 40px 0 0 40px;
+        }
         &--flex {
             @include flex (row, space-between, center);
         }
     }
     &__name {
-        @include font (48px, 66px, 'AvenirNext', 700);
+        @include font (24px, 32px, 'AvenirNext', 600);
         margin: 0;
         width: 100%;
+        @include desktop {
+            @include font (48px, 66px, 'AvenirNext', 700);
+        }
     }    
     &__description {
-        @include font (18px, 32px, 'AvenirNext', 400);
-        width: 60%;
+        @include font (14px, 32px, 'AvenirNext', 400);
+        width: 100%;
+        @include desktop {
+            @include font (18px, 32px, 'AvenirNext', 400);
+            width: 60%;
+        }
     }
     &__price {
         @include font (20px, 32px, 'AvenirNext', 600);

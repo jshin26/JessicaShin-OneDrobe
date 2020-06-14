@@ -32,19 +32,19 @@ class Home extends React.Component {
 
     clickNext = (e) => {
         e.preventDefault();
-        if(this.state.text === textArray[0]) {
+        if(this.state.image === imageArray[0]) {
             this.setState({
                 text: textArray[1],
                 image: imageArray[1]
             })
         }
-        else if (this.state.text === textArray[1]) {
+        else if (this.state.image === imageArray[1]) {
             this.setState({
                 text: textArray[2],
                 image: imageArray[2]
             })
         }
-        else if (this.state.text === textArray[2]) {
+        else if (this.state.image === imageArray[2]) {
             this.setState({
                 text: textArray[0],
                 image: imageArray[0]
@@ -54,28 +54,24 @@ class Home extends React.Component {
 
     clickBack = (e) => {
         e.preventDefault();
-        if(this.state.text === textArray[0]) {
+        if(this.state.image === imageArray[0]) {
             this.setState({
                 text: textArray[2],
                 image: imageArray[2]
             })
         }
-        else if (this.state.text === textArray[1]) {
+        else if (this.state.image === imageArray[1]) {
             this.setState({
                 text: textArray[0],
                 image: imageArray[0]
             })
         }
-        else if (this.state.text === textArray[2]) {
+        else if (this.state.image === imageArray[2]) {
             this.setState({
                 text: textArray[1],
                 image: imageArray[1]
             })
         } 
-    }
-    appear = (e) => {
-        e.preventDefault();
-        console.log('hi')
     }
 
     render () {
@@ -84,28 +80,22 @@ class Home extends React.Component {
                
                
                 <h1 className="home__title">{this.state.text}</h1>
+                
                 <div className="home--flex">
                     <button className="home__button back" onClick={this.clickBack}><img src={back} alt="back"/></button>
                     <img className="home__img" src={this.state.image} alt="hero"/>
                     <button className="home__button next" onClick={this.clickNext}><img src={next} alt="next"/></button>
                 </div>
 
-                {/* <h1 className="home__title">"Search more than 50 brands, with just one click"</h1>
-                <div className="home__container">
-                    <div className="home__hero1">
-                        
-                        <div className="home__hero1-inside"></div>
-                        
-                    </div>
-                </div>
+                <div className="home__mobile">
 
-                <div className="home__container">
-                    <div className="home__hero2"></div>
-                </div>
+                    <h1 className="home__title">"Never struggle to find a perfect apparel"</h1>
+                    <img className="home__img" src={hero2} alt="hero2"/>
 
-                <div className="home__container">
-                    <div className="home__hero3"></div>
-                </div> */}
+                    <h1 className="home__title">"Compare similar looks, from different brands"</h1>
+                    <img className="home__img" src={hero3} alt="hero3"/>
+
+                </div>
 
                 <Link exact to="/product" className="home__search">
                     <img className="home__search-icon" src={searchIcon} alt="search-icon"/>

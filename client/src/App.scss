@@ -6,19 +6,25 @@
 @import './Style/variable';
 
 .page-content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  // position: relative;
+  @include flex (column);
+  @include desktop {
+    @include flex (row);
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .right {
-  width: 100%;
-  margin-left: 18%;
+  @include desktop {
+    width: 100%;
+    margin-left: 18%;
+  }
 }
 
 .sideHeader {
-  position: fixed;
-  width: 18%;
+  
+  @include desktop {
+    position: fixed;
+    width: 18%;
+  }
 }

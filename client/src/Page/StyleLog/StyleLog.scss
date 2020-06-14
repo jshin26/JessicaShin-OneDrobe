@@ -17,12 +17,17 @@
     }
     &__btn {
         position: fixed;
-        bottom: 15%;
+        bottom: 12%;
         right: 2.5%;
-        width: 80px;
+        width: 60px;
         background-color: transparent;
         border: none;
-        cursor: pointer;      
+        cursor: pointer;
+        @include desktop {
+            bottom: 15%;
+            right: 2.5%;
+            width: 80px;
+        }
     }
     &__icon {
         width: 100%;
@@ -35,26 +40,42 @@
     @include flex (column, center, center);
     border-bottom: 1px solid $silver;
     &__title {
-        @include font (24px, 32px, 'AvenirNext', 600);
+        @include font (16px, 24px, 'AvenirNext', 600);
+        @include desktop {
+            @include font (24px, 32px, 'AvenirNext', 600);
+        }
     }
     &__detail {
-        @include flex (row, space-around, center);
+        @include flex (column, center);
         width: 60%;
         margin: 24px 0;
+        @include tablet {
+            @include flex (row, space-around, center);
+        }
     }
-    &__author {
-        margin: 0;
-    }
+    &__author,
     &__date {
-        margin: 0;
+        margin-bottom: 16px;
+        @include desktop {
+            margin: 0;
+        }
     }
     &__image {
-        width: 65%;
+        width: 100%;
         object-fit: cover;
         object-position: center;
+        @include desktop {
+            width: 65%;
+        }
     }
     &__read {
-        width: 65%;
+        width: 100%;
+        @include tablet {
+            width: 75%;
+        }
+        @include desktop {
+            width: 65%;
+        }
         &-btn {
             background-color: transparent;
             border: 2px solid $yellow;
@@ -68,7 +89,6 @@
         bottom: 8%;
         background-color: $yellow;
         overflow: auto;
-        // padding: 0 70px;
         width: 50%;
         border-radius: 10px;
         &:focus {

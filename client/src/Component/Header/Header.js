@@ -19,9 +19,9 @@ const Header =() =>{
                 </Link>
                 <nav className="side__nav">
                     <NavLink className="side__link" exact to="/">home</NavLink>
-                    <NavLink className="side__link" exact to="/about">about</NavLink>
+                    {/* <NavLink className="side__link" exact to="/about">about</NavLink> */}
                     <NavLink className="side__link" exact to="/product">search</NavLink>
-                    {/* <NavLink className="side__link" exact to="/favourites">favourites</NavLink> */}
+                    <NavLink className="side__link" exact to="/brands">brands</NavLink>
                     <NavLink className="side__link" exact to="/log">#stylelog</NavLink>
     
                 </nav>

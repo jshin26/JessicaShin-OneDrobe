@@ -15,8 +15,10 @@
 
 }
 #search {
-    @include flex (row, space-between);
+    @include flex (row, space-between); 
     flex-wrap: wrap;
-    padding: 16px;
-    margin-top: 6.5%;
+    @include desktop {
+        padding: 16px;
+        margin-top: 6.5%;
+    }
 }

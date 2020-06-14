@@ -7,38 +7,55 @@
 
 
 .side {
-    @include flex (column);
+    @include flex (column, center, center);
     background: $white;
-    position: relative;
     height: 100%;
+    @include desktop {
+        position: relative;
+    }
     &__logo {
+        width: 180px;
+        @include desktop {
+            width: 100%;
+        }
         &-img {
             width: 100%;
         }
     }
     &__nav {
-        @include flex (column);
-        overflow: hidden;
+        @include flex (row, space-evenly, center);
+        width: 100%;
+        @include desktop {
+            @include flex (column);
+            overflow: hidden;
+        }
     }
     &__link {
-        @include font (24px, 32px, 'AvenirNext', 600);
+        @include font (16px, 32px, 'AvenirNext', 600);
         width: 100%;
         text-decoration: none;
         text-align: center;
-        margin: 10px 0;
-        padding: 20px 0;
         &:link,
         &:visited {
             color: $black;
         }
-        &:hover {
-            transform: scale(1.2)
+        @include desktop {
+            @include font (24px, 32px, 'AvenirNext', 600);
+            margin: 10px 0;
+            padding: 20px 0;            
+            &:hover {
+                transform: scale(1.2)
+            }
         }
     }
 }
 
 .chatmodal {
-    width:100%;
-    position: absolute;
-    bottom: -200px;
+    display: none;
+    @include desktop {
+        display: block;
+        width:100%;
+        position: absolute;
+        bottom: -200px;
+    }
 }
