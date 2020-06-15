@@ -20,7 +20,6 @@ app.use('/favourites', favouritesRoute);
 
 app.use('/log', stylelogRoute);
 
-
 app.listen(port, () => {
     console.log('Server is running on 8080')
 })

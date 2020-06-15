@@ -22,6 +22,40 @@
             width: 100%;
         }
     }
+    &__user {                
+        @include flex (row, space-evenly, center);
+        width: 100%;
+        margin: -10px 0 16px;
+        @include desktop {
+            width: 90%;
+            margin: -20px 0 24px;
+        }
+        &-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
+        &-detail {
+            @include flex (row, space-evenly, center);
+            width: 50%;
+            @include desktop {
+                @include flex (column, center, center);
+                width: 60%;
+            }
+        }
+        &-name {
+
+        }
+        &-btn {
+            background-color: transparent;
+            border-left: 2px solid $yellow;
+            border-right: 2px solid $yellow;
+            border-top: none;
+            border-bottom: none;
+            padding: 8px;
+            cursor: pointer;
+        }
+    }
     &__nav {
         @include flex (row, space-evenly, center);
         width: 100%;
@@ -56,6 +90,6 @@
         display: block;
         width:100%;
         position: absolute;
-        bottom: -200px;
+        bottom: -100px;
     }
 }

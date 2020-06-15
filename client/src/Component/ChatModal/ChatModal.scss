@@ -6,16 +6,34 @@
 @import '../../Style/variable';
 
 .modal {
+    // width: 95%;
     position: absolute;
     left: 10%;
     bottom: 10%;
     background-color: $white;
     overflow: auto;
+    border-radius: 5px;
     &:focus {
         outline: none;
     }
     &-modalctn {
         width: 100%;
+    }
+    &__bgr {
+        background-color: $yellow;
+        
+        padding: 8px;
+        &-btn {
+            @include flex (row, center);
+            button {
+                padding: 10px;
+                background-color: transparent;
+                border: 2px solid $white;
+                color: $white;
+                margin: 12px 0;
+                border-radius: 5px;
+            }
+        }
     }
     &__btn {
         @include flex (row, center, center);

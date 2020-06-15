@@ -27,7 +27,7 @@
     &__main {
         @include flex (column, center);
         @include desktop {
-            display: flex;
+            @include flex (row, center)
         }
     }
     &__dots {

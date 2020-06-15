@@ -138,7 +138,7 @@
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "Z1975 Baggy Jeans",
-        "original" : "45.90",
+        "original" : "$45.90",
         "price" : "25.99",
         "description" : "Mid-rise jeans with front pockets and back patch pockets. Tonal seam detail. Front zip and metal button closure.",
         "page" : "https://www.zara.com/ca/en/z1975-baggy-jeans-p06147021.html?v1=42555599&v2=1511729",
@@ -687,7 +687,7 @@
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Palo Alto Teddy Jacket",
-        "original" : "178",
+        "original" : "$178",
         "price" : "88.99",
         "description" : "This is a hooded teddy jacket with a cinchable shock cord at the waist and pockets lined with soft micro fleece. It's made with a soft, shaggy teddy fabric. ",
         "page" : "https://www.aritzia.com/en/product/palo-alto-teddy-jacket/78099.html?dwvar_78099_color=13887",
@@ -718,6 +718,44 @@
             "http://localhost:8080/aritzia/pants1.4.jpg"
         ],
         "menugroup": "pants"
+    },
+    {
+        "id": "77271",
+        "brand": "ARITZIA",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
+        "brandpage" : "https://www.aritzia.com/",
+        "name" : "Gables Tote Bag",
+        "original" : "$38",
+        "price" : "30",
+        "description" : "This is an open woven tote with two shoulder straps. It’s made from 100% paper straw.",
+        "page" : "https://www.aritzia.com/en/product/gables-tote-bag/77271.html?dwvar_77271_color=1368",
+        "categories" : "women, tote, woven, bag",
+        "images" : [
+            "http://localhost:8080/aritzia/bag3.1.jpg",
+            "http://localhost:8080/aritzia/bag3.2.jpg",
+            "http://localhost:8080/aritzia/bag3.3.jpg",
+            "http://localhost:8080/aritzia/bag3.4.jpg"
+        ],
+        "menugroup": "bag"
+    },
+    {
+        "id": "75179",
+        "brand": "ARITZIA",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
+        "brandpage" : "https://www.aritzia.com/",
+        "name" : "Classic Waistpack",
+        "original" : "$48",
+        "price" : "35",
+        "description" : "This is a modern waist pack with polished hardware and an adjustable belt. It's made from smooth fabric with a glossy finish. ",
+        "page" : "https://www.aritzia.com/en/product/classic-waistpack/75179.html?dwvar_75179_color=1274",
+        "categories" : "women, bag, waist pack",
+        "images" : [
+            "http://localhost:8080/aritzia/bag4.1.jpg",
+            "http://localhost:8080/aritzia/bag4.2.jpg",
+            "http://localhost:8080/aritzia/bag4.3.jpg",
+            "http://localhost:8080/aritzia/bag4.4.jpg"
+        ],
+        "menugroup": "bag"
     },
     {
         "id": "77535",
@@ -763,7 +801,7 @@
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Troubadour Skirt",
-        "original" : "160",
+        "original" : "$160",
         "price" : "79.99",
         "description" : "This is a flowy midi skirt with a smocked waist panel. It's made with lightweight, airy fabric.",
         "page" : "https://www.aritzia.com/en/product/troubadour-skirt/78517.html?dwvar_78517_color=1274",
@@ -858,7 +896,7 @@
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Jubilee Dress",
-        "original" : "198",
+        "original" : "$198",
         "price" : "98.99",
         "description" : "This is a puff-sleeve, button-front dress with a low V-neckline and an empire waist. It's made with artisanal Broderie Anglaise fabric.",
         "page" : "https://www.aritzia.com/en/product/jubilee-dress/75472.html?dwvar_75472_color=1274",
@@ -896,7 +934,7 @@
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Leather Shopper Bag",
-        "original" : "148",
+        "original" : "$148",
         "price" : "73.99",
         "description" : "This is a mini shopper bag with a leather cord handle and an adjustable, detachable shoulder strap. It's made from smooth, 100% genuine cow leather with a subtle texture.",
         "page" : "https://www.aritzia.com/en/product/leather-shopper-bag/77910.html?dwvar_77910_color=18131",
@@ -908,5 +946,442 @@
             "http://localhost:8080/aritzia/bag2.4.jpg"
         ],
         "menugroup": "bag"
+    },
+    {
+        "id": "496521",
+        "brand": "GAP",
+        "brandlogo" : "http://localhost:8080/gap/gap.png",
+        "brandpage" : "https://www.gapcanada.ca/",
+        "name" : "Leather Shopper Bag",
+        "original" : "$99.95",
+        "price" : "68.99",
+        "description" : "Better denim. Better planet. This pair of denim is part of our water-saving Washwell™ program. Compared to conventional wash methods, Washwell™ has saved millions of liters of water since 2016.",
+        "page" : "https://www.gapcanada.ca/browse/product.do?pid=496521003&cid=1048644&pcid=5168&vid=1&grid=pds_20_87_1#pdp-page-content",
+        "categories" : "men, outer, denim, straight, jacket",
+        "images" : [
+            "http://localhost:8080/gap/outer1.1.jpg",
+            "http://localhost:8080/gap/outer1.2.jpg",
+            "http://localhost:8080/gap/outer1.3.jpg",
+            "http://localhost:8080/gap/outer1.4.jpg"
+        ],
+        "menugroup": "outer"
+    },
+    {
+        "id": "538064",
+        "brand": "GAP",
+        "brandlogo" : "http://localhost:8080/gap/gap.png",
+        "brandpage" : "https://www.gapcanada.ca/",
+        "name" : "1969 Premium Utility Jacket",
+        "original" : "",
+        "price" : "118",
+        "description" : "Gap was established in 1969 on Ocean Avenue in San Francisco, California. Our first store sold only denim and records. In celebration of our 50th anniversary, we have created this limited edition collection inspired by iconic vintage pieces from our archives.",
+        "page" : "https://www.gapcanada.ca/browse/product.do?pid=538064003&cid=48872&pcid=5168&vid=1&grid=pds_33_87_1#pdp-page-content",
+        "categories" : "men, outer, straight, jacket",
+        "images" : [
+            "http://localhost:8080/gap/outer2.1.jpg",
+            "http://localhost:8080/gap/outer2.2.jpg",
+            "http://localhost:8080/gap/outer2.3.jpg",
+            "http://localhost:8080/gap/outer2.4.jpg"
+        ],
+        "menugroup": "outer"
+    },
+    {
+        "id": "546669",
+        "brand": "GAP",
+        "brandlogo" : "http://localhost:8080/gap/gap.png",
+        "brandpage" : "https://www.gapcanada.ca/",
+        "name" : "Mac Jacket",
+        "original" : "$158",
+        "price" : "133.99",
+        "description" : "Gap was established in 1969 on Ocean Avenue in San Francisco, California. Our first store sold only denim and records. In celebration of our 50th anniversary, we have created this limited edition collection inspired by iconic vintage pieces from our archives.",
+        "page" : "https://www.gapcanada.ca/browse/product.do?pid=546669003&cid=48872&pcid=5168&vid=1&grid=pds_55_87_1#pdp-page-content",
+        "categories" : "men, outer, jacket, french, khaki",
+        "images" : [
+            "http://localhost:8080/gap/outer3.1.jpg",
+            "http://localhost:8080/gap/outer3.2.jpg",
+            "http://localhost:8080/gap/outer3.3.jpg",
+            "http://localhost:8080/gap/outer3.4.jpg"
+        ],
+        "menugroup": "outer"
+    },
+    {
+        "id": "548292",
+        "brand": "GAP",
+        "brandlogo" : "http://localhost:8080/gap/gap.png",
+        "brandpage" : "https://www.gapcanada.ca/",
+        "name" : "Short Sleeve Shirt in Poplin",
+        "original" : "",
+        "price" : "49.95",
+        "description" : "Gap was established in 1969 on Ocean Avenue in San Francisco, California. Our first store sold only denim and records. In celebration of our 50th anniversary, we have created this limited edition collection inspired by iconic vintage pieces from our archives.",
+        "page" : "https://www.gapcanada.ca/browse/product.do?pid=548292003&cid=1081560&pcid=15043&vid=13&grid=pds_5_313_1#pdp-page-content",
+        "categories" : "men, top, shirt, pocket, short",
+        "images" : [
+            "http://localhost:8080/gap/top1.1.jpg",
+            "http://localhost:8080/gap/top1.2.jpg",
+            "http://localhost:8080/gap/top1.3.jpg",
+            "http://localhost:8080/gap/top1.4.jpg"
+        ],
+        "menugroup": "top"
+    },
+    {
+        "id": "440943",
+        "brand": "GAP",
+        "brandlogo" : "http://localhost:8080/gap/gap.png",
+        "brandpage" : "https://www.gapcanada.ca/",
+        "name" : "Modern Khakis in Slim Fit with GapFlex",
+        "original" : "",
+        "price" : "69.95",
+        "description" : "This product was made in a factory that runs the Gap Inc. P.A.C.E. (Personal Advancement & Career Enhancement) program. P.A.C.E. is our educational program that helps the women who make our clothes build the skills, knowledge, confidence & resilience needed to advance in work & life.",
+        "page" : "https://www.gapcanada.ca/browse/product.do?pid=440943003&cid=1125699&pcid=80799&vid=1&grid=pds_46_261_1#pdp-page-content",
+        "categories" : "men, pants, slim",
+        "images" : [
+            "http://localhost:8080/gap/pants1.1.jpg",
+            "http://localhost:8080/gap/pants1.2.jpg",
+            "http://localhost:8080/gap/pants1.3.jpg",
+            "http://localhost:8080/gap/pants1.4.jpg"
+        ],
+        "menugroup": "pants"
+    },
+    {
+        "id": "542521",
+        "brand": "GAP",
+        "brandlogo" : "http://localhost:8080/gap/gap.png",
+        "brandpage" : "https://www.gapcanada.ca/",
+        "name" : "Wrap Midi Skirt",
+        "original" : "",
+        "price" : "79.95",
+        "description" : "Ruffle texture at hem.",
+        "page" : "https://www.gapcanada.ca/browse/product.do?pid=542521003&cid=1111186&pcid=1082574&vid=1&grid=pds_10_37_1#pdp-page-content",
+        "categories" : "women, wrap, skirt, midi",
+        "images" : [
+            "http://localhost:8080/gap/skirt1.1.jpg",
+            "http://localhost:8080/gap/skirt1.2.jpg",
+            "http://localhost:8080/gap/skirt1.3.jpg",
+            "http://localhost:8080/gap/skirt1.4.jpg"
+        ],
+        "menugroup": "skirt"
+    },
+    {
+        "id": "540782",
+        "brand": "GAP",
+        "brandlogo" : "http://localhost:8080/gap/gap.png",
+        "brandpage" : "https://www.gapcanada.ca/",
+        "name" : "High Rise Denim Skirt",
+        "original" : "",
+        "price" : "69.95",
+        "description" : "Classic five-pocket styling.",
+        "page" : "https://www.gapcanada.ca/browse/product.do?pid=540782013&cid=1111185&pcid=1082574&vid=1&grid=pds_21_37_1#pdp-page-content",
+        "categories" : "women, skirt, mini, button",
+        "images" : [
+            "http://localhost:8080/gap/skirt2.1.jpg",
+            "http://localhost:8080/gap/skirt2.2.jpg",
+            "http://localhost:8080/gap/skirt2.3.jpg",
+            "http://localhost:8080/gap/skirt2.4.jpg"
+        ],
+        "menugroup": "skirt"
+    },
+    {
+        "id": "574107",
+        "brand": "GAP",
+        "brandlogo" : "http://localhost:8080/gap/gap.png",
+        "brandpage" : "https://www.gapcanada.ca/",
+        "name" : "Apron Midi Dress in Linen-Cotton",
+        "original" : "",
+        "price" : "89.95",
+        "description" : "Button-closure at side.",
+        "page" : "https://www.gapcanada.ca/browse/product.do?pid=574107013&cid=1077122&pcid=13658&vid=1&grid=pds_53_266_1#pdp-page-content",
+        "categories" : "women, dress, midi",
+        "images" : [
+            "http://localhost:8080/gap/dress1.1.jpg",
+            "http://localhost:8080/gap/dress1.2.jpg",
+            "http://localhost:8080/gap/dress1.3.jpg",
+            "http://localhost:8080/gap/dress1.4.jpg"
+        ],
+        "menugroup": "dress"
+    },
+    {
+        "id": "519614",
+        "brand": "GAP",
+        "brandlogo" : "http://localhost:8080/gap/gap.png",
+        "brandpage" : "https://www.gapcanada.ca/",
+        "name" : "V-Neck Midi Shirtdress",
+        "original" : "$98",
+        "price" : "53.99",
+        "description" : "This product was made in a factory that runs the Gap Inc. P.A.C.E. (Personal Advancement & Career Enhancement) program. P.A.C.E. is our educational program that helps the women who make our clothes build the skills, knowledge, confidence & resilience needed to advance in work & life. ",
+        "page" : "https://www.gapcanada.ca/browse/product.do?pid=519614013&cid=1077122&pcid=13658&vid=1&grid=pds_120_266_1#pdp-page-content",
+        "categories" : "women, dress, midi, shirtdress",
+        "images" : [
+            "http://localhost:8080/gap/dress2.1.jpg",
+            "http://localhost:8080/gap/dress2.2.jpg",
+            "http://localhost:8080/gap/dress2.3.jpg",
+            "http://localhost:8080/gap/dress2.4.jpg"
+        ],
+        "menugroup": "dress"
+    },
+    {
+        "id": "D96635",
+        "brand": "adidas",
+        "brandlogo" : "http://localhost:8080/adidas/adidas.png",
+        "brandpage" : "https://www.adidas.ca/en",
+        "name" : "NMD_R1 SHOES",
+        "original" : "",
+        "price" : "170",
+        "description" : "Run with it. These adidas NMD_R1 Shoes are a little technical and a lot street smart. Their midsole plugs flash back to the '80s, but the knit upper, full-length cushioned midsole and EVA inserts are 100 percent fashion forward.",
+        "page" : "https://www.adidas.ca/en/nmd_r1-shoes/D96635.html",
+        "categories" : "men, women, unisex, shoes, sneakers, running",
+        "images" : [
+            "http://localhost:8080/adidas/shoes1.1.jpg",
+            "http://localhost:8080/adidas/shoes1.2.jpg",
+            "http://localhost:8080/adidas/shoes1.3.jpg",
+            "http://localhost:8080/adidas/shoes1.4.jpg"
+        ],
+        "menugroup": "shoes"
+    },
+    {
+        "id": "GL1976",
+        "brand": "adidas",
+        "brandlogo" : "http://localhost:8080/adidas/adidas.png",
+        "brandpage" : "https://www.adidas.ca/en",
+        "name" : "TANK DRESS",
+        "original" : "",
+        "price" : "65",
+        "description" : "Hit refresh on your look in this tie-dyed tank dress. Keep your adidas style legit with signature 3-Stripes. Soft cotton jersey has a little stretch so you can dance if the mood strikes.",
+        "page" : "https://www.adidas.ca/en/tank-dress/GL1976.html",
+        "categories" : "women, tank, dress",
+        "images" : [
+            "http://localhost:8080/adidas/dress1.1.jpg",
+            "http://localhost:8080/adidas/dress1.2.jpg",
+            "http://localhost:8080/adidas/dress1.3.jpg",
+            "http://localhost:8080/adidas/dress1.4.jpg"
+        ],
+        "menugroup": "dress"
+    },
+    {
+        "id": "FL4101",
+        "brand": "adidas",
+        "brandlogo" : "http://localhost:8080/adidas/adidas.png",
+        "brandpage" : "https://www.adidas.ca/en",
+        "name" : "ADIDAS 3-STRIPES SKIRT",
+        "original" : "",
+        "price" : "55",
+        "description" : "Techy? Sporty? Yes. Geek out about this chic 3-Stripes skirt. Put a futuristic spin on your look with ripstop pockets against a soft French terry backdrop. Style won.",
+        "page" : "https://www.adidas.ca/en/skirt/FL4101.html",
+        "categories" : "women, skirt, mini",
+        "images" : [
+            "http://localhost:8080/adidas/skirt1.1.jpg",
+            "http://localhost:8080/adidas/skirt1.2.jpg",
+            "http://localhost:8080/adidas/skirt1.3.jpg",
+            "http://localhost:8080/adidas/skirt1.4.jpg"
+        ],
+        "menugroup": "skirt"
+    },
+    {
+        "id": "FV9655",
+        "brand": "adidas",
+        "brandlogo" : "http://localhost:8080/adidas/adidas.png",
+        "brandpage" : "https://www.adidas.ca/en",
+        "name" : "OZWEEGO SHOES",
+        "original" : "",
+        "price" : "160",
+        "description" : "When the adidas OZWEEGO Shoes were introduced as a running shoe back in the day, they opened the doors to a new future. Innovative. Daring. Technical. This iteration continues the legacy. Same progressive design. Same unparalleled cushioning. Though no running required this time.",
+        "page" : "https://www.adidas.ca/en/ozweego-shoes/FV9655.html",
+        "categories" : "men, women, unisex, shoes, sneakers",
+        "images" : [
+            "http://localhost:8080/adidas/shoes2.1.jpg",
+            "http://localhost:8080/adidas/shoes2.2.jpg",
+            "http://localhost:8080/adidas/shoes2.3.jpg",
+            "http://localhost:8080/adidas/shoes2.4.jpg"
+        ],
+        "menugroup": "shoes"
+    },
+    {
+        "id": "M20324",
+        "brand": "adidas",
+        "brandlogo" : "http://localhost:8080/adidas/adidas.png",
+        "brandpage" : "https://www.adidas.ca/en",
+        "name" : "STAN SMITH SHOES",
+        "original" : "",
+        "price" : "160",
+        "description" : "Roll with the classic. Back in the day, Stan Smith won big on the tennis court. Slide into the adidas shoe worthy of his name and you'll win big on the streets. Top to bottom, these shoes capture the essential style of the 1971 original, with a minimalist leather build and clean trim.",
+        "page" : "https://www.adidas.ca/en/stan-smith-shoes/M20324.html",
+        "categories" : "men, women, unisex, shoes, sneakers",
+        "images" : [
+            "http://localhost:8080/adidas/shoes4.4.jpg",
+            "http://localhost:8080/adidas/shoes4.2.jpg",
+            "http://localhost:8080/adidas/shoes4.3.jpg",
+            "http://localhost:8080/adidas/shoes4.1.jpg"
+        ],
+        "menugroup": "shoes"
+    },
+    {
+        "id": "EG4959",
+        "brand": "adidas",
+        "brandlogo" : "http://localhost:8080/adidas/adidas.png",
+        "brandpage" : "https://www.adidas.ca/en",
+        "name" : "SUPERSTAR SHOES",
+        "original" : "",
+        "price" : "100",
+        "description" : "Originally made for basketball courts in the '70s. Celebrated by hip hop royalty in the '80s. The adidas Superstar shoe is now a lifestyle staple for streetwear enthusiasts. The world-famous shell toe feature remains, providing style and protection. Just like it did on the B-ball courts back in the day.    Now, whether at a festival or walking in the street you can enjoy yourself without the fear of being stepped on. The serrated 3-Stripes detail and adidas Superstar box logo adds OG authenticity to your look.",
+        "page" : "https://www.adidas.ca/en/superstar-shoes/EG4959.html",
+        "categories" : "men, women, unisex, shoes, sneakers",
+        "images" : [
+            "http://localhost:8080/adidas/shoes3.2.jpg",
+            "http://localhost:8080/adidas/shoes3.1.jpg",
+            "http://localhost:8080/adidas/shoes3.3.jpg",
+            "http://localhost:8080/adidas/shoes3.4.jpg"
+        ],
+        "menugroup": "shoes"
+    },
+    {
+        "id": "40976321",
+        "brand": "HOLLISTER",
+        "brandlogo" : "http://localhost:8080/hollister/hollister.png",
+        "brandpage" : "https://www.hollisterco.com/shop/ca",
+        "name" : "Sherpa-Lined Denim Jacket",
+        "original" : "$119",
+        "price" : "71.40",
+        "description" : "",
+        "page" : "https://www.hollisterco.com/shop/ca/p/sherpa-lined-denim-jacket-40976321?categoryId=12551&seq=01&faceout=prod1",
+        "categories" : "men, outer, jacket, sherpa, denim",
+        "images" : [
+            "http://localhost:8080/hollister/outer1.1.jpeg",
+            "http://localhost:8080/hollister/outer1.2.jpeg",
+            "http://localhost:8080/hollister/outer1.3.jpeg",
+            "http://localhost:8080/hollister/outer1.4.jpeg"
+        ],
+        "menugroup": "outer"
+    },
+    {
+        "id": "38552822",
+        "brand": "HOLLISTER",
+        "brandlogo" : "http://localhost:8080/hollister/hollister.png",
+        "brandpage" : "https://www.hollisterco.com/shop/ca",
+        "name" : "Stretch Crop Denim Jacket",
+        "original" : "",
+        "price" : "52.95",
+        "description" : "",
+        "page" : "https://www.hollisterco.com/shop/ca/p/stretch-crop-denim-jacket-38552822?categoryId=12619&seq=01&faceout=model1",
+        "categories" : "women, denim, jacket, outer",
+        "images" : [
+            "http://localhost:8080/hollister/outer2.1.jpeg",
+            "http://localhost:8080/hollister/outer2.2.jpeg",
+            "http://localhost:8080/hollister/outer2.3.jpg",
+            "http://localhost:8080/hollister/outer2.4.jpg"
+        ],
+        "menugroup": "outer"
+    },
+    {
+        "id": "38254819",
+        "brand": "HOLLISTER",
+        "brandlogo" : "http://localhost:8080/hollister/hollister.png",
+        "brandpage" : "https://www.hollisterco.com/shop/ca",
+        "name" : "Applique Logo Graphic Tee",
+        "original" : "$22.95",
+        "price" : "16",
+        "description" : "",
+        "page" : "https://www.hollisterco.com/shop/ca/p/applique-logo-graphic-tee-38254819?categoryId=166318&seq=01&faceout=model1",
+        "categories" : "women, tshirt, tee",
+        "images" : [
+            "http://localhost:8080/hollister/top1.2.jpeg",
+            "http://localhost:8080/hollister/top1.1.jpeg",
+            "http://localhost:8080/hollister/top1.3.jpeg",
+            "http://localhost:8080/hollister/top1.4.jpeg"
+        ],
+        "menugroup": "top"
+    },
+    {
+        "id": "40241323",
+        "brand": "HOLLISTER",
+        "brandlogo" : "http://localhost:8080/hollister/hollister.png",
+        "brandpage" : "https://www.hollisterco.com/shop/ca",
+        "name" : "Wrap Side-Tie Crop Top",
+        "original" : "",
+        "price" : "32.95",
+        "description" : "",
+        "page" : "https://www.hollisterco.com/shop/ca/p/wrap-side-tie-ultra-crop-top-40241323?categoryId=166318&seq=03&faceout=model1",
+        "categories" : "women, tshirt, tee",
+        "images" : [
+            "http://localhost:8080/hollister/top2.1.jpg",
+            "http://localhost:8080/hollister/top2.2.jpg",
+            "http://localhost:8080/hollister/top2.3.jpeg",
+            "http://localhost:8080/hollister/top2.4.jpg"
+        ],
+        "menugroup": "top"
+    },
+    {
+        "id": "39140057",
+        "brand": "Roots",
+        "brandlogo" : "http://localhost:8080/roots/roots.png",
+        "brandpage" : "https://www.roots.com/ca/en/homepage",
+        "name" : "Journey Windbreaker",
+        "original" : "",
+        "price" : "78",
+        "description" : "Designed for everyday adventures and long journeys, our Journey Windbreaker is a versatile style. This jacket packs away into a hood compartment with a hanger loop that clips onto your bag for on-the-go convenience. It features a zipper front, front pockets with snap closures, a drawcord hood and an elastic hem and cuffs.",
+        "page" : "https://www.roots.com/ca/en/journey-windbreaker-39140057.html?selectedColor=Y02&cgid=MensJackets&start=10&itemsourse=productlist",
+        "categories" : "outer, men, jacket",
+        "images" : [
+            "http://localhost:8080/roots/outer1.3.jpg",
+            "http://localhost:8080/roots/outer1.2.jpg",
+            "http://localhost:8080/roots/outer1.1.jpg",
+            "http://localhost:8080/roots/outer1.4.jpg"
+        ],
+        "menugroup": "outer"
+    },
+    {
+        "id": "38130070",
+        "brand": "Roots",
+        "brandlogo" : "http://localhost:8080/roots/roots.png",
+        "brandpage" : "https://www.roots.com/ca/en/homepage",
+        "name" : "Summerside Skirt",
+        "original" : "$48",
+        "price" : "29.98",
+        "description" : "Perfect for the warmer weather, our Summerside Skirt is made with soft and lightweight baby french terry. This cozy style features a drawcord waist and our Cooper Beaver logo.",
+        "page" : "https://www.roots.com/ca/en/summerside-skirt-38130070.html?selectedColor=008&cgid=WomensShortsSkirts&start=40&itemsourse=productlist",
+        "categories" : "women, skirt, summer, mini",
+        "images" : [
+            "http://localhost:8080/roots/skirt1.2.jpg",
+            "http://localhost:8080/roots/skirt1.1.jpg",
+            "http://localhost:8080/roots/skirt1.3.jpg",
+            "http://localhost:8080/roots/skirt1.4.jpg"
+        ],
+        "menugroup": "skirt"
+    },
+    {
+        "id": "46043461",
+        "brand": "Roots",
+        "brandlogo" : "http://localhost:8080/roots/roots.png",
+        "brandpage" : "https://www.roots.com/ca/en/homepage",
+        "name" : "Womens Annex Cabin Slip On",
+        "original" : "",
+        "price" : "98",
+        "description" : "Inspired by the Roots Cabin Collection, our Womens Annex Cabin Slip On features our signature cabin stripe detail. This slip-on style is designed with a full leather upper with an elastic gore, 100% cotton lining, a rubber outsole and a contoured PU footbed with a breathable foam top layer for comfort.",
+        "page" : "https://www.roots.com/ca/en/womens-annex-cabin-slip-on-46043461.html?selectedColor=010&cgid=WomensFootwear&start=3&itemsourse=productlist",
+        "categories" : "women, shoes, slip on",
+        "images" : [
+            "http://localhost:8080/roots/shoes1.1.jpg",
+            "http://localhost:8080/roots/shoes1.2.jpg",
+            "http://localhost:8080/roots/shoes1.3.jpg",
+            "http://localhost:8080/roots/shoes1.4.jpg"
+        ],
+        "menugroup": "shoes"
+    },
+    {
+        "id": "47030026",
+        "brand": "Roots",
+        "brandlogo" : "http://localhost:8080/roots/roots.png",
+        "brandpage" : "https://www.roots.com/ca/en/homepage",
+        "name" : "Mens Natural 2 Strap Sandal",
+        "original" : "",
+        "price" : "90",
+        "description" : "Strap in and set off with our Natural 2-Strap Sandal, a Roots favourite featuring memory foam cushioning and a cored-out footbed for lightweight comfort.",
+        "page" : "https://www.roots.com/ca/en/mens-natural-2-strap-sandal-47030026.html?selectedColor=001&cgid=MensFootwear&start=22&itemsourse=productlist",
+        "categories" : "men, sandal",
+        "images" : [
+            "http://localhost:8080/roots/shoes2.1.jpg",
+            "http://localhost:8080/roots/shoes2.2.jpg",
+            "http://localhost:8080/roots/shoes2.3.jpg",
+            "http://localhost:8080/roots/shoes2.4.jpg"
+        ],
+        "menugroup": "shoes"
     }
 ]

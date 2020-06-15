@@ -21,8 +21,7 @@
   }
 }
 
-.sideHeader {
-  
+.sideHeader {  
   @include desktop {
     position: fixed;
     width: 18%;

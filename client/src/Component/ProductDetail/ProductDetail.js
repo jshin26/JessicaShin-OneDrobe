@@ -6,7 +6,6 @@ import Switch from 'react-switch';
 
 import backIcon from '../../Asset/back-arrow.svg';
 import dotIcon from '../../Asset/dot.svg';
-import heart from '../../Asset/heart.svg'
 
 const API_URL="http://localhost:8080";
 

@@ -37,9 +37,13 @@ class ChatModal extends React.Component {
                     overlayClassName="overlay"
                 >
 
-                    <Chatbot />
-                    <button onClick={this.handleCloseModal}>Close</button>
-
+                    <div className="modal__bgr">
+                        <Chatbot />
+                    
+                        <div className="modal__bgr-btn">
+                            <button onClick={this.handleCloseModal}>Close</button>
+                        </div>
+                    </div>
                 </ReactModal>
             </div>
         )

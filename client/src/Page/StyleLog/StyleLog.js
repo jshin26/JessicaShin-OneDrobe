@@ -58,7 +58,7 @@ class LogComp extends React.Component {
             <section className="log">
                 <h4 className="log__title">{this.props.title}</h4>
 
-                <img className="log__image" src={this.props.image}/>
+                <img className="log__image" src={this.props.image} alt={this.props.title}/>
 
                 <div className="log__detail">
                     <p className="log__author">author: {this.props.author}</p>
