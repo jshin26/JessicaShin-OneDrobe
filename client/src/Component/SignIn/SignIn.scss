@@ -14,6 +14,14 @@
     @include desktop {
         @include flex (row, center, center)
     }
+    &--left {
+        @include flex (row, center, center);
+        width: 100%;
+        @include desktop {
+            width: 50%;
+            height: 100vh;
+        }
+    }
     &__logo{
         width: 80%;
         // animation-name: rotate;
@@ -24,14 +32,15 @@
             width: 50%;
         }
         @include desktop {
-            width: 30%;
+            width: 50%;
         }
     }
     &--right {
         @include flex (column, center, center);
         @include desktop {
             width: 50%;
-
+            background-color: $white;
+            height: 100vh;
         }
     }
     &__title {

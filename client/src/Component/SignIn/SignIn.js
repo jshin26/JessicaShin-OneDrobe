@@ -24,7 +24,9 @@ class SignIn extends React.Component{
         return (
             <div className="signin">
     
-                <img className="signin__logo" src={logo} alt="onedrobe logo"/>
+                <div className="signin--left">
+                  <img className="signin__logo" src={logo} alt="onedrobe logo"/>
+                </div>
     
                 <div className="signin--right">
 

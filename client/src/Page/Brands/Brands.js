@@ -58,7 +58,7 @@ class Brands extends React.Component {
         
         return (
             <BrowserRouter>
-                {this.state.brandData.map(item => item.id)}
+                
             </BrowserRouter>
         )
     }

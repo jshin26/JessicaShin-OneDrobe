@@ -65,9 +65,7 @@
             margin-left: 70px;
         }
         &-text {
-            @include desktop {
-                margin-right: 10px;
-            }
+            margin-right: 10px;
         }
         &-img {
             width: 30px;

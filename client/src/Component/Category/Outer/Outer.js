@@ -9,7 +9,7 @@ const API_URL="http://localhost:8080/"
 class Outer extends React.Component {
 
     state={
-        productData: []
+        productData: [],
     }
 
     componentDidMount () {
@@ -31,12 +31,22 @@ class Outer extends React.Component {
         }
     }
 
+    filterHandler = (array) => {
+        for (let i=0; i<array.length; i++) {
+
+        }
+    }
+
     render() {
 
         let filtered = this.state.productData.filter(content => content.menugroup === "outer")
         this.shuffleArray(filtered)
         return(
             <div>
+
+                <div className="main__filter-box">
+                    <button className="main__filter-btn" onClick={this.filterHandler}>filter</button>
+                </div>
                 <ProductCard 
                     cardList={filtered}
                 />

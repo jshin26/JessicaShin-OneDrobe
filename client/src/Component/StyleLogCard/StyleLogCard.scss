@@ -1,0 +1,102 @@
+
+// IMPORTS
+
+@import '../../Style/fonts';
+@import '../../Style/mixins';
+@import '../../Style/variable';
+
+
+.log {
+    @include flex (column);
+    width: 100%;
+    border-bottom: .7px solid $mercury;
+    margin-bottom: 24px;
+    @include desktop {
+        @include flex (column, flex-start);
+        width: 300px;
+        height: 380px;
+        margin-bottom: 32px;
+        border: .7px solid $mercury;
+    }
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 12px;
+        @include desktop {
+            width: 100%;
+            height: 210px;
+        }
+    }
+    &__detail {
+        @include flex (row);
+        @include font (13px, 24px, 'AvenirNext', 300);
+        &--left {
+            width: 30%;
+            @include tablet {
+                @include flex (row, center)
+            }
+            @include desktop {
+                width:25%;
+            }
+        }
+        &--right {
+            width: 70%;
+            @include desktop {
+                width:75%;
+            }
+        }
+    }
+    &__user {
+        @include flex (row, space-between, center);
+        @include desktop {
+            height: 40px;
+            width: 85%;
+        }
+        &-image {
+            width: 100%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        &-name {
+            @include font (13px, 24px, 'AvenirNext', 600);
+            margin: 4px 0;
+        }
+    }
+    &__date {
+        @include font (9px, 24px, 'AvenirNext', 400);
+        margin: 0;
+
+    }
+    &__title {
+        margin: 0;
+        @include tablet {
+            @include font (16px, 24px, 'AvenirNext', 300);
+        }
+        @include desktop {
+            height: 80px;
+        }
+    }
+    &__number {
+        @include flex (row, "", center);
+        &-box {
+            @include flex(row, "", center);
+            width: 50%;
+            @include tablet {
+                width: 40%;
+                height: 30px;
+            }
+            @include desktop {
+                width: 50%;
+            }
+        }
+        &-icon {
+            width: 20px;
+            margin-right:24px;
+        }
+        &-text {
+            margin-right:24px;
+        }
+    }
+}

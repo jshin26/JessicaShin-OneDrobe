@@ -1,60 +1,62 @@
 const express = require('express');
 const router = express.Router();
 const stylelogData = require('../data/stylelog.json');
-const multer = require('multer');
+// const multer = require('multer');
 const { v4: uuidv4} = require('uuid');
 
-const storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-        cb(null, './uploads');
-    },
-    filename: function(req, file, cb) {
-        cb(null, Date.now() + file.originalname)
-    }
-});
+// const storage = multer.diskStorage({
+//     destination: function(req, file, cb) {
+//         cb(null, './uploads');
+//     },
+//     filename: function(req, file, cb) {
+//         cb(null, Date.now() + file.originalname)
+//     }
+// });
 
-const fileFilter = (req, file, cb) => {
+// const fileFilter = (req, file, cb) => {
 
-    if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png') {
-        //accept
-        cb (null, true);
-    } else {
-        //reject a file
-        cb (null, false);
-    }    
-}
+//     if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png') {
+//         //accept
+//         cb (null, true);
+//     } else {
+//         //reject a file
+//         cb (null, false);
+//     }    
+// }
 
-const upload = multer({storage: storage, 
-    limits: {
-        fileSize: 1024 * 1024 * 5
-    },
-    fileFilter: fileFilter
-});
+// const upload = multer({storage: storage, 
+//     limits: {
+//         fileSize: 1024 * 1024 * 5
+//     },
+//     fileFilter: fileFilter
+// });
 
 router.get('/log', (req, res) => {
     res.json(stylelogData);
 })
 
 router.get('/log/:id', (req, res) => {
+    if(stylelogData.find(log => log.id === req.params.id)) {
+        let currLog = req.params.id
+            ? stylelogData.find(log => log.id === req.params.id)
+            : stylelogData;
 
-    const styleLog = {
-        "id": uuidv4(),
-        "author" : req.params.author,
-        "title" : req.params.title,
-        "description" : req.params.description,
-        "date" : req.params.date,
-        "image": document.image
+        res.json(currLog);
+    } else {
+        res.status(404).json("There are no matching product. Please check product id.")
     }
-
-    let currLog = req.params.id
-        ? styleLog.find(fav => fav.id === req.params.id)
-        : styleLog;
-    
-    res.json({currLog});
 })
 
-router.post('/log', upload.single("image"), (req, res, next) => {
-    console.log(req.file)
+router.put('/log/:id',(req, res) => {
+    let currLog = req.params.id
+        ? stylelogData.find(log => log.id === req.params.id)
+        : stylelogData;
+
+    res.json(currLog.likes++)
+})
+
+// upload.single("image"),
+router.post('/log', (req, res, next) => {
 
     const newLog = {
         "id": uuidv4(),
@@ -62,7 +64,6 @@ router.post('/log', upload.single("image"), (req, res, next) => {
         "title" : req.body.title,
         "description" : req.body.description,
         "date" : req.body.date,
-        "image": req.file.path 
     }
     stylelogData.push(req.body);
     

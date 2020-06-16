@@ -12,7 +12,16 @@
 
 .main {
     margin-top: 6.5%;
-
+    &__filter{
+        &-box {
+            // position: relative
+        }
+        &-btn {
+            position: absolute;
+            // left: 0;
+            top: 20%;
+        }
+    }
 }
 #search {
     @include flex (row, space-between); 

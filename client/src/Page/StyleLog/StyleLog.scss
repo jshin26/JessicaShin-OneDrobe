@@ -5,161 +5,30 @@
 @import '../../Style/mixins';
 @import '../../Style/variable';
 
-
-
 .stylelog {
     background-color: $yellow;
     &--inner {
-        width: 75%;
+        @include flex (column, center, center);
+        width: 85%;
         margin: 0 auto;
         background-color: $white;
-        padding: 32px;
+        padding-top: 50px;
     }
-    &__btn {
-        position: fixed;
-        bottom: 12%;
-        right: 2.5%;
-        width: 60px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        @include desktop {
-            bottom: 15%;
-            right: 2.5%;
-            width: 80px;
-        }
-    }
-    &__icon {
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
-.log {
-    @include flex (column, center, center);
-    border-bottom: 1px solid $silver;
     &__title {
-        @include font (16px, 24px, 'AvenirNext', 600);
+        margin: 0 0 32px;
+        text-align: center;
         @include desktop {
-            @include font (24px, 32px, 'AvenirNext', 600);
-        }
-    }
-    &__detail {
-        @include flex (column, center);
-        width: 60%;
-        margin: 24px 0;
-        @include tablet {
-            @include flex (row, space-around, center);
-        }
-    }
-    &__author,
-    &__date {
-        margin-bottom: 16px;
-        @include desktop {
-            margin: 0;
-        }
-    }
-    &__image {
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-        @include desktop {
-            width: 65%;
-        }
-    }
-    &__read {
-        width: 100%;
-        @include tablet {
-            width: 75%;
-        }
-        @include desktop {
-            width: 65%;
-        }
-        &-btn {
-            background-color: transparent;
-            border: 2px solid $yellow;
-            border-radius: 10px;
-            padding: 13px;
-        }
-    }
-    &-modal {
-        position: absolute;
-        left: 33%;
-        bottom: 8%;
-        background-color: $yellow;
-        overflow: auto;
-        width: 50%;
-        border-radius: 10px;
-        &:focus {
-            outline: none;
-        }
-        &--inner {
-            background-color: $white;
-            width: 80%;
-            padding: 30px 0;
-            margin: 0 auto;
-        }
-        &__title {
             @include font (48px, 56px, 'AvenirNext', 600);
-            margin: 0 0 32px;
-            text-align: center;
-        }
-        &__form {
-            @include flex (column, center, center);
-            width: 100%;
-            &-box {
-                @include flex (column, center, center);
-                width:100%;
-                margin-bottom: 24px;
-            }
-        }
-        &__label {
-            width: 60%;
-            margin: 0 0 8px;
-        }
-        &__input {
-            @include font (16px, 24px, 'AvenirNext', 400);
-            width: 60%;
-            padding: 13px;
-            &:focus {
-                border: 2px solid $yellow;                
-                outline: none;             
-            }
-        }
-        &__textarea {
-            @include font (16px, 24px, 'AvenirNext', 400);
-            width: 60%;
-            padding: 13px;
-            height: 140px;
-            resize: none;        
-            &:focus {
-                border: 2px solid $yellow;                
-                outline: none;
-            }
-        }
-        &__upload {
-            width: 60%;
-            margin-bottom: 24px;
-        }
-        &__btnbox {
-            @include flex (row, center);
-            width: 100%;
-        }
-        &__btn {
-            width: 30%;
-            padding: 14px;
+
         }
     }
-    &-overlay {
-        position: fixed;
-        top:0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: transparentize($color: #000000, $amount: 0.5);
+    &__log {
+        padding: 12px;
+        @include desktop {
+            @include flex (row, space-between, center);
+            flex-wrap: wrap;
+            // width: 75%;
+            padding: 32px;
+        }
     }
-}
-.ReactModal__Body--open {
-    overflow: hidden;
 }
