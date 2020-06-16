@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import firebase from 'firebase';
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+// import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 import Header from './Component/Header/Header';
 import Home from './Page/Home/Home';
@@ -27,6 +27,7 @@ class App extends React.Component {
   }
   componentDidMount = () => {
     firebase.auth().onAuthStateChanged(user =>  {
+      // console.log(user);
       this.setState({isSignedIn : !!user})
     })
   }
@@ -44,6 +45,7 @@ class App extends React.Component {
                     signout = {()=> firebase.auth().signOut()}
                     userImage = {firebase.auth().currentUser.photoURL}
                     userName = {firebase.auth().currentUser.displayName}
+                    userEmail = {firebase.auth().currentUser.email}
                   />
                 </div>
                 <Switch>

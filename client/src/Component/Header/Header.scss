@@ -23,12 +23,25 @@
         }
     }
     &__user {                
-        @include flex (row, space-evenly, center);
+        @include flex (column, space-evenly, center);
         width: 100%;
         margin: -10px 0 16px;
+        position: relative;
         @include desktop {
             width: 90%;
             margin: -20px 0 24px;
+        }
+        &--show {
+            @include flex (row, center, center)
+        }
+        &-name {
+            @include desktop {
+                @include font (16px, 32px, 'AvenirNext', 600);
+            }
+        }
+        &-down {
+            width: 15px;
+            margin-left: 24px;
         }
         &-image {
             width: 50px;
@@ -36,16 +49,32 @@
             border-radius: 50px;
         }
         &-detail {
-            @include flex (row, space-evenly, center);
-            width: 50%;
+            @include flex (column, space-evenly, center);
+            width: 90%;
+            position: absolute;
+            top: 50px;
+            background-color: $white;
+            border: 1px solid $black;
+            padding: 12px;
+            animation-name: showmenuMobile;
+            animation-duration: .5s;
+            @include tablet {
+                width: 50%;
+            }
             @include desktop {
                 @include flex (column, center, center);
-                width: 60%;
+                width: 75%;
+                padding: 24px;
+                top: 0;
+                left: 250px;
+                animation-name: showmenuDesktop;
+                animation-duration: .5s;             
+            }
+            p {
+                margin: 8px 0;
             }
         }
-        &-name {
-
-        }
+        
         &-btn {
             background-color: transparent;
             border-left: 2px solid $yellow;
@@ -91,5 +120,23 @@
         width:100%;
         position: absolute;
         bottom: -100px;
+    }
+}
+@keyframes showmenuMobile {
+    0% {
+        right: -150px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+
+@keyframes showmenuDesktop {
+    0% {
+        left:150px;
+    }
+    100% {
+        left: 250px;
     }
 }
