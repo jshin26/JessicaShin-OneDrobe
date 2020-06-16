@@ -1,5 +1,50 @@
 [
     {
-        
+        "id": "01",
+        "brand" : "ZARA",
+        "brandlogo" : "http://localhost:8080/zara/zara.png ",
+        "brandpage" : "https://www.zara.com/ca/"
+    },
+    {
+        "id": "02",
+        "brand": "H&M",
+        "brandlogo" : "http://localhost:8080/hm/hm.png",
+        "brandpage" : "https://www2.hm.com/en_us/index.html"
+    },
+    {
+        "id": "03",
+        "brand": "Nike",
+        "brandlogo" : "http://localhost:8080/nike/nike.png",
+        "brandpage" : "https://www.nike.com/ca/"
+    },
+    {
+        "id": "04",
+        "brand": "ARITZIA",
+        "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
+        "brandpage" : "https://www.aritzia.com/"
+    },
+    {
+        "id": "05",
+        "brand": "GAP",
+        "brandlogo" : "http://localhost:8080/gap/gap.png",
+        "brandpage" : "https://www.gapcanada.ca/"
+    },
+    {
+        "id": "06",
+        "brand": "adidas",
+        "brandlogo" : "http://localhost:8080/adidas/adidas.png",
+        "brandpage" : "https://www.adidas.ca/en"
+    },
+    {
+        "id": "07",
+        "brand": "HOLLISTER",
+        "brandlogo" : "http://localhost:8080/hollister/hollister.png",
+        "brandpage" : "https://www.hollisterco.com/shop/ca"
+    },
+    {
+        "id": "08",
+        "brand": "Roots",
+        "brandlogo" : "http://localhost:8080/roots/roots.png",
+        "brandpage" : "https://www.roots.com/ca/en/homepage"
     }
 ]

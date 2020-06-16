@@ -2,6 +2,7 @@
     {
         "id": "8372056",
         "brand": "ZARA",
+        "brandId" : "01",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "Plaid Blazer",
@@ -21,6 +22,7 @@
     {
         "id": "2761040",
         "brand": "ZARA",
+        "brandId" : "01",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "Blazer with Rolled-up Sleeves",
@@ -40,6 +42,7 @@
     {
         "id": "5070954",
         "brand": "ZARA",
+        "brandId" : "01",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "Faux Suede Dress",
@@ -59,6 +62,7 @@
     {
         "id": "0264164",
         "brand": "ZARA",
+        "brandId" : "01",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "T-Shirt with Text",
@@ -78,6 +82,7 @@
     {
         "id": "9123067",
         "brand": "ZARA",
+        "brandId" : "01",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "Belted Denim Shorts",
@@ -97,6 +102,7 @@
     {
         "id": "8197006",
         "brand": "ZARA",
+        "brandId" : "01",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "Hi Rise Denim Shorts",
@@ -116,6 +122,7 @@
     {
         "id": "3427003",
         "brand": "ZARA",
+        "brandId" : "01",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "Faux Leather Jacket",
@@ -135,6 +142,7 @@
     {
         "id": "6147021",
         "brand": "ZARA",
+        "brandId" : "01",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "Z1975 Baggy Jeans",
@@ -154,6 +162,7 @@
     {
         "id": "13641510",
         "brand": "ZARA",
+        "brandId" : "01",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "Jute Trim Tied Flat Leather Sandals",
@@ -173,6 +182,7 @@
     {
         "id": "16667510",
         "brand": "ZARA",
+        "brandId" : "01",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
         "brandpage" : "https://www.zara.com/ca/",
         "name" : "Raffia CrossBody Bag",
@@ -192,6 +202,7 @@
     {
         "id": "856310003",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Crinkled Dress",
@@ -211,6 +222,7 @@
     {
         "id": "821336002",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Linen-blend Dress",
@@ -229,6 +241,8 @@
     },
     {
         "id": "817353009",
+        "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Puff-sleeved Dress",
@@ -248,6 +262,7 @@
     {
         "id": "838920001",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Patterned Dress",
@@ -267,6 +282,7 @@
     {
         "id": "873158002",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Cotton T-shirt",
@@ -286,6 +302,7 @@
     {
         "id": "865921001",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Ribbed Top",
@@ -305,6 +322,7 @@
     {
         "id": "711053027",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Long T-Shirt",
@@ -324,6 +342,7 @@
     {
         "id": "867205002",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Tie-belt Utility Jacket",
@@ -343,6 +362,7 @@
     {
         "id": "861682002",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Tie Belt Coat",
@@ -362,6 +382,7 @@
     {
         "id": "791033003",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Hooded Jacket",
@@ -381,6 +402,7 @@
     {
         "id": "861767002",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Lyocell-blend Slacks",
@@ -399,6 +421,8 @@
     },
     {
         "id": "894135001",
+        "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Linen-blend Pants",
@@ -418,6 +442,7 @@
     {
         "id": "690936001",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Linen Joggers",
@@ -437,6 +462,7 @@
     {
         "id": "872600009",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Long Skirt",
@@ -456,6 +482,7 @@
     {
         "id": "674606052",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "A-line Skirt",
@@ -475,6 +502,7 @@
     {
         "id": "901433001",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Crinkled Skirt",
@@ -494,6 +522,7 @@
     {
         "id": "894673002",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "H&M+ Sleeveless Top",
@@ -513,6 +542,7 @@
     {
         "id": "759158002",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Platform Espadirlles",
@@ -532,6 +562,7 @@
     {
         "id": "756209003",
         "brand": "H&M",
+        "brandId" : "02",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "name" : "Straw Bucket Bag",
@@ -551,6 +582,7 @@
     {
         "id": "BV4110-283",
         "brand": "Nike",
+        "brandId" : "03",
         "brandlogo" : "http://localhost:8080/nike/nike.png",
         "brandpage" : "https://www.nike.com/ca/",
         "name" : "Nike Sportswear Essential",
@@ -570,6 +602,7 @@
     {
         "id": "CT2011-021",
         "brand": "Nike",
+        "brandId" : "03",
         "brandlogo" : "http://localhost:8080/nike/nike.png",
         "brandpage" : "https://www.nike.com/ca/",
         "name" : "Nike F.C. Hoodie",
@@ -589,6 +622,7 @@
     {
         "id": "CJ4824-063",
         "brand": "Nike",
+        "brandId" : "03",
         "brandlogo" : "http://localhost:8080/nike/nike.png",
         "brandpage" : "https://www.nike.com/ca/",
         "name" : "Nike Air Hoodie",
@@ -608,6 +642,7 @@
     {
         "id": "CJ4347-010",
         "brand": "Nike",
+        "brandId" : "03",
         "brandlogo" : "http://localhost:8080/nike/nike.png",
         "brandpage" : "https://www.nike.com/ca/",
         "name" : "Jordan Jumpman",
@@ -627,6 +662,7 @@
     {
         "id": "CW7483-100",
         "brand": "Nike",
+        "brandId" : "03",
         "brandlogo" : "http://localhost:8080/nike/nike.png",
         "brandpage" : "https://www.nike.com/ca/",
         "name" : "Nike Air Max 90",
@@ -646,6 +682,7 @@
     {
         "id": "CK9671-100",
         "brand": "Nike",
+        "brandId" : "03",
         "brandlogo" : "http://localhost:8080/nike/nike.png",
         "brandpage" : "https://www.nike.com/ca/",
         "name" : "Nike Air VaporMax 360",
@@ -665,6 +702,7 @@
     {
         "id": "71481",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Little Cropped Jacket",
@@ -684,6 +722,7 @@
     {
         "id": "78099",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Palo Alto Teddy Jacket",
@@ -703,6 +742,7 @@
     {
         "id": "74847",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Renzo Pant",
@@ -722,6 +762,7 @@
     {
         "id": "77271",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Gables Tote Bag",
@@ -741,6 +782,7 @@
     {
         "id": "75179",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Classic Waistpack",
@@ -760,6 +802,7 @@
     {
         "id": "77535",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "New Paperbag Pant",
@@ -779,6 +822,7 @@
     {
         "id": "77450",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Vito Linen Pant",
@@ -798,6 +842,7 @@
     {
         "id": "78517",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Troubadour Skirt",
@@ -817,6 +862,7 @@
     {
         "id": "77093",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Sculpt Knit Scallop Skirt",
@@ -836,6 +882,7 @@
     {
         "id": "78149",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Lady Skirt",
@@ -855,6 +902,7 @@
     {
         "id": "78123",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Sidonie Dress",
@@ -874,6 +922,7 @@
     {
         "id": "78168",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Aki Dress",
@@ -893,6 +942,7 @@
     {
         "id": "75472",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Jubilee Dress",
@@ -912,6 +962,7 @@
     {
         "id": "71371",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Mini Jute Bucket",
@@ -931,6 +982,7 @@
     {
         "id": "77910",
         "brand": "ARITZIA",
+        "brandId" : "04",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
         "brandpage" : "https://www.aritzia.com/",
         "name" : "Leather Shopper Bag",
@@ -950,6 +1002,7 @@
     {
         "id": "496521",
         "brand": "GAP",
+        "brandId" : "05",
         "brandlogo" : "http://localhost:8080/gap/gap.png",
         "brandpage" : "https://www.gapcanada.ca/",
         "name" : "Leather Shopper Bag",
@@ -969,6 +1022,7 @@
     {
         "id": "538064",
         "brand": "GAP",
+        "brandId" : "05",
         "brandlogo" : "http://localhost:8080/gap/gap.png",
         "brandpage" : "https://www.gapcanada.ca/",
         "name" : "1969 Premium Utility Jacket",
@@ -988,6 +1042,7 @@
     {
         "id": "546669",
         "brand": "GAP",
+        "brandId" : "05",
         "brandlogo" : "http://localhost:8080/gap/gap.png",
         "brandpage" : "https://www.gapcanada.ca/",
         "name" : "Mac Jacket",
@@ -1007,6 +1062,7 @@
     {
         "id": "548292",
         "brand": "GAP",
+        "brandId" : "05",
         "brandlogo" : "http://localhost:8080/gap/gap.png",
         "brandpage" : "https://www.gapcanada.ca/",
         "name" : "Short Sleeve Shirt in Poplin",
@@ -1026,6 +1082,7 @@
     {
         "id": "440943",
         "brand": "GAP",
+        "brandId" : "05",
         "brandlogo" : "http://localhost:8080/gap/gap.png",
         "brandpage" : "https://www.gapcanada.ca/",
         "name" : "Modern Khakis in Slim Fit with GapFlex",
@@ -1045,6 +1102,7 @@
     {
         "id": "542521",
         "brand": "GAP",
+        "brandId" : "05",
         "brandlogo" : "http://localhost:8080/gap/gap.png",
         "brandpage" : "https://www.gapcanada.ca/",
         "name" : "Wrap Midi Skirt",
@@ -1064,6 +1122,7 @@
     {
         "id": "540782",
         "brand": "GAP",
+        "brandId" : "05",
         "brandlogo" : "http://localhost:8080/gap/gap.png",
         "brandpage" : "https://www.gapcanada.ca/",
         "name" : "High Rise Denim Skirt",
@@ -1083,6 +1142,7 @@
     {
         "id": "574107",
         "brand": "GAP",
+        "brandId" : "05",
         "brandlogo" : "http://localhost:8080/gap/gap.png",
         "brandpage" : "https://www.gapcanada.ca/",
         "name" : "Apron Midi Dress in Linen-Cotton",
@@ -1102,6 +1162,7 @@
     {
         "id": "519614",
         "brand": "GAP",
+        "brandId" : "05",
         "brandlogo" : "http://localhost:8080/gap/gap.png",
         "brandpage" : "https://www.gapcanada.ca/",
         "name" : "V-Neck Midi Shirtdress",
@@ -1121,6 +1182,7 @@
     {
         "id": "D96635",
         "brand": "adidas",
+        "brandId" : "06",
         "brandlogo" : "http://localhost:8080/adidas/adidas.png",
         "brandpage" : "https://www.adidas.ca/en",
         "name" : "NMD_R1 SHOES",
@@ -1140,6 +1202,7 @@
     {
         "id": "GL1976",
         "brand": "adidas",
+        "brandId" : "06",
         "brandlogo" : "http://localhost:8080/adidas/adidas.png",
         "brandpage" : "https://www.adidas.ca/en",
         "name" : "TANK DRESS",
@@ -1159,6 +1222,7 @@
     {
         "id": "FL4101",
         "brand": "adidas",
+        "brandId" : "06",
         "brandlogo" : "http://localhost:8080/adidas/adidas.png",
         "brandpage" : "https://www.adidas.ca/en",
         "name" : "ADIDAS 3-STRIPES SKIRT",
@@ -1178,6 +1242,7 @@
     {
         "id": "FV9655",
         "brand": "adidas",
+        "brandId" : "06",
         "brandlogo" : "http://localhost:8080/adidas/adidas.png",
         "brandpage" : "https://www.adidas.ca/en",
         "name" : "OZWEEGO SHOES",
@@ -1197,6 +1262,7 @@
     {
         "id": "M20324",
         "brand": "adidas",
+        "brandId" : "06",
         "brandlogo" : "http://localhost:8080/adidas/adidas.png",
         "brandpage" : "https://www.adidas.ca/en",
         "name" : "STAN SMITH SHOES",
@@ -1216,6 +1282,7 @@
     {
         "id": "EG4959",
         "brand": "adidas",
+        "brandId" : "06",
         "brandlogo" : "http://localhost:8080/adidas/adidas.png",
         "brandpage" : "https://www.adidas.ca/en",
         "name" : "SUPERSTAR SHOES",
@@ -1235,6 +1302,7 @@
     {
         "id": "40976321",
         "brand": "HOLLISTER",
+        "brandId" : "07",
         "brandlogo" : "http://localhost:8080/hollister/hollister.png",
         "brandpage" : "https://www.hollisterco.com/shop/ca",
         "name" : "Sherpa-Lined Denim Jacket",
@@ -1254,6 +1322,7 @@
     {
         "id": "38552822",
         "brand": "HOLLISTER",
+        "brandId" : "07",
         "brandlogo" : "http://localhost:8080/hollister/hollister.png",
         "brandpage" : "https://www.hollisterco.com/shop/ca",
         "name" : "Stretch Crop Denim Jacket",
@@ -1273,6 +1342,7 @@
     {
         "id": "38254819",
         "brand": "HOLLISTER",
+        "brandId" : "07",
         "brandlogo" : "http://localhost:8080/hollister/hollister.png",
         "brandpage" : "https://www.hollisterco.com/shop/ca",
         "name" : "Applique Logo Graphic Tee",
@@ -1292,6 +1362,7 @@
     {
         "id": "40241323",
         "brand": "HOLLISTER",
+        "brandId" : "07",
         "brandlogo" : "http://localhost:8080/hollister/hollister.png",
         "brandpage" : "https://www.hollisterco.com/shop/ca",
         "name" : "Wrap Side-Tie Crop Top",
@@ -1311,6 +1382,7 @@
     {
         "id": "39140057",
         "brand": "Roots",
+        "brandId" : "08",
         "brandlogo" : "http://localhost:8080/roots/roots.png",
         "brandpage" : "https://www.roots.com/ca/en/homepage",
         "name" : "Journey Windbreaker",
@@ -1330,6 +1402,7 @@
     {
         "id": "38130070",
         "brand": "Roots",
+        "brandId" : "08",
         "brandlogo" : "http://localhost:8080/roots/roots.png",
         "brandpage" : "https://www.roots.com/ca/en/homepage",
         "name" : "Summerside Skirt",
@@ -1349,6 +1422,7 @@
     {
         "id": "46043461",
         "brand": "Roots",
+        "brandId" : "08",
         "brandlogo" : "http://localhost:8080/roots/roots.png",
         "brandpage" : "https://www.roots.com/ca/en/homepage",
         "name" : "Womens Annex Cabin Slip On",
@@ -1368,6 +1442,7 @@
     {
         "id": "47030026",
         "brand": "Roots",
+        "brandId" : "08",
         "brandlogo" : "http://localhost:8080/roots/roots.png",
         "brandpage" : "https://www.roots.com/ca/en/homepage",
         "name" : "Mens Natural 2 Strap Sandal",

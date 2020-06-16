@@ -10,7 +10,7 @@ const API_URL="http://localhost:8080";
 class Brands extends React.Component {
 
     state= {
-        productData: [],
+        brandData: [],
         search: ""
     }
 
@@ -20,10 +20,10 @@ class Brands extends React.Component {
     
     componentDidMount () {
         axios
-            .get(API_URL)
+            .get(`${API_URL}/brand/brand`)
             .then(response => {                
                 this.setState({
-                    productData: response.data
+                    brandData: response.data
                 })
             })            
             .catch(err => {
@@ -58,7 +58,7 @@ class Brands extends React.Component {
         
         return (
             <BrowserRouter>
-                Hello
+                {this.state.brandData.map(item => item.id)}
             </BrowserRouter>
         )
     }
