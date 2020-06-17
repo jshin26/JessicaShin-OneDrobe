@@ -3,6 +3,9 @@ import axios from 'axios';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './Brands.scss';
 
+import BrandHeader from '../../Component/BrandHeader/BrandHeader';
+import BrandCard from '../../Component/BrandCard/BrandCard';
+
 const API_URL="http://localhost:8080";
 
 // Brands
@@ -43,28 +46,48 @@ class Brands extends React.Component {
 
     render() {
 
-        // let productInfo = this.state.productData.filter((res) => {            
-        //     if (this.state.search === "") {
-        //         return this.state.productData
-        //     } else if (
-        //             res.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
-        //         ||  res.categories.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
-        //         ||  res.description.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
-        //     ) {
-        //         return res
-        //     }
-        // })
-        // this.shuffleArray(productInfo);
+        let brandInfo = this.state.brandData.filter((res) => {            
+            if (this.state.search === "") {
+                return this.state.brandData
+            } else if (
+                    res.brand.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
+                || res.category.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
+                // ||  res.category.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
+                // ||  res.categories.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
+            ) {
+                return res
+            }
+        })
+        this.shuffleArray(brandInfo);
         
         return (
             <BrowserRouter>
-                {this.state.brandData.map((content) =>{
-                    return (
-                        <div>
-                            {content.brand}
-                        </div>
-                    )
-                })}
+                <div className="brand">
+                    <BrandHeader 
+                        updateSearch={this.updateSearch}
+                        search={this.state.search}
+                    />
+                    <div className="brand-body">
+                        {/* <Switch> */}
+                            {/* <Route path="/brand" exact> */}
+                                <div key={this.state.brandData.id} id="search">
+                                    {brandInfo.map(content=>{
+                                        return <BrandCard 
+                                        key={content.id}
+                                        brandLinks={`/${content.id}`}
+                                        brandName={content.brand}
+                                        brandLogo={content.brandlogo}  
+                                        delivery={content.delivery}
+                                        newIn={content.newIn}           
+                                    />
+                                    })}
+                                </div>
+                            {/* </Route> */}
+                            {/* <Route path="/:id" exact component={BrandDetail}/> */}
+                        {/* </Switch> */}
+                    </div>
+                </div>               
+                
             </BrowserRouter>
         )
     }

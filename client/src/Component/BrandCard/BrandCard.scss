@@ -1,0 +1,43 @@
+
+// IMPORTS
+
+@import '../../Style/fonts';
+@import '../../Style/mixins';
+@import '../../Style/variable';
+
+.brandcard {
+    @include flex (column, center, center);
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid $yellow;
+    height: 300px;
+    margin-bottom: 32px;
+    text-decoration: none;
+    @include tablet {
+        width: 50%;
+    }
+    &:link,
+    &:visited {
+        color: $black;
+    }
+    &__name {
+        @include font (24px, 18px, 'AvenirNext', 400);
+    }
+    &__logo {
+        width: 70%;
+        margin-bottom: 24px;
+    }
+    &__detail {
+        @include flex (row, center, center);
+        &-box {
+            @include flex(row, space-between, center);
+            margin-right: 24px;
+        }
+        &-icon {
+            width: 30px;
+            height: 30px;
+        }
+
+    }
+}

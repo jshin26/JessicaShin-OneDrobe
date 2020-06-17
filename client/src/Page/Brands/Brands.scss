@@ -1,0 +1,15 @@
+
+// IMPORTS
+
+@import '../../Style/fonts';
+@import '../../Style/mixins';
+@import '../../Style/variable';
+
+
+.brand {
+    @include flex(column);
+    &-body {
+        margin-top: 7%;
+
+    }
+}

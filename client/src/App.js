@@ -53,7 +53,6 @@ class App extends React.Component {
                       <Route path="/product" exact component={Product} />
                       <Route path="/brands" exact component={Brands} />
                       <Route path="/log" exact component={StyleLog} />
-                      <Route path="/log/:id/comments" exact component={StyleLogDetail} />
                     </div>
                 </Switch>
               </div>

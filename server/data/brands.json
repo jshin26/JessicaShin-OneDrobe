@@ -3,48 +3,78 @@
         "id": "01",
         "brand" : "ZARA",
         "brandlogo" : "http://localhost:8080/zara/zara.png ",
-        "brandpage" : "https://www.zara.com/ca/"
+        "brandpage" : "https://www.zara.com/ca/",
+        "category" : "women, men, #feminine, #formal, #plus, #plussize, #office, #modernchic, #simple #basic, #lovely",
+        "delivery" : "over $50",
+        "newIn" : true
     },
     {
         "id": "02",
         "brand": "H&M",
         "brandlogo" : "http://localhost:8080/hm/hm.png",
-        "brandpage" : "https://www2.hm.com/en_us/index.html"
+        "category" : "women, men, #feminine, #formal, #plus, #plussize, #office, #modernchic, #simple #basic, #lovely",
+        "brandpage" : "https://www2.hm.com/en_us/index.html",
+        "delivery" : "over $50",
+        "newIn" : true
     },
     {
         "id": "03",
         "brand": "Nike",
         "brandlogo" : "http://localhost:8080/nike/nike.png",
-        "brandpage" : "https://www.nike.com/ca/"
+        "category" : "women, men, #sporty, #sport, #outdoor, #fitness, #workout, #sports, #training, #running, #sportswear, #golf",
+        "brandpage" : "https://www.nike.com/ca/",
+        "delivery" : "over $175",
+        "newIn" : false
+
     },
     {
         "id": "04",
         "brand": "ARITZIA",
         "brandlogo" : "http://localhost:8080/aritzia/aritzia.png",
-        "brandpage" : "https://www.aritzia.com/"
+        "category" : "women, men, #feminine, #lovely, #beach",
+        "brandpage" : "https://www.aritzia.com/",
+        "delivery" : "over $150",
+        "newIn" : false
+
     },
     {
         "id": "05",
         "brand": "GAP",
         "brandlogo" : "http://localhost:8080/gap/gap.png",
-        "brandpage" : "https://www.gapcanada.ca/"
+        "category" : "women, men, #simple, #basic, #fitness",
+        "brandpage" : "https://www.gapcanada.ca/",
+        "delivery" : "over $50",
+        "newIn" : true
+
     },
     {
         "id": "06",
         "brand": "adidas",
         "brandlogo" : "http://localhost:8080/adidas/adidas.png",
-        "brandpage" : "https://www.adidas.ca/en"
+        "category" : "women, men, #sporty, #sport, #sports, #training, #running, #sportswear, #golf",
+        "brandpage" : "https://www.adidas.ca/en",
+        "delivery" : "over $100",
+        "newIn" : true
+
     },
     {
         "id": "07",
         "brand": "HOLLISTER",
         "brandlogo" : "http://localhost:8080/hollister/hollister.png",
-        "brandpage" : "https://www.hollisterco.com/shop/ca"
+        "category" : "women, men, #beach, #ocean, #cool, #jeans, #summer",
+        "brandpage" : "https://www.hollisterco.com/shop/ca",
+        "delivery" : "over $70",
+        "newIn" : false
+
     },
     {
         "id": "08",
         "brand": "Roots",
         "brandlogo" : "http://localhost:8080/roots/roots.png",
-        "brandpage" : "https://www.roots.com/ca/en/homepage"
+        "category" : "women, men, #sportwear, #cozy, #outdoor, #leather",
+        "brandpage" : "https://www.roots.com/ca/en/homepage",
+        "delivery" : "free",
+        "newIn" : true
+
     }
 ]
