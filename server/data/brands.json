@@ -6,7 +6,12 @@
         "brandpage" : "https://www.zara.com/ca/",
         "category" : "women, men, #feminine, #formal, #plus, #plussize, #office, #modernchic, #simple #basic, #lovely",
         "delivery" : "over $50",
-        "newIn" : true
+        "newIn" : true,
+        "description" : "Zara SA is a Spanish apparel retailer based in Arteixo in Galicia. The company specializes in fast fashion, and products include clothing, accessories, shoes, swimwear, beauty, and perfumes. It is the largest company in the Inditex group, the world's largest apparel retailer.",
+        "cs" : "1 (877) 550-1108",
+        "instagram" : "https://www.instagram.com/zara/",
+        "facebook" : "https://www.facebook.com/ZARACare/",
+        "twitter" : "https://twitter.com/ZARA"
     },
     {
         "id": "02",
@@ -15,7 +20,12 @@
         "category" : "women, men, #feminine, #formal, #plus, #plussize, #office, #modernchic, #simple #basic, #lovely",
         "brandpage" : "https://www2.hm.com/en_us/index.html",
         "delivery" : "over $50",
-        "newIn" : true
+        "newIn" : true,
+        "description" : "Hennes & Mauritz AB is a Swedish multinational clothing-retail company known for its fast-fashion clothing for men, women, teenagers and children. As of November 2019, H&M operates in 74 countries with over 5,000 stores under the various company brands, with 126,000 full-time equivalent positions.",
+        "cs" : "1 (855) 272-7007",
+        "instagram" : "https://www.instagram.com/hm/",
+        "facebook" : "https://www.facebook.com/hmcanadahm/?brand_redir=21415640912",
+        "twitter" : "https://twitter.com/hm"
     },
     {
         "id": "03",
@@ -24,8 +34,12 @@
         "category" : "women, men, #sporty, #sport, #outdoor, #fitness, #workout, #sports, #training, #running, #sportswear, #golf",
         "brandpage" : "https://www.nike.com/ca/",
         "delivery" : "over $175",
-        "newIn" : false
-
+        "newIn" : false,
+        "description" : "Nike, Inc. is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services. The company is headquartered near Beaverton, Oregon, in the Portland metropolitan area. ",
+        "cs" : "1 (855) 272-7007",
+        "instagram" : "https://www.instagram.com/nike/",
+        "facebook" : "https://www.facebook.com/nikewomen",
+        "twitter" : "https://twitter.com/nikeuk"
     },
     {
         "id": "04",
@@ -34,8 +48,12 @@
         "category" : "women, men, #feminine, #lovely, #beach",
         "brandpage" : "https://www.aritzia.com/",
         "delivery" : "over $150",
-        "newIn" : false
-
+        "newIn" : false,
+        "description" : "Aritzia Inc. is a Canadian women's fashion brand founded in Vancouver, British Columbia, by Brian Hill in 1984. Aritzia operates various upscale retail stores across Canada and the United States. The company went public on October 3, 2016.",
+        "cs" : "1 (855) 274-8942",
+        "instagram" : "https://www.instagram.com/aritzia/",
+        "facebook" : "https://www.facebook.com/aritzia/",
+        "twitter" : "https://twitter.com/aritzia"
     },
     {
         "id": "05",
@@ -44,7 +62,12 @@
         "category" : "women, men, #simple, #basic, #fitness",
         "brandpage" : "https://www.gapcanada.ca/",
         "delivery" : "over $50",
-        "newIn" : true
+        "newIn" : true,
+        "description" : "The Gap, Inc., commonly known as Gap Inc. or Gap, is an American worldwide clothing and accessories retailer. Gap was founded in 1969 by Donald Fisher and Doris F. Fisher and is headquartered in San Francisco, California.",
+        "cs" : "1 (614) 744-3907",
+        "instagram" : "https://www.instagram.com/gapinc/",
+        "facebook" : "https://www.facebook.com/hmcanadahm/?brand_redir=21415640912",
+        "twitter" : "https://twitter.com/GapInc"
 
     },
     {
@@ -54,8 +77,12 @@
         "category" : "women, men, #sporty, #sport, #sports, #training, #running, #sportswear, #golf",
         "brandpage" : "https://www.adidas.ca/en",
         "delivery" : "over $100",
-        "newIn" : true
-
+        "newIn" : true,
+        "description" : "Adidas AG is a multinational corporation, founded and headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories. It is the largest sportswear manufacturer in Europe, and the second largest in the world, after Nike.",
+        "cs" : "1 (855) 272-7007",
+        "instagram" : "https://www.instagram.com/adidas/",
+        "facebook" : "https://www.facebook.com/adidasoriginals",
+        "twitter" : "https://twitter.com/adidasuk"
     },
     {
         "id": "07",
@@ -64,8 +91,12 @@
         "category" : "women, men, #beach, #ocean, #cool, #jeans, #summer",
         "brandpage" : "https://www.hollisterco.com/shop/ca",
         "delivery" : "over $70",
-        "newIn" : false
-
+        "newIn" : false,
+        "description" : "Hollister Co., often advertised as Hollister or HCo., is a global teen and young adult retail brand owned by Abercrombie & Fitch Co. Goods are available in-store and through the company's online store. In 2019, Piper Jaffray ranked it in the top five clothing brands among teens.",
+        "cs" : "1 (866) 426-1285",
+        "instagram" : "https://www.instagram.com/hollisterco/",
+        "facebook" : "https://www.facebook.com/hollister",
+        "twitter" : "https://twitter.com/HollisterCo"
     },
     {
         "id": "08",
@@ -74,7 +105,11 @@
         "category" : "women, men, #sportwear, #cozy, #outdoor, #leather",
         "brandpage" : "https://www.roots.com/ca/en/homepage",
         "delivery" : "free",
-        "newIn" : true
-
+        "newIn" : true,
+        "description" : "Roots Ltd. or Roots Canada is a publicly held Canadian brand that sells apparel, leather bags, small leather goods, footwear, active athletic wear, and home furnishings. The company was founded in 1973 by Michael Budman and Don Green. Their design centre and leather factory are located in Toronto, Ontario.",
+        "cs" : " 1 (888) 307-6687",
+        "instagram" : "https://www.instagram.com/roots/",
+        "facebook" : "https://www.facebook.com/roots",
+        "twitter" : "https://twitter.com/ROOTS"
     }
 ]

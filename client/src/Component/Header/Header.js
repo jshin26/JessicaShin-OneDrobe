@@ -14,12 +14,14 @@ class Header extends React.Component {
     state={
         open: false
     }
+
     componentDidMount() {
         document.addEventListener("click", this.closeHandle);
     }
     componentWillUnmount() {
         document.removeEventListener("click", this.closeHandle);
     }
+    
     openHandle = (e) => {
         const open = this.state.open;
         this.setState({
@@ -71,14 +73,14 @@ class Header extends React.Component {
                     <NavLink className="side__link" exact to="/">home</NavLink>
                     {/* <NavLink className="side__link" exact to="/about">about</NavLink> */}
                     <NavLink className="side__link" exact to="/product">search</NavLink>
-                    <NavLink className="side__link" exact to="/brands">brands</NavLink>
+                    <NavLink className="side__link" exact to="/brand">brands</NavLink>
                     <NavLink className="side__link" exact to="/log">#stylelog</NavLink>
     
                 </nav>
     
-                {/* <div className="chatmodal">
+                <div className="chatmodal">
                     <ChatModal />
-                </div> */}
+                </div>
     
             </div>
         )

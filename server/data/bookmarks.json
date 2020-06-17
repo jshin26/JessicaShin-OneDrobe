@@ -1,0 +1,16 @@
+[
+    {
+        "id": "00",
+        "brand" : "onedrobe",
+        "brandlogo" : "http://localhost:8080/logo_transparent.png",
+        "brandpage" : "",
+        "category" : "",
+        "delivery" : "",
+        "newIn" : false,
+        "description" : "",
+        "cs" : "",
+        "instagram" : "",
+        "facebook" : "",
+        "twitter" : ""
+    }
+]

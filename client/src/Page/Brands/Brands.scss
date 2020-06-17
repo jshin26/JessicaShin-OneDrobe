@@ -8,8 +8,50 @@
 
 .brand {
     @include flex(column);
-    &-body {
-        margin-top: 7%;
+    &__main {
+        width: 100%;
+        @include tablet {
+            width: 50%;
+            height: 100vh;
+            overflow: scroll;
 
+        }
+        @include desktop {
+            @include flex (row, flex-start);
+            width: 33%;
+            flex-wrap: wrap;
+        }
+    }
+    &__route {
+        width: 90%;
+        @include tablet {
+            height: 100vh;
+            overflow: scroll;
+        }
+        @include desktop {
+            @include flex (row, center);
+            width: 67%;
+        }
+    }
+    &__warning {
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+#brand-body {
+    @include flex (column, center, center);
+    margin-top: 7%;
+    padding: 12px;
+    @include tablet {
+        @include flex (row, center, flex-start);
+        
+    }
+    @include desktop {
+        @include flex (row, flex-start);
+        width:100%;
+        margin: 10% auto 0;
+        padding-left: 32px;
     }
 }

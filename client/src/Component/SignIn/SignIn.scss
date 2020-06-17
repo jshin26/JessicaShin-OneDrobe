@@ -18,36 +18,54 @@
         @include flex (row, center, center);
         width: 100%;
         @include desktop {
+            height: 100vh;
+            position: relative;
+        }
+    }
+    &--yellow {
+        width: 100%;
+        height: 100vh;
+        background-color: $yellow;
+        @include tablet {
+            width: 50%;
+        }
+    }
+    &--white {
+        display: none;
+        @include tablet {
+            display: block;
             width: 50%;
             height: 100vh;
+            background-color: $white;
         }
     }
     &__logo{
-        width: 80%;
-        // animation-name: rotate;
+        width: 60%;
+        position: absolute;
+        animation-name: rotate;
         animation-duration: 6s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
+        background-color: transparent;
         @include tablet {
             width: 50%;
         }
         @include desktop {
-            width: 50%;
+            width: 30%;            
         }
     }
     &--right {
         @include flex (column, center, center);
-        @include desktop {
-            width: 50%;
-            background-color: $white;
-            height: 100vh;
+        background-color: transparent;
+        position: absolute;
+        @include tablet {
+            width: 50%;            
         }
     }
     &__title {
         width: 90%;
         @include desktop {
             width: 60%;
-
         }
     }
     &__link {

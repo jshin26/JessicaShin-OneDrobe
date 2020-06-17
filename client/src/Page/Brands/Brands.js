@@ -5,6 +5,9 @@ import './Brands.scss';
 
 import BrandHeader from '../../Component/BrandHeader/BrandHeader';
 import BrandCard from '../../Component/BrandCard/BrandCard';
+import BrandDetail from '../../Component/BrandDetail/BrandDetail';
+import ProductDetail from '../../Component/ProductDetail/ProductDetail';
+import Bookmarks from '../Bookmarks/Bookmarks'
 
 const API_URL="http://localhost:8080";
 
@@ -52,8 +55,6 @@ class Brands extends React.Component {
             } else if (
                     res.brand.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
                 || res.category.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
-                // ||  res.category.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
-                // ||  res.categories.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
             ) {
                 return res
             }
@@ -67,14 +68,15 @@ class Brands extends React.Component {
                         updateSearch={this.updateSearch}
                         search={this.state.search}
                     />
-                    <div className="brand-body">
-                        {/* <Switch> */}
-                            {/* <Route path="/brand" exact> */}
-                                <div key={this.state.brandData.id} id="search">
+                   
+                    <div key={this.state.brandData.id} id="brand-body">
+                        <p className="brand__warning">please reminder that 'brand'page is optimized best in desktop view</p>
+                        {/* <Route path="/brands/" exact> */}
+                                <div className="brand__main">
                                     {brandInfo.map(content=>{
                                         return <BrandCard 
                                         key={content.id}
-                                        brandLinks={`/${content.id}`}
+                                        brandLinks={`/brand/${content.id}`}
                                         brandName={content.brand}
                                         brandLogo={content.brandlogo}  
                                         delivery={content.delivery}
@@ -83,8 +85,16 @@ class Brands extends React.Component {
                                     })}
                                 </div>
                             {/* </Route> */}
-                            {/* <Route path="/:id" exact component={BrandDetail}/> */}
-                        {/* </Switch> */}
+                            
+                        <Switch>
+                            <div className="brand__route">
+                                <Route path="/bookmarks" exact component={Bookmarks} />
+
+                            
+                                <Route path="/brand/:id" component={BrandDetail}/>
+                           
+                            </div>
+                        </Switch>
                     </div>
                 </div>               
                 

@@ -1,0 +1,43 @@
+
+// IMPORTS
+
+@import '../../Style/fonts';
+@import '../../Style/mixins';
+@import '../../Style/variable';
+
+.brand__header {
+    width: 65%;
+    &-form {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        background-color: $white;
+        border: 2.5px solid $silver;
+        border-radius: 10px;
+        padding: 8px;
+        &:focus-within {
+            border: 3px solid $black;
+            outline: none;
+        }
+        @include tablet {
+            @include flex (row, center, center);
+            width: 100%;
+        }
+        @include desktop {
+            width: 100%;
+            padding: 16px; 
+        }
+    }
+    &-text {
+        margin: 0;
+        display: none;
+        @include desktop {
+            @include font (16px, 20px, 'AvenirNext', 300);
+            display: block;
+            color: $black;
+            margin-top: 8px;
+            padding-left: 50px;
+
+        }
+    }
+}

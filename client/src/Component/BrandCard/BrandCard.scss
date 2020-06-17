@@ -6,27 +6,41 @@
 @import '../../Style/variable';
 
 .brandcard {
-    @include flex (column, center, center);
+    @include flex (column, space-between, center);
     flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     border: 2px solid $yellow;
     height: 300px;
-    margin-bottom: 32px;
+    padding: 12px;
+    margin-bottom: 24px;
     text-decoration: none;
+    box-sizing: border-box;    
     @include tablet {
-        width: 50%;
+        width: 80%;
+        margin-right: 20px;
+    }
+    @include desktop {
+        width: 45%;
+        margin-right: 24px;
+
+
     }
     &:link,
     &:visited {
         color: $black;
     }
+    &__logo {
+        @include flex (column, center, center)
+    }
     &__name {
         @include font (24px, 18px, 'AvenirNext', 400);
     }
-    &__logo {
+    &__img {
         width: 70%;
-        margin-bottom: 24px;
+        height: 150px;
+        object-fit: contain;
+        object-position: center;
+        // margin-bottom: 24px;
     }
     &__detail {
         @include flex (row, center, center);
@@ -37,7 +51,27 @@
         &-icon {
             width: 30px;
             height: 30px;
+            margin-right: 8px;
         }
+        &-text {
+            margin: 0;
+        }
+    }
+}
+.newIn {
+    animation: newInAppear 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
+@keyframes newInAppear {
+    0% {
+        background-color: none;
+    }
+    50% {
+        background-color: $yellow;
+    }
+    100% {
+        background-color: none;
     }
 }
