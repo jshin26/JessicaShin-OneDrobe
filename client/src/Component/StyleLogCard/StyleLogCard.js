@@ -6,13 +6,12 @@ import StyleLogDetail from '../StyleLogDetail/StyleLogDetail';
 import like from '../../Asset/like.svg';
 import comment from '../../Asset/comment.svg';
 
-function updateTime (unix) {
+export function updateTime (unix) {
     const getDate = new Date(unix);
 
     const year = getDate.getFullYear();
     const month = getDate.getMonth();
     const day = getDate.getDate();
-
 
     let calSeconds = Math.floor((new Date() - getDate) / 1000);
     let timeAgo = Math.floor(calSeconds / 2592000);
@@ -56,41 +55,41 @@ class StyleLogCard extends React.Component {
         let {title, image, userImage, author, date, description, likes, likeHandle, comments} = this.props;
 
         return (
-            <>
-            <section className="log" onClick={this.handleOpenModal}>
+            <React.Fragment>
+                <section className="log" onClick={this.handleOpenModal}>
 
-                <img className="log__image" src={image} alt={title}/>
+                    <img className="log__image" src={image} alt={title}/>
 
-                <div className="log__detail">
+                    <div className="log__detail">
 
-                    <div>
-                        <img className="log__user-image" src={userImage} alt={author}/>
-                    </div>
-                    
-                    <div>
-
-                        <div className="log__user">
-                            <p className="log__user-name">{author}</p>
+                        <div>
+                            <img className="log__user-image" src={userImage} alt={author}/>
+                        </div>
                         
-                            <p className="log__date">{updateTime(date)}</p>
-                        </div>
+                        <div>
 
-                        <p className="log__title">{title}</p>
-
-                        <div className="log__number">
-                            <div className="log__number-box">
-                                <img className="log__number-icon" src={like} onClick={likeHandle} alt="likes"/>
-                                <p className="log__number-text">{likes}</p>
+                            <div className="log__user">
+                                <p className="log__user-name">{author}</p>
+                            
+                                <p className="log__date">{updateTime(date)}</p>
                             </div>
-                            <div className="log__number-box">
-                                <img className="log__number-icon" src={comment} alt="comments"/>
-                                <p className="log__number-text">{comments}</p>
+
+                            <p className="log__title">{title}</p>
+
+                            <div className="log__number">
+                                <div className="log__number-box">
+                                    <img className="log__number-icon" src={like} onClick={likeHandle} alt="likes"/>
+                                    <p className="log__number-text">{likes}</p>
+                                </div>
+                                <div className="log__number-box">
+                                    <img className="log__number-icon" src={comment} alt="comments"/>
+                                    {/* <p className="log__number-text">{comments}</p> */}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-            </section>
+                </section>
 
                 <ReactModal
                     isOpen={this.state.showModal}
@@ -99,20 +98,19 @@ class StyleLogCard extends React.Component {
                     className="loggmodal"
                     // overlayClassName="log-overlay"
                 >
-                    Hi
-                    <p>{comments}</p>
                 <StyleLogDetail
-                    logimage={image}
-                    title={title}
-                    userImage={userImage}
-                    author={author}
-                    date={date}
-                    likes={likes}
-                    comments={comments}
-                    description={description}
+                    // logimage={image}
+                    // title={title}
+                    // userImage={userImage}
+                    // author={author}
+                    // date={date}
+                    // likes={likes}
+                    // comments={comments}
+                    // description={description}
+                    // commentName={comments}
                 />
                 </ReactModal>
-            </>
+            </React.Fragment>
         )
     }
 }

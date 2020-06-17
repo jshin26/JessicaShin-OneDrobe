@@ -9,22 +9,17 @@ import StyleLogPostModal from '../../Component/StyleLogPostModal/StyleLogPostMod
 
 import mask from '../../Asset/mask.jpg';
 
-
 import './StyleLog.scss';
 
 const API_URL="http://localhost:8080";
 
 class StyleLog extends React.Component {
     state={
-        logs: [
-            {comments: []}
-        ],
+        logs: [],
         like: [],
-
     }
 
     componentDidMount () {
-
         axios
             .get(`${API_URL}/log/log`)
             .then(response => {          
@@ -35,19 +30,7 @@ class StyleLog extends React.Component {
             .catch(err => {
                 console.log(err)
             })
-        axios
-            .get(`${API_URL}/log/log${this.props.match.params.id}`)
-            .then(response => {          
-                this.setState({
-                    like: response.data.likes
-                })
-            })            
-            .catch(err => {
-                console.log(err)
-            })
     }
-
-    
 
     postNewlog = (e) =>{
         e.preventDefault();
@@ -77,9 +60,8 @@ class StyleLog extends React.Component {
     }
 
     likeHandle = (e) => {
-        console.log(this.props.match)
         axios
-            .put(`${API_URL}/log/log/${this.props.match}`, {
+            .put(`${API_URL}/log/log/`, {
                 // "likes" : this.props.logs.likes++
             })
             .then(res=> {
@@ -88,7 +70,6 @@ class StyleLog extends React.Component {
             .catch(err=>{
                 console.log(err)
             })
-
     }
 
     render () {
@@ -96,7 +77,7 @@ class StyleLog extends React.Component {
             <main className="stylelog">
                 <div className="stylelog--inner">
 
-                    <Typical 
+                    {/* <Typical 
                         loop={Infinity}
                         wrapper="h2"
                         className="stylelog__title"
@@ -109,7 +90,7 @@ class StyleLog extends React.Component {
                             '#OOTD',
                             2000
                         ]}
-                    />
+                    /> */}
 
                     <div className="stylelog__log">
                         {this.state.logs.map((content) =>{

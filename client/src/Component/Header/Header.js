@@ -76,9 +76,9 @@ class Header extends React.Component {
     
                 </nav>
     
-                <div className="chatmodal">
+                {/* <div className="chatmodal">
                     <ChatModal />
-                </div>
+                </div> */}
     
             </div>
         )

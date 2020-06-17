@@ -10,6 +10,7 @@ import Brands from './Page/Brands/Brands';
 import StyleLog from './Page/StyleLog/StyleLog';
 
 import SignIn from './Component/SignIn/SignIn';
+import StyleLogDetail from './Component/StyleLogDetail/StyleLogDetail';
 
 firebase.initializeApp({
   apiKey: "AIzaSyCW-_eube6pI4qTKBoX_ulouQNhzs-NPO4",
@@ -52,6 +53,7 @@ class App extends React.Component {
                       <Route path="/product" exact component={Product} />
                       <Route path="/brands" exact component={Brands} />
                       <Route path="/log" exact component={StyleLog} />
+                      <Route path="/log/:id/comments" exact component={StyleLogDetail} />
                     </div>
                 </Switch>
               </div>

@@ -58,7 +58,13 @@ class Brands extends React.Component {
         
         return (
             <BrowserRouter>
-                
+                {this.state.brandData.map((content) =>{
+                    return (
+                        <div>
+                            {content.brand}
+                        </div>
+                    )
+                })}
             </BrowserRouter>
         )
     }

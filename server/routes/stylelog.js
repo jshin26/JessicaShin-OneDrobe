@@ -35,17 +35,49 @@ router.get('/log', (req, res) => {
     res.json(stylelogData);
 })
 
+// router.get('/log/:id', (req, res) => {
+//     if(stylelogData.find(log => log.id === req.params.id)) {
+//         let currLog = req.params.id
+//             ? stylelogData.find(log => log.id === req.params.id)
+//             : stylelogData;
+
+//         res.json(currLog);
+//     } else {
+//         res.status(404).json("There are no matching product. Please check product id.")
+//     }
+// })
 router.get('/log/:id', (req, res) => {
+    // if(stylelogData.find(log => log.id === req.params.id)) {
+    //     let currLog = req.params.id
+    //         ? stylelogData.find(log => log.id === req.params.id)
+    //         : stylelogData;
+
+    //     res.json();
+    // } else {
+    //     res.status(404).json("There are no matching product. Please check product id.")
+    // }
     if(stylelogData.find(log => log.id === req.params.id)) {
         let currLog = req.params.id
-            ? stylelogData.find(log => log.id === req.params.id)
-            : stylelogData;
+        ? stylelogData.find(log => log.id === req.params.id)
+        : stylelogData
 
-        res.json(currLog);
-    } else {
-        res.status(404).json("There are no matching product. Please check product id.")
+        if (currLog.length !== 0) {
+            const logId = currLog.id
+            const logComments = currLog.comments
+            res.status(201).json({logId, logComments})
+        }
     }
+    
 })
+
+// let currBrand = req.params.id
+//         ? brandData.find(brand => brand.id === req.params.id)
+//         : brandData;
+    
+//     if (currBrand.length !== 0) {
+//         const productById = productData.filter(item => item.brandId === req.params.id);
+//         res.status(201).json({currBrand, productById})
+//     }
 
 router.put('/log/:id',(req, res) => {
     let currLog = req.params.id
@@ -72,19 +104,19 @@ router.post('/log', (req, res, next) => {
     })
 })
 
-router.delete('/log/:id', (req, res) => {
-    const logItem = stylelogData.find(item => item.id === req.params.id);
-    const indexItem = stylelogData.indexOf(logItem);
-    if (indexItem > -1) {
-        const newLog = stylelogData.splice(indexItem, 1);
-        if (newLog.length !== 0) {
-            res.status(201).json(stylelogData);
-        } else {
-            res.status(400).json("There is not such a inventory item to delete");
-        }
-    } else {
-        res.status(400).json("There is not such a inventory item to delete");
-    }
-})
+// router.delete('/log/:id', (req, res) => {
+//     const logItem = stylelogData.find(item => item.id === req.params.id);
+//     const indexItem = stylelogData.indexOf(logItem);
+//     if (indexItem > -1) {
+//         const newLog = stylelogData.splice(indexItem, 1);
+//         if (newLog.length !== 0) {
+//             res.status(201).json(stylelogData);
+//         } else {
+//             res.status(400).json("There is not such a inventory item to delete");
+//         }
+//     } else {
+//         res.status(400).json("There is not such a inventory item to delete");
+//     }
+// })
 
 module.exports = router;
