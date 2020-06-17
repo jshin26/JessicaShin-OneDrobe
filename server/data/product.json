@@ -510,7 +510,7 @@
         "price" : "29.99",
         "description" : "Calf-length skirt in a woven, crinkled viscose blend. High waist with ruffle trim and covered, elasticized waistband. Buttons at front. Lining in recycled polyester.",
         "page" : "https://www2.hm.com/en_us/productpage.0901433001.html",
-        "categories" : "women, maxi, skirt, long",
+        "categories" : "women, maxi, midi, skirt, long",
         "images" : [
             "http://localhost:8080/hm/hm_skirt3.1.jpeg",
             "http://localhost:8080/hm/hm_skirt3.2.jpeg",
@@ -870,7 +870,7 @@
         "price" : "88",
         "description" : "This is a high-waisted bodycon skirt finished with a scalloped hem. Babaton’s signature sculpt-knit yarn smooths and contours your shape",
         "page" : "https://www.aritzia.com/en/product/sculpt-knit-scallop-skirt/77093.html?dwvar_77093_color=1275",
-        "categories" : "women, skirt, woven, maxi",
+        "categories" : "women, skirt, woven, midi",
         "images" : [
             "http://localhost:8080/aritzia/skirt2.1.jpg",
             "http://localhost:8080/aritzia/skirt2.2.jpg",

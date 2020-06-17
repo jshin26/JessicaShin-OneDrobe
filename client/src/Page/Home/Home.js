@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.scss';
+import Typical from 'react-typical';
 import { Link } from 'react-router-dom';
 
 import hero1 from '../../Asset/hero1.png';

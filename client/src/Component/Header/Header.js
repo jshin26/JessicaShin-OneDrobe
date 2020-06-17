@@ -21,7 +21,7 @@ class Header extends React.Component {
     componentWillUnmount() {
         document.removeEventListener("click", this.closeHandle);
     }
-    
+
     openHandle = (e) => {
         const open = this.state.open;
         this.setState({
@@ -63,7 +63,7 @@ class Header extends React.Component {
                             <img className="side__user-image" src={userImage} alt="user profile"/>
                             <p>{userName}</p>
                             <p>{userEmail}</p>
-                            <button className="side__user-btn" onClick={signout} >sign out</button>
+                            <button className="side__user-btn" onClick={signout} >log out</button>
                         </div>
                     }
 
