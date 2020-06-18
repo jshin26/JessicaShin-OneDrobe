@@ -35,11 +35,11 @@
 .log {
     &-modal {
         position: absolute;
-        left: 33%;
-        bottom: 8%;
+        left: 55%;
+        bottom: 15%;
         background-color: $yellow;
         overflow: auto;
-        width: 50%;
+        width: 40%;
         border-radius: 10px;
         &:focus {
             outline: none;

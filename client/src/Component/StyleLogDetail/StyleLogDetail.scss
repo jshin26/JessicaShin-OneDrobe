@@ -1,0 +1,92 @@
+
+// IMPORTS
+
+@import '../../Style/fonts';
+@import '../../Style/mixins';
+@import '../../Style/variable';
+
+.log-detail {
+    @include flex (column);
+    @include desktop {
+        @include flex (row);
+    }
+    &--left {
+        margin-bottom: 16px;
+        @include tablet {
+            width: 100%;
+        }
+        @include desktop {
+            width:65%;
+            position: relative;
+        }
+    }
+    &__img {
+        width: 100%;
+        @include desktop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &--right {
+        @include flex (column);
+        @include desktop {
+            width: 35%;
+            padding-top: 50px;
+        }
+    }
+    &__user {
+        @include flex (row, space-between, flex-start);
+        border: 1px solid $mercury;
+        margin: 0 8px;
+        padding: 8px 0;
+        border-radius: 4px;;
+        &-img {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+        &-info {
+            @include flex (column, center, flex-start);
+            width: 80%;
+        }
+        &-name {
+            @include font (15px, 24px, 'AvenirNext', 600);
+            margin: 0;
+        }
+        &-time {
+            @include font (11px, 18px, 'AvenirNext', 300);
+            margin: 0;
+        }
+    }
+    &__description {
+        @include font (15px, 18px, 'AvenirNext', 400);
+        @include tablet {
+            width: 80%;
+
+        }
+    }
+    &__number {
+        @include flex (row, flex-start, center);
+        width: 100%;
+        @include tablet {
+            width: 50%;
+        }
+        @include desktop {
+            width: 70%;
+        }
+        &-box {
+            @include flex (row, space-around, center);
+            width: 50%;
+        }
+        &-icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

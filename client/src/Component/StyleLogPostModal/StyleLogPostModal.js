@@ -40,23 +40,23 @@ class StyleLogPostModal extends React.Component {
                     <div className="log-modal--inner">
                         
                         <form className="log-modal__form" onSubmit={postNewlog}>
-                            <div className="log-modal__form-box">
+                            {/* <div className="log-modal__form-box">
                                 <label className="log-modal__label">title</label>
                                 <input className="log-modal__input" type="text" name="title" placeholder="please type title"></input>
-                            </div>
+                            </div> */}
                             <div className="log-modal__form-box">
                                 <label className="log-modal__label">description</label>
-                                <textarea className="log-modal__textarea" name="description" placeholder="please type description"></textarea>
+                                <textarea className="log-modal__textarea" name="title" placeholder="please type description"></textarea>
                             </div>
     
-                            {/* <ImageUploader 
+                            <ImageUploader 
                                 withIcon={true}
                                 buttonText='Choose images'
                                 imgExtension={['.jpg', '.png', 'gif']}
                                 maxFileSize={5242880}                                
                                 className="log-modal__upload"
                                 name="image"
-                            /> */}
+                            />
                             <div className="log-modal__btnbox">
                                 <button className="log-modal__btn btn btn--white" onClick={this.handleCloseModal}>cancel</button>
                                 <button className="log-modal__btn btn" type="submit">submit</button>

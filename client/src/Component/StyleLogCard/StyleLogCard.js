@@ -52,7 +52,7 @@ class StyleLogCard extends React.Component {
 
     render () {
 
-        let {title, image, userImage, author, date, description, likes, likeHandle, comments} = this.props;
+        let {title, image, userImage, author, date, likes, likeHandle, comments} = this.props;
 
         return (
             <React.Fragment>
@@ -62,11 +62,11 @@ class StyleLogCard extends React.Component {
 
                     <div className="log__detail">
 
-                        <div>
+                        <div className="log__detail--left">
                             <img className="log__user-image" src={userImage} alt={author}/>
                         </div>
                         
-                        <div>
+                        <div className="log__detail--right">
 
                             <div className="log__user">
                                 <p className="log__user-name">{author}</p>
@@ -95,20 +95,19 @@ class StyleLogCard extends React.Component {
                     isOpen={this.state.showModal}
                     contentLabel="onRequestClose Example"
                     onRequestClose={this.handleCloseModal}
-                    className="loggmodal"
-                    // overlayClassName="log-overlay"
+                    className="log-detail-modal"
+                    overlayClassName="overlay"
                 >
-                <StyleLogDetail
-                    // logimage={image}
-                    // title={title}
-                    // userImage={userImage}
-                    // author={author}
-                    // date={date}
-                    // likes={likes}
-                    // comments={comments}
-                    // description={description}
-                    // commentName={comments}
-                />
+                    <StyleLogDetail
+                        image={image}
+                        title={title}
+                        userImage={userImage}
+                        author={author}
+                        date={date}
+                        likes={likes}
+                        // comments={comments}
+                        // commentName={comments}
+                    />
                 </ReactModal>
             </React.Fragment>
         )

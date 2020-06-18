@@ -8,6 +8,7 @@ import ProductCard from '../ProductCard/ProductCard';
 
 import warning from '../../Asset/warning.svg';
 import deliveryIcon from '../../Asset/delivery.svg';
+import saleIcon from '../../Asset/sale.svg';
 import instagramI from '../../Asset/instagram.svg';
 import facebookI from '../../Asset/facebook.svg';
 import twitterI from '../../Asset/twitter.svg';
@@ -56,33 +57,28 @@ class BrandDetail extends React.Component {
                     "delivery" : this.state.brandData.currBrand.delivery,
                     "category" : this.state.brandData.currBrand.category,
                     "newIn" : this.state.brandData.currBrand.newIn,
-                    // "description" : this.state.brandData.currBrand.description,
-                    // "cs" : this.state.brandData.currBrand.cs,
-                    // "instagram" : this.state.brandData.currBrand.instagram,
-                    // "facebook" :this.state.brandData.currBrand.facebook,
-                    // "twitter" :this.state.brandData.currBrand.twitter
-            }) }
-        // } else if (e === false) {
-        //     axios.delete(`${API_URL}/bookmarks/bookmark/${productID}`,)
+            }) 
+        } else if (e === false) {
+            axios.delete(`${API_URL}/bookmarks/bookmark/${productID}`,)
        
-        //     .then(() => {
-        //         axios
-        //             .get(`${API_URL}/bookmarks/bookmark`)
-        //             .then(response => {                
-        //                 this.setState({
-        //                     favourites: response.data
-        //                 })
-        //             })            
-        //             .catch(err => {
-        //                 console.log(err)
-        //             })
-        //     })
-        // }
+            .then(() => {
+                axios
+                    .get(`${API_URL}/bookmarks/bookmark`)
+                    .then(response => {                
+                        this.setState({
+                            favourites: response.data
+                        })
+                    })            
+                    .catch(err => {
+                        console.log(err)
+                    })
+            })
+        }
     }
 
     render() {
 
-        let { brand, brandpage, brandlogo, delivery, newIn, description, cs, instagram, facebook, twitter, id} = this.state.brandData.currBrand
+        let { brand, brandpage, brandlogo, delivery, newIn, description, cs, instagram, facebook, twitter, id, onSale} = this.state.brandData.currBrand
         return (
 
             <section className="brand-detail">
@@ -98,9 +94,13 @@ class BrandDetail extends React.Component {
                                 <img className="brandcard__detail-icon" src={deliveryIcon} alt="delivery"/>
                                 <p className="brandcard__detail-text">{delivery}</p>
                             </div>
-                            <div className={`brandcard__detail-box ${newIn? "newIn" : ""}`}>
+                            <div className={`brandcard__detail-box ${newIn? "newIn" : "displaynone"}`}>
                                 <img className="brandcard__detail-icon" src={newIn ? warning : ""} alt="" />
                                 <p className="brandcard__detail-text">{newIn ? "New In" : ""}</p>
+                            </div>
+                            <div className={`brandcard__detail-box ${onSale? "onSale" : "displaynone"}`}>
+                                <img className="brandcard__detail-icon" src={onSale ? saleIcon : ""} alt="" />
+                                <p className="brandcard__detail-text">{onSale ? "on Sale" : ""}</p>
                             </div>
                         </div>
                     </div>

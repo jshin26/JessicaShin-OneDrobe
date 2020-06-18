@@ -67,10 +67,44 @@ class StyleLogDetail extends React.Component {
     }
  
     render () {
+
+        let {title, image, userImage, author, date, likes, comments} = this.props;
+
         return (
-            <article>
-hi
-                {this.state.selectedLog.logComments.map((content) => {
+            <article className="log-detail">
+                
+                <div className="log-detail--left">
+                    <img className="log-detail__img" src={image} alt={title}/>
+                </div>
+
+                <div className="log-detail--right">
+
+                    <div className="log-detail__user">
+                        <img className="log-detail__user-img" src={userImage} alt={author} />                    
+                        <div className="log-detail__user-info">
+
+                            <p className="log-detail__user-name">{author}</p>
+                            <p className="log-detail__user-time">{updateTime(date)}</p>
+                            <p className="log-detail__description">{title}</p>
+
+                            <div className="log-detail__number">
+                                <div className="log-detail__number-box">
+                                    <img className="log-detail__number-icon" src={like} alt="likes"/>
+                                    <p className="log-detail__number-text">{likes}</p>
+                                </div>
+                                <div className="log-detail__number-box">
+                                    <img className="log-detail__number-icon" src={comment} alt="comments"/>
+                                    {/* <p className="log-detail-text">{comments}</p> */}
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                
+                {/* {this.state.selectedLog.logComments.map((content) => {
                     return(
                         <CommentComp 
                             key={content.logId}
@@ -78,7 +112,7 @@ hi
                             comment={content.comment}
                         />
                     )
-                })}
+                })} */}
                 
             </article>
         )

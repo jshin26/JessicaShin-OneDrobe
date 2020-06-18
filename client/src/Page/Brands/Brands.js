@@ -80,7 +80,8 @@ class Brands extends React.Component {
                                         brandName={content.brand}
                                         brandLogo={content.brandlogo}  
                                         delivery={content.delivery}
-                                        newIn={content.newIn}           
+                                        newIn={content.newIn}
+                                        onSale={content.onSale}
                                     />
                                     })}
                                 </div>
@@ -89,10 +90,7 @@ class Brands extends React.Component {
                         <Switch>
                             <div className="brand__route">
                                 <Route path="/bookmarks" exact component={Bookmarks} />
-
-                            
                                 <Route path="/brand/:id" component={BrandDetail}/>
-                           
                             </div>
                         </Switch>
                     </div>

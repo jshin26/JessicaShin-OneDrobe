@@ -35,7 +35,7 @@ class StyleLog extends React.Component {
     postNewlog = (e) =>{
         e.preventDefault();
         console.log(e)
-        if ( !e.target.title.value || !e.target.description.value) {
+        if ( !e.target.title.value) {
             alert ('please fill in the blanks');
             e.preventDefault();
         } else {
@@ -45,7 +45,6 @@ class StyleLog extends React.Component {
                     "author": firebase.auth().currentUser.displayName,
                     "userImage" : firebase.auth().currentUser.photoURL,
                     "title" : e.target.title.value,
-                    "description" : e.target.description.value,
                     "date" : Date.now(),
                     "image" : mask,
                 })
@@ -77,7 +76,7 @@ class StyleLog extends React.Component {
             <main className="stylelog">
                 <div className="stylelog--inner">
 
-                    {/* <Typical 
+                    <Typical 
                         loop={Infinity}
                         wrapper="h2"
                         className="stylelog__title"
@@ -90,7 +89,7 @@ class StyleLog extends React.Component {
                             '#OOTD',
                             2000
                         ]}
-                    /> */}
+                    />
 
                     <div className="stylelog__log">
                         {this.state.logs.map((content) =>{
@@ -101,7 +100,6 @@ class StyleLog extends React.Component {
                                 image={content.image}
                                 date={content.date}
                                 author={content.author}
-                                description={content.description}
                                 userImage={content.userImage}
                                 likes = {content.likes}
                                 // comments={content.comments.commentName}
