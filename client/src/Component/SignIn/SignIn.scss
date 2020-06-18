@@ -8,9 +8,9 @@
 
 .signin {
     @include flex (column, center, center);
-        background-color: $yellow;
-        width: 100%;
-        height: 100vh;
+    background-image: linear-gradient(90deg, #dcb444, $yellow, $yellow, $white);
+    width: 100%;
+    height: 100vh;
     @include desktop {
         @include flex (row, center, center)
     }
@@ -20,23 +20,6 @@
         @include desktop {
             height: 100vh;
             position: relative;
-        }
-    }
-    &--yellow {
-        width: 100%;
-        height: 100vh;
-        background-color: $yellow;
-        @include tablet {
-            width: 50%;
-        }
-    }
-    &--white {
-        display: none;
-        @include tablet {
-        display: block;
-        width: 50%;
-        height: 100vh;
-        background-color: $white;
         }
     }
     &__logo{
@@ -51,10 +34,12 @@
             width: 50%;
         }
         @include desktop {
-            width: 30%; 
+            width: 25%; 
         }
     }
     &--right {
+        visibility: hidden;
+        animation: fade-in 3s 1 forwards;
         @include flex (column, center, center);
             background-color: transparent;
             position: absolute;
@@ -66,6 +51,18 @@
         width: 90%;
         @include desktop {
             width: 60%;
+        }
+    }
+    &__sub {
+        visibility: hidden;
+        @include desktop {
+            @include font (48px, 20px, 'AvenirNext', 600);
+            color: $white;
+            &:after {
+                visibility: visible;
+                content: "";
+                animation: changetext 3s infinite;
+            }
         }
     }
     &__link {
@@ -83,4 +80,26 @@
         transform: rotate(360deg);
     }
 }
-    
+@keyframes fade-in {
+    0% { 
+        opacity: 0.0; 
+        visibility: visible;
+    }
+    100% {
+        opacity: 1.0;
+        visibility: visible;
+    }
+}
+
+@keyframes changetext {
+
+    0% {
+        content:"onedrobe"
+    }
+    50% {
+        content:"click to enter"
+    }
+    100% {
+        content:"onedrobe"
+    }
+}

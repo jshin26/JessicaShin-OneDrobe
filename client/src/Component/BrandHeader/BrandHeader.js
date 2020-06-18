@@ -1,7 +1,7 @@
 import React from 'react';
 import './BrandHeader.scss'
 
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './BrandHeader.scss';
 import searchIcon from '../../Asset/Icon-search.svg';
 import star from '../../Asset/star.svg';

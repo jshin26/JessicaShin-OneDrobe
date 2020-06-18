@@ -9,7 +9,7 @@ import onedrobe from '../../Asset/logo-noimage.png';
 class SignIn extends React.Component{
 
   state={
-    open: false
+    open: false,
   }
   
   uiConfig = {
@@ -24,13 +24,6 @@ class SignIn extends React.Component{
     }
   }
   
-  componentDidMount() {
-    document.addEventListener("click", this.closeHandle);
-  }
-  componentWillUnmount() {
-    document.removeEventListener("click", this.closeHandle);
-  }
-  
   openHandle = (e) => {
     const open = this.state.open;
     this.setState({
@@ -38,26 +31,17 @@ class SignIn extends React.Component{
     })
   }
   
-  closeHandle = (e) => {
-    if (e.target.classList[0] !== "signin__logo") {
-      this.setState({
-        open: false
-      })
-    }
-  }
-  
 render () {
     return (
       <div className="signin">
         <div className="signin--left">
-
-          <div className="signin--yellow"></div>
     
-            {this.state.open === false &&
+          {this.state.open === false &&
+          <>
             <img className="signin__logo" onClick={this.openHandle} src={logo} alt="onedrobe logo"/>
-            }
-    
-          <div className="signin--white"></div>
+            <p className="signin__sub"></p>
+          </>
+          }
         </div>
     
         {this.state.open &&

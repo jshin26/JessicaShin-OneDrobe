@@ -39,7 +39,7 @@ class StyleLogDetail extends React.Component {
     }
 
     fetchInventoryData = (url) => {
-        axios.get(`http://localhost:8080/log/log/${url}`)
+        axios.get(`${API_URL}/log/log/${url}`)
         .then(response => {
             console.log(response)
             this.setState({
@@ -54,7 +54,7 @@ class StyleLogDetail extends React.Component {
     componentDidMount(){
         console.log(this.state)
         this.fetchInventoryData('');
-        axios.get(`http://localhost:8080/log/log/${this.state.log.logId}`)
+        axios.get(`${API_URL}/log/log/${this.state.log.logId}`)
         .then(response => {
             console.log(response)
             this.setState({
@@ -68,7 +68,7 @@ class StyleLogDetail extends React.Component {
  
     render () {
 
-        let {title, image, userImage, author, date, likes, comments} = this.props;
+        let {title, image, userImage, author, date, likes} = this.props;
 
         return (
             <article className="log-detail">

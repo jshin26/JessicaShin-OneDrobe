@@ -52,7 +52,7 @@ class StyleLogCard extends React.Component {
 
     render () {
 
-        let {title, image, userImage, author, date, likes, likeHandle, comments} = this.props;
+        let {title, image, userImage, author, date, likes, likeHandle} = this.props;
 
         return (
             <React.Fragment>

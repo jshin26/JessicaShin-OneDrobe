@@ -55,7 +55,7 @@ class Product extends React.Component {
 
     render() {
 
-        let productInfo = this.state.productData.filter((res) => {            
+        let productInfo = this.state.productData.filter(res => {            
             if (this.state.search === "") {
                 return this.state.productData
             } else if (

@@ -6,7 +6,6 @@ import './Brands.scss';
 import BrandHeader from '../../Component/BrandHeader/BrandHeader';
 import BrandCard from '../../Component/BrandCard/BrandCard';
 import BrandDetail from '../../Component/BrandDetail/BrandDetail';
-import ProductDetail from '../../Component/ProductDetail/ProductDetail';
 import Bookmarks from '../Bookmarks/Bookmarks'
 
 const API_URL="http://localhost:8080";

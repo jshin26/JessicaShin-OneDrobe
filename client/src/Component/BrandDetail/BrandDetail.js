@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import {Link} from 'react-router-dom';
 import './BrandDetail.scss';
 import Switch from 'react-switch';
 
@@ -86,7 +85,7 @@ class BrandDetail extends React.Component {
                 <div className="brand-detail__main">
                    
                     <div className="brand-detail--left">
-                        <a className="brand-detail__detail" href={brandpage} target="_blank">
+                        <a className="brand-detail__detail" href={brandpage} rel="noopener noreferrer" target="_blank">
                             <img className="brand-detail__logo" src={brandlogo} alt={brand}/>
                         </a>
                         <div className="brandcard__detail">
@@ -110,13 +109,13 @@ class BrandDetail extends React.Component {
                         <p className="brand-detail__cs">customer service: {cs}</p>
 
                         <div className="brand-detail__sns">
-                            <a className="brand-detail__link" href={instagram} target="_blank">
+                            <a className="brand-detail__link" href={instagram} rel="noopener noreferrer" target="_blank">
                                 <img className="brand-detail__icon" src={instagramI} alt="instagram link"/>
                             </a>
-                            <a className="brand-detail__link" href={facebook} target="_blank">
+                            <a className="brand-detail__link" href={facebook} rel="noopener noreferrer" target="_blank">
                                 <img className="brand-detail__icon" src={facebookI} alt="facebook link"/>
                             </a>
-                            <a className="brand-detail__link" href={twitter} target="_blank">
+                            <a className="brand-detail__link" href={twitter} rel="noopener noreferrer" target="_blank">
                                 <img className="brand-detail__icon" src={twitterI} alt="twitter link"/>
                             </a>
                         </div>

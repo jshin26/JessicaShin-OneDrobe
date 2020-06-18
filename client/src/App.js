@@ -10,7 +10,6 @@ import Brands from './Page/Brands/Brands';
 import StyleLog from './Page/StyleLog/StyleLog';
 
 import SignIn from './Component/SignIn/SignIn';
-import StyleLogDetail from './Component/StyleLogDetail/StyleLogDetail';
 
 firebase.initializeApp({
   apiKey: "AIzaSyCW-_eube6pI4qTKBoX_ulouQNhzs-NPO4",
