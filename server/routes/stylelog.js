@@ -47,26 +47,26 @@ router.get('/log', (req, res) => {
 //     }
 // })
 router.get('/log/:id', (req, res) => {
-    // if(stylelogData.find(log => log.id === req.params.id)) {
-    //     let currLog = req.params.id
-    //         ? stylelogData.find(log => log.id === req.params.id)
-    //         : stylelogData;
-
-    //     res.json();
-    // } else {
-    //     res.status(404).json("There are no matching product. Please check product id.")
-    // }
     if(stylelogData.find(log => log.id === req.params.id)) {
         let currLog = req.params.id
-        ? stylelogData.find(log => log.id === req.params.id)
-        : stylelogData
+            ? stylelogData.find(log => log.id === req.params.id)
+            : stylelogData;
 
-        if (currLog.length !== 0) {
-            const logId = currLog.id
-            const logComments = currLog.comments
-            res.status(201).json({logId, logComments})
-        }
+        res.json(currLog);
+    } else {
+        res.status(404).json("There are no matching product. Please check product id.")
     }
+    // if(stylelogData.find(log => log.id === req.params.id)) {
+    //     let currLog = req.params.id
+    //     ? stylelogData.find(log => log.id === req.params.id)
+    //     : stylelogData
+
+    //     if (currLog.length !== 0) {
+    //         const logId = currLog.id
+    //         const logComments = currLog.comments
+    //         res.status(201).json({logId, logComments})
+    //     }
+    // }
     
 })
 

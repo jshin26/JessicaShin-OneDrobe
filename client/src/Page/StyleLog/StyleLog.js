@@ -7,7 +7,7 @@ import firebase from 'firebase';
 import StyleLogCard from '../../Component/StyleLogCard/StyleLogCard';
 import StyleLogPostModal from '../../Component/StyleLogPostModal/StyleLogPostModal';
 
-import mask from '../../Asset/mask.jpg';
+import image01 from '../../Asset/01.jpg';
 
 import './StyleLog.scss';
 
@@ -19,7 +19,7 @@ class StyleLog extends React.Component {
         like: [],
     }
 
-    componentDidMount () {
+    mountFn () {
         axios
             .get(`${API_URL}/log/log`)
             .then(response => {          
@@ -31,12 +31,15 @@ class StyleLog extends React.Component {
                 console.log(err)
             })
     }
+    componentDidMount () {
+       this.mountFn();
+    }
 
     postNewlog = (e) =>{
-        e.preventDefault();
+        // e.preventDefault();
         console.log(e)
         if ( !e.target.title.value) {
-            alert ('please fill in the blanks');
+            alert ('please write a caption');
             e.preventDefault();
         } else {
             axios
@@ -46,7 +49,21 @@ class StyleLog extends React.Component {
                     "userImage" : firebase.auth().currentUser.photoURL,
                     "title" : e.target.title.value,
                     "date" : Date.now(),
-                    "image" : mask,
+                    "image" : image01,
+                    "outer" : e.target.outer.value,
+                    "outerlink" : e.target.outerlink.value,
+                    "top" : e.target.top.value,
+                    "toplink" : e.target.toplink.value,
+                    "pants" : e.target.pants.value,
+                    "pantslink" : e.target.pantslink.value,
+                    "dress" : e.target.dress.value,
+                    "dresslink" : e.target.dresslink.value,
+                    "skirt" : e.target.skirt.value,
+                    "skirtlink" : e.target.skirtlink.value,
+                    "shoes" : e.target.shoes.value,
+                    "shoeslink" : e.target.shoeslink.value,
+                    "bag" : e.target.bag.value,
+                    "baglink" : e.target.baglink.value,
                 })
                 .then(res=> {
                     console.log(res)
@@ -58,13 +75,12 @@ class StyleLog extends React.Component {
         }
     }
 
-    likeHandle = (e) => {
+    likeHandle = (e, logId) => {
         axios
-            .put(`${API_URL}/log/log/`, {
-                // "likes" : this.props.logs.likes++
-            })
+            .put(`${API_URL}/log/log/${logId}`)
             .then(res=> {
-                console.log(res)
+                // console.log(res);
+                this.mountFn();
             })
             .catch(err=>{
                 console.log(err)
@@ -116,8 +132,7 @@ class StyleLog extends React.Component {
                                 shoeslink={content.shoeslink}
                                 bag={content.bag}
                                 baglink={content.baglink}
-                                // comments={content.comments.commentName}
-                                // likeHandle={this.likeHandle}
+                                likeHandle={(event) => this.likeHandle(event, content.id)}
                             />
                         }).reverse()}
                     </div>

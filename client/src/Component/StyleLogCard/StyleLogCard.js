@@ -52,13 +52,13 @@ class StyleLogCard extends React.Component {
 
     render () {
 
-        let {title, image, userImage, author, date, likes, likeHandle, outer, outerproduct, outerlink, top, topproduct, toplink, pants, pantsproduct, pantslink, dress, dressproduct, dresslink, skirt, skirtproduct, skirtlink, shoes, shoesproduct, shoeslink, bag, bagproduct, baglink} = this.props;
+        let {id, title, image, userImage, author, date, likes, likeHandle, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = this.props;
 
         return (
             <React.Fragment>
-                <section className="log" onClick={this.handleOpenModal}>
+                <section className="log">
 
-                    <img className="log__image" src={image} alt={title}/>
+                    <img className="log__image"  onClick={this.handleOpenModal} src={image} alt={title}/>
 
                     <div className="log__detail">
 
@@ -77,9 +77,9 @@ class StyleLogCard extends React.Component {
                             <p className="log__title">{title}</p>
 
                             <div className="log__number">
-                                <div className="log__number-box">
-                                    <img className="log__number-icon" src={like} onClick={likeHandle} alt="likes"/>
-                                    <p className="log__number-text">{likes}</p>
+                                <div className="log__number-box" onClick={(event) => likeHandle(event, id)} >
+                                    <img className="log__number-icon" src={like} alt="likes"/>
+                                    <p className="log__number-text">{likes.toLocaleString()}</p>
                                 </div>
                                 <div className="log__number-box">
                                     <img className="log__number-icon" src={comment} alt="comments"/>
@@ -100,12 +100,14 @@ class StyleLogCard extends React.Component {
                     ariaHideApp={false}
                 >
                     <StyleLogDetail
+                        id={id}
                         image={image}
                         title={title}
                         userImage={userImage}
                         author={author}
                         date={date}
                         likes={likes}
+                        likeHandle={likeHandle}
                         outer={outer}
                         outerlink={outerlink}
                         top={top}
@@ -120,6 +122,7 @@ class StyleLogCard extends React.Component {
                         shoeslink={shoeslink}
                         bag={bag}
                         baglink={baglink}
+                        likeHandle={likeHandle}
                     />
                 </ReactModal>
             </React.Fragment>

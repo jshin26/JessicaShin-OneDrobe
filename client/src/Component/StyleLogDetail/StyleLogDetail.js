@@ -14,7 +14,7 @@ import shoesI from '../../Asset/0shoes.svg';
 
 const StyleLogDetail = (props) => {
  
-    let {title, image, userImage, author, date, likes, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = props;
+    let {id, likeHandle, title, image, userImage, author, date, likes, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = props;
 
     return (
         <article className="log-detail">
@@ -34,9 +34,9 @@ const StyleLogDetail = (props) => {
                         <p className="log-detail__description">{title}</p>
 
                         <div className="log-detail__number">
-                            <div className="log-detail__number-box">
+                            <div className="log-detail__number-box" onClick={(event) => likeHandle(event, id)}>
                                 <img className="log-detail__number-icon" src={like} alt="likes"/>
-                                <p className="log-detail__number-text">{likes}</p>
+                                <p className="log-detail__number-text">{likes.toLocaleString()}</p>
                             </div>
                             <div className="log-detail__number-box">
                                 <img className="log-detail__number-icon" src={comment} alt="comments"/>
