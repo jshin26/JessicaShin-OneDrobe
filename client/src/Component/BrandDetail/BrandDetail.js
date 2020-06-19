@@ -56,6 +56,7 @@ class BrandDetail extends React.Component {
                     "delivery" : this.state.brandData.currBrand.delivery,
                     "category" : this.state.brandData.currBrand.category,
                     "newIn" : this.state.brandData.currBrand.newIn,
+                    "onSale" : this.state.brandData.currBrand.onSale,
             }) 
         } else if (e === false) {
             axios.delete(`${API_URL}/bookmarks/bookmark/${productID}`,)

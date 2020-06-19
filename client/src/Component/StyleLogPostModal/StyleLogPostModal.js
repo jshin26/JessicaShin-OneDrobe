@@ -36,6 +36,7 @@ class StyleLogPostModal extends React.Component {
                     onRequestClose={this.handleCloseModal}
                     className="log-modal"
                     overlayClassName="log-overlay"
+                    ariaHideApp={false}
                 >
                     <div className="log-modal--inner">
                         

@@ -8,15 +8,7 @@
         "page" : "https://www.ellecanada.com/fashion/shopping/covid-19-could-forever-change-the-way-we-shop",
         "image" : "http://localhost:8080/log/01.jpg",
         "likes" : 5039,
-        "date" : "MAY 19, 2020",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "date" : "MAY 19, 2020"
     },
     {
         "id": "202006232",
@@ -27,15 +19,7 @@
         "page" : "https://www.ellecanada.com/fashion/trends/tanya-taylor-launches-size-inclusive-swimwear-collection",
         "image" : "http://localhost:8080/log/02.jpg",
         "likes" : 425,
-        "date" : "MAY 12, 2020",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "date" : "MAY 12, 2020"
     },
     {
         "id": "202006000",
@@ -46,18 +30,10 @@
         "page" : "https://www.ellecanada.com/fashion/trends/the-case-for-statement-sleeves-this-season",
         "image" : "http://localhost:8080/log/03.jpg",
         "likes" : 1258,
-        "date" : "MAR 28 2020",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "date" : "MAR 28 2020"
     },
     {
-        "id": "20200608",
+        "id": "2020060228",
         "author": "Caitlin Agnew",
         "userImage": "http://localhost:8080/log/agnew.jpg",
         "title" : "Bermuda Shorts Are Your New Summer Wardrobe Staple",
@@ -65,24 +41,10 @@
         "page" : "https://www.ellecanada.com/fashion/trends/bermuda-shorts-are-your-new-summer-wardrobe-staple",
         "image" : "http://localhost:8080/log/10.jpg",
         "likes" : 12039,
-        "date" : "JUN 4, 2020",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            },
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "date" : "JUN 4, 2020"
     },
     {
-        "id": "20200608",
+        "id": "2020060889",
         "author": "Caitlin Agnew",
         "userImage": "http://localhost:8080/log/agnew.jpg",
         "title" : "Bermuda Shorts Are Your New Summer Wardrobe Staple",
@@ -90,21 +52,7 @@
         "page" : "https://www.ellecanada.com/fashion/trends/bermuda-shorts-are-your-new-summer-wardrobe-staple",
         "image" : "http://localhost:8080/log/09.jpg",
         "likes" : 12039,
-        "date" : "JUN 4, 2020",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            },
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "date" : "JUN 4, 2020"
     },
     {
         "id": "20200609",
@@ -115,15 +63,7 @@
         "page" : "https://margaretzhang.com.au/2019/10/how-do-you-like-your-eggs-film/",
         "image" : "http://localhost:8080/log/05.jpg",
         "likes" : 4258,
-        "date" : "OCT 10, 2019",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "date" : "OCT 10, 2019"
     },
     {
         "id": "20200610",
@@ -134,15 +74,7 @@
         "page" : "https://www.ellecanada.com/fashion/shopping/indigenous-fashion-week-toronto-simons-capsule-collection",
         "image" : "http://localhost:8080/log/06.jpg",
         "likes" : 27039,
-        "date" : "MAY 28 2020",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "date" : "MAY 28 2020"
     },
     {
         "id": "20200611",
@@ -154,17 +86,11 @@
         "image" : "http://localhost:8080/log/10.jpg",
         "likes" : 16003,
         "date": "JUN 4 2020",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "outer" : "cozy and warm cardigan",
+        "outerlink" : ""
     },
     {
-        "id": "20200611",
+        "id": "2020061561",
         "author": "Erica Ngao",
         "userImage": "http://localhost:8080/log/agnew.jpg",
         "title" : "15 Canadian Brands Donating Proceeds to Fight Anti-Black Racism",
@@ -173,17 +99,13 @@
         "image" : "http://localhost:8080/log/11.jpg",
         "likes" : 16003,
         "date": "JUN 4 2020",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "shoes" : "pretty high heel",
+        "shoeslink" : "",
+        "bag" : "shoulder bag",
+        "baglink" :""
     },
     {
-        "id": "20200611",
+        "id": "202006452311",
         "author": "Erica Ngao",
         "userImage": "http://localhost:8080/log/erica.jpg",
         "title" : "15 Canadian Brands Donating Proceeds to Fight Anti-Black Racism",
@@ -192,17 +114,11 @@
         "image" : "http://localhost:8080/log/06.jpg",
         "likes" : 16003,
         "date": "JUN 4 2020",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "dress" :"no dress",
+        "dresslink" : ""
     },
     {
-        "id": "20200611",
+        "id": "2020061781",
         "author": "Erica Ngao",
         "userImage": "http://localhost:8080/log/hannah.jpg",
         "title" : "15 Canadian Brands Donating Proceeds to Fight Anti-Black Racism",
@@ -211,17 +127,13 @@
         "image" : "http://localhost:8080/log/11.jpg",
         "likes" : 16003,
         "date": "JUN 4 2020",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "outer" : "cozy outer",
+        "outerlink" : "",
+        "pants" : "awesome jeans",
+        "pantslink" :""
     },
     {
-        "id": "20200609",
+        "id": "20200608529",
         "author": "Margaret Zhang",
         "userImage": "http://localhost:8080/log/margaret.jpg",
         "title" : "How Do You Like Your Eggs?",
@@ -230,13 +142,11 @@
         "image" : "http://localhost:8080/log/01.jpg",
         "likes" : 4258,
         "date" : "OCT 10, 2019",
-        "comments" : [
-            {
-                "commentImage" : "http://localhost:8080/log/hannah.jpg",
-                "commentName" : "shiny shiny",
-                "timestamp" : "MAY 19, 2020",
-                "comment" :"wow!"
-            }
-        ]
+        "top" : "BLOUSE-4476",
+        "toplink" : "https://ca.oakandfort.com/BLOUSE-4476",
+        "pants" : "kick jeans",
+        "pantslink" : "https://www.zara.com/ca/en/zw-premium-the-hw-kick-jeans-p04124043.html?v1=44663663&v2=1523829",
+        "bag" :"BUCKET BAG 3515",
+        "baglink" :"https://ca.oakandfort.com/BUCKET-BAG-3515_2?location=&quantity=1&size=One%20Size"
     }
 ]

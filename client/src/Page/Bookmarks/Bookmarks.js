@@ -6,6 +6,7 @@ import './Bookmarks.scss';
 import close from '../../Asset/close.png';
 import warning from '../../Asset/warning.svg';
 import deliveryIcon from '../../Asset/delivery.svg';
+import saleIcon from '../../Asset/sale.svg';
 
 const API_URL="http://localhost:8080";
 
@@ -14,7 +15,7 @@ const API_URL="http://localhost:8080";
 
 const BrandCard = (props) => {
 
-    let {brandLinks, brandName, brandLogo, delivery, newIn, deleteHandler, id} = props;
+    let {brandLinks, brandName, brandLogo, delivery, newIn, deleteHandler, id, onSale} = props;
     return (
         <div className="bookmark">
 
@@ -33,9 +34,13 @@ const BrandCard = (props) => {
                     <img className="brandcard__detail-icon" src={deliveryIcon} alt="delivery"/>
                     <p className="brandcard__detail-text">{delivery}</p>
                 </div>
-                <div className={`brandcard__detail-box ${newIn? "newIn" : ""}`}>
+                <div className={`brandcard__detail-box ${newIn? "newIn" : "displaynone"}`}>
                     <img className="brandcard__detail-icon" src={newIn ? warning : ""} alt="" />
                     <p className="brandcard__detail-text">{newIn ? "New In" : ""}</p>
+                </div>
+                <div className={`brandcard__detail-box ${onSale? "onSale" : "displaynone"}`}>
+                    <img className="brandcard__detail-icon" src={onSale ? saleIcon : ""} alt="" />
+                    <p className="brandcard__detail-text">{onSale ? "on Sale" : ""}</p>
                 </div>
             </div>
 
@@ -99,7 +104,8 @@ class Favourite extends React.Component {
                     brandLogo={content.brandlogo}  
                     delivery={content.delivery}
                     newIn={content.newIn}  
-                    deleteHandler={this.deleteHandler}                 
+                    deleteHandler={this.deleteHandler}
+                    onSale={content.onSale}
                 />
             })}
 

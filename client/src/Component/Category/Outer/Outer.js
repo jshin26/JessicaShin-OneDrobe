@@ -44,9 +44,6 @@ class Outer extends React.Component {
         return(
             <div>
 
-                <div className="main__filter-box">
-                    <button className="main__filter-btn" onClick={this.filterHandler}>filter</button>
-                </div>
                 <ProductCard 
                     cardList={filtered}
                 />

@@ -52,7 +52,7 @@ class StyleLogCard extends React.Component {
 
     render () {
 
-        let {title, image, userImage, author, date, likes, likeHandle} = this.props;
+        let {title, image, userImage, author, date, likes, likeHandle, outer, outerproduct, outerlink, top, topproduct, toplink, pants, pantsproduct, pantslink, dress, dressproduct, dresslink, skirt, skirtproduct, skirtlink, shoes, shoesproduct, shoeslink, bag, bagproduct, baglink} = this.props;
 
         return (
             <React.Fragment>
@@ -83,9 +83,9 @@ class StyleLogCard extends React.Component {
                                 </div>
                                 <div className="log__number-box">
                                     <img className="log__number-icon" src={comment} alt="comments"/>
-                                    {/* <p className="log__number-text">{comments}</p> */}
+                                    <p className="log__number-text">0</p>
                                 </div>
-                            </div>
+                            </div>                            
                         </div>
                     </div>
 
@@ -97,6 +97,7 @@ class StyleLogCard extends React.Component {
                     onRequestClose={this.handleCloseModal}
                     className="log-detail-modal"
                     overlayClassName="overlay"
+                    ariaHideApp={false}
                 >
                     <StyleLogDetail
                         image={image}
@@ -105,8 +106,20 @@ class StyleLogCard extends React.Component {
                         author={author}
                         date={date}
                         likes={likes}
-                        // comments={comments}
-                        // commentName={comments}
+                        outer={outer}
+                        outerlink={outerlink}
+                        top={top}
+                        toplink={toplink}
+                        pants={pants}
+                        pantslink={pantslink}
+                        dress={dress}
+                        dresslink={dresslink}
+                        skirt={skirt}
+                        skirtlink={skirtlink}
+                        shoes={shoes}
+                        shoeslink={shoeslink}
+                        bag={bag}
+                        baglink={baglink}
                     />
                 </ReactModal>
             </React.Fragment>

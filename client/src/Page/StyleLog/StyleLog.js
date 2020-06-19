@@ -102,6 +102,20 @@ class StyleLog extends React.Component {
                                 author={content.author}
                                 userImage={content.userImage}
                                 likes = {content.likes}
+                                outer={content.outer}
+                                outerlink={content.outerlink}
+                                top={content.top}
+                                toplink={content.toplink}
+                                pants={content.pants}
+                                pantslink={content.pantslink}
+                                dress={content.dress}
+                                dresslink={content.dresslink}
+                                skirt={content.skirt}
+                                skirtlink={content.skirtlink}
+                                shoes={content.shoes}
+                                shoeslink={content.shoeslink}
+                                bag={content.bag}
+                                baglink={content.baglink}
                                 // comments={content.comments.commentName}
                                 // likeHandle={this.likeHandle}
                             />
