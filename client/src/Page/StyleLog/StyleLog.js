@@ -132,6 +132,7 @@ class StyleLog extends React.Component {
                                 shoeslink={content.shoeslink}
                                 bag={content.bag}
                                 baglink={content.baglink}
+                                displaycomments={content.comments}
                                 likeHandle={(event) => this.likeHandle(event, content.id)}
                             />
                         }).reverse()}

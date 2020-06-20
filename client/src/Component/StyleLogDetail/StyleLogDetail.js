@@ -12,9 +12,41 @@ import skirtI from '../../Asset/0skirt.svg';
 import bagI from '../../Asset/0bag.svg';
 import shoesI from '../../Asset/0shoes.svg';
 
+const CommentComponent = (props) => {
+
+    let {commentUser, commentImage, commentDate, comment} = props;
+
+    return (
+
+        <section className="comment">
+
+            <div className="comment__box">
+
+                <div className="comment--left">
+                    <img className="comment__image" src={commentImage}/>
+                </div>
+
+                <div className="comment--right">
+
+                    <div className="comment__info">
+                        <p className="comment__name">{commentUser}</p>
+                        <p className="comment__date">{updateTime(commentDate)}</p>
+                    </div>
+
+                    <div>
+                        <p className="comment__comments">{comment}</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    )
+}
+
 const StyleLogDetail = (props) => {
  
-    let {id, likeHandle, title, image, userImage, author, date, likes, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = props;
+    let {displaycomments, id, likeHandle, title, image, userImage, author, date, likes, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = props;
 
     return (
         <article className="log-detail">
@@ -91,6 +123,25 @@ const StyleLogDetail = (props) => {
                         </a>
                         <p>{bag}</p>
                     </div>
+                </div>
+
+                <div>
+                    <form>
+                        <input type="text"></input>
+                    </form>
+                </div>
+
+                <div>
+                    {displaycomments.map((content) =>{
+                        return (
+                            <CommentComponent
+                                commentUser={content.commentUser}
+                                commentDate={content.commentDate}
+                                comment={content.comment}
+                                commentImage={content.commentImage}
+                            />
+                        )
+                    })}
                 </div>
 
             </div>

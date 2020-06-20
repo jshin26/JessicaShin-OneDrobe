@@ -52,7 +52,7 @@ class StyleLogCard extends React.Component {
 
     render () {
 
-        let {id, title, image, userImage, author, date, likes, likeHandle, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = this.props;
+        let {displaycomments, id, title, image, userImage, author, date, likes, likeHandle, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = this.props;
 
         return (
             <React.Fragment>
@@ -79,7 +79,7 @@ class StyleLogCard extends React.Component {
                             <div className="log__number">
                                 <div className="log__number-box" onClick={(event) => likeHandle(event, id)} >
                                     <img className="log__number-icon" src={like} alt="likes"/>
-                                    <p className="log__number-text">{likes.toLocaleString()}</p>
+                                    <p className="log__number-text">{likes}</p>
                                 </div>
                                 <div className="log__number-box">
                                     <img className="log__number-icon" src={comment} alt="comments"/>
@@ -123,6 +123,7 @@ class StyleLogCard extends React.Component {
                         bag={bag}
                         baglink={baglink}
                         likeHandle={likeHandle}
+                        displaycomments={displaycomments}
                     />
                 </ReactModal>
             </React.Fragment>

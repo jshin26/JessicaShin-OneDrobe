@@ -130,7 +130,9 @@
         "outer" : "cozy outer",
         "outerlink" : "",
         "pants" : "awesome jeans",
-        "pantslink" :""
+        "pantslink" :"",
+        "bag" :"BUCKET BAG 3515",
+        "baglink" :"https://ca.oakandfort.com/BUCKET-BAG-3515_2?location=&quantity=1&size=One%20Size"
     },
     {
         "id": "20200608529",
@@ -147,6 +149,26 @@
         "pants" : "kick jeans",
         "pantslink" : "https://www.zara.com/ca/en/zw-premium-the-hw-kick-jeans-p04124043.html?v1=44663663&v2=1523829",
         "bag" :"BUCKET BAG 3515",
-        "baglink" :"https://ca.oakandfort.com/BUCKET-BAG-3515_2?location=&quantity=1&size=One%20Size"
+        "baglink" :"https://ca.oakandfort.com/BUCKET-BAG-3515_2?location=&quantity=1&size=One%20Size",
+        "comments" : [
+            {
+                "comment" : "wowwow",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "jessica",
+                "commentDate" : "JUN 27 2020"
+            },
+            {
+                "comment" : "hello",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "jessica",
+                "commentDate" : "JUN 27 2020"
+            },
+            {
+                "comment" : "whaaattttt",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "jessica",
+                "commentDate" : "JUN 27 2020"
+            }
+        ]
     }
 ]

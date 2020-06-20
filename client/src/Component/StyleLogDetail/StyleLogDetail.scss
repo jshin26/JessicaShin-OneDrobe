@@ -5,6 +5,27 @@
 @import '../../Style/mixins';
 @import '../../Style/variable';
 
+
+.comment {
+    &__box {
+        @include flex (row, flex-start, flex-start);
+    }
+    &--left {
+        width: 20%;
+    }
+    &--right {
+        width: 80%;
+    }
+    &__image {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    &__info {
+
+    }
+}
+
 .log-detail {
     @include flex (column);
     @include desktop {
