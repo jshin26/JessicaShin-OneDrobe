@@ -8,8 +8,8 @@ import warning from '../../Asset/warning.svg';
 import deliveryIcon from '../../Asset/delivery.svg';
 import saleIcon from '../../Asset/sale.svg';
 
-// const API_URL="http://localhost:8080";
-const API_URL="";
+const API_URL="http://localhost:8080";
+// const API_URL="";
 
 
 // Favourite

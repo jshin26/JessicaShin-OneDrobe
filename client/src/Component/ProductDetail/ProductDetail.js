@@ -7,8 +7,8 @@ import Switch from 'react-switch';
 import backIcon from '../../Asset/back-arrow.svg';
 import dotIcon from '../../Asset/dot.svg';
 
-// const API_URL="http://localhost:8080";
-const API_URL="";
+const API_URL="http://localhost:8080";
+// const API_URL="";
 
 class ProductDetail extends React.Component {
     

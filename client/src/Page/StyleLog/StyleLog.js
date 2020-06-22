@@ -11,8 +11,8 @@ import image01 from '../../Asset/01.jpg';
 
 import './StyleLog.scss';
 
-// const API_URL="http://localhost:8080";
-const API_URL="";
+const API_URL="http://localhost:8080";
+// const API_URL="";
 
 class StyleLog extends React.Component {
     state={
