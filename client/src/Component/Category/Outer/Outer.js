@@ -2,7 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import ProductCard from '../../ProductCard/ProductCard';
 
-const API_URL="http://localhost:8080/"
+// const API_URL="http://localhost:8080/"
+const API_URL="";
 
 // Outer
 

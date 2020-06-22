@@ -12,7 +12,9 @@ import instagramI from '../../Asset/instagram.svg';
 import facebookI from '../../Asset/facebook.svg';
 import twitterI from '../../Asset/twitter.svg';
 
-const API_URL="http://localhost:8080";
+// const API_URL="http://localhost:8080";
+const API_URL="";
+
 
 class BrandDetail extends React.Component {
     

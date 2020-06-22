@@ -15,7 +15,8 @@ import ProductDetail from '../../Component/ProductDetail/ProductDetail';
 import {ProductCardComp } from '../../Component/ProductCard/ProductCard';
 import Favourite from '../Favourite/Favourite'
 
-const API_URL="http://localhost:8080";
+const API_URL="";
+// const API_URL="http://localhost:8080";
 
 // Product
 

@@ -8,7 +8,8 @@ import BrandCard from '../../Component/BrandCard/BrandCard';
 import BrandDetail from '../../Component/BrandDetail/BrandDetail';
 import Bookmarks from '../Bookmarks/Bookmarks'
 
-const API_URL="http://localhost:8080";
+// const API_URL="http://localhost:8080";
+const API_URL="";
 
 // Brands
 
