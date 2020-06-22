@@ -40,7 +40,6 @@
 
     }
     &__comments {
-        margin: 0;
         @include font (16px, 24px, 'AvenirNext', 400);
         margin: 12px 0;
     }
@@ -158,7 +157,7 @@
         }
         &-input {
             width: 90%;
-            height:75px;
+            height:30px;
             padding: 8px;
             border-radius: 5px;
             border: 1px solid $mercury;
