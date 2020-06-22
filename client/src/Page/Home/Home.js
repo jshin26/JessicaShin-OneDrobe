@@ -1,8 +1,11 @@
 import React from 'react';
 import './Home.scss';
+import Typical from 'react-typical';
 import { Link } from 'react-router-dom';
 
 import hero1 from '../../Asset/hero1.png';
+import hero from '../../Asset/herooo.png';
+import herotext from '../../Asset/heroo.png';
 import hero2 from '../../Asset/hero2.jpg';
 import hero3 from '../../Asset/hero3.png';
 import back from '../../Asset/arrow1.svg';
@@ -78,23 +81,28 @@ class Home extends React.Component {
         return (
             <section className="home">
                
-               
-                <h1 className="home__title">{this.state.text}</h1>
+                <Typical 
+                    loop={Infinity}
+                    wrapper="h2"
+                    className="home__title"
+                    steps={[
+                        1500,
+                        "Search more than 50 brands, with just one click",
+                        2000,
+                        "Never struggle to find a perfect apparel",
+                        2000,
+                        "Compare similar looks, from different brands",
+                        2000
+                    ]}
+                />
                 
                 <div className="home--flex">
-                    <button className="home__button back" onClick={this.clickBack}><img src={back} alt="back"/></button>
-                    <img className="home__img" src={this.state.image} alt="hero"/>
-                    <button className="home__button next" onClick={this.clickNext}><img src={next} alt="next"/></button>
+                    <img className="home__img" src={hero} alt="hero"/>
                 </div>
 
                 <div className="home__mobile">
-
-                    <h1 className="home__title">"Never struggle to find a perfect apparel"</h1>
                     <img className="home__img" src={hero2} alt="hero2"/>
-
-                    <h1 className="home__title">"Compare similar looks, from different brands"</h1>
                     <img className="home__img" src={hero3} alt="hero3"/>
-
                 </div>
 
                 <Link exact to="/product" className="home__search">

@@ -48,7 +48,7 @@ class Brands extends React.Component {
 
     render() {
 
-        let brandInfo = this.state.brandData.filter((res) => {            
+        let brandInfo = this.state.brandData.filter(res => {            
             if (this.state.search === "") {
                 return this.state.brandData
             } else if (

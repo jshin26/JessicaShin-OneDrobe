@@ -8,7 +8,30 @@
         "page" : "https://www.ellecanada.com/fashion/shopping/covid-19-could-forever-change-the-way-we-shop",
         "image" : "http://localhost:8080/log/01.jpg",
         "likes" : 5039,
-        "date" : "MAY 19, 2020"
+        "date" : "MAY 19, 2020",
+        "comments" : [
+            {
+                "id" : "1237418587",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "12854239987",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "123478967963287",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "202006232",
@@ -19,7 +42,30 @@
         "page" : "https://www.ellecanada.com/fashion/trends/tanya-taylor-launches-size-inclusive-swimwear-collection",
         "image" : "http://localhost:8080/log/02.jpg",
         "likes" : 425,
-        "date" : "MAY 12, 2020"
+        "date" : "MAY 12, 2020",
+        "comments" : [
+            {
+                "id" : "1237486549987",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "1285325489987",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "1234767",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "202006000",
@@ -30,7 +76,30 @@
         "page" : "https://www.ellecanada.com/fashion/trends/the-case-for-statement-sleeves-this-season",
         "image" : "http://localhost:8080/log/03.jpg",
         "likes" : 1258,
-        "date" : "MAR 28 2020"
+        "date" : "MAR 28 2020",
+        "comments" : [
+            {
+                "id" : "1789987",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "128859987",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "12353217",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "2020060228",
@@ -41,7 +110,30 @@
         "page" : "https://www.ellecanada.com/fashion/trends/bermuda-shorts-are-your-new-summer-wardrobe-staple",
         "image" : "http://localhost:8080/log/10.jpg",
         "likes" : 12039,
-        "date" : "JUN 4, 2020"
+        "date" : "JUN 4, 2020",
+        "comments" : [
+            {
+                "id" : "127856987",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "12252987",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "12741963287",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "2020060889",
@@ -52,7 +144,30 @@
         "page" : "https://www.ellecanada.com/fashion/trends/bermuda-shorts-are-your-new-summer-wardrobe-staple",
         "image" : "http://localhost:8080/log/09.jpg",
         "likes" : 12039,
-        "date" : "JUN 4, 2020"
+        "date" : "JUN 4, 2020",
+        "comments" : [
+            {
+                "id" : "12375389987",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "12800987",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "12302063287",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "20200609",
@@ -63,7 +178,30 @@
         "page" : "https://margaretzhang.com.au/2019/10/how-do-you-like-your-eggs-film/",
         "image" : "http://localhost:8080/log/05.jpg",
         "likes" : 4258,
-        "date" : "OCT 10, 2019"
+        "date" : "OCT 10, 2019",
+        "comments" : [
+            {
+                "id" : "1237030987",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "1285040987",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "12340863287",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "20200610",
@@ -74,7 +212,30 @@
         "page" : "https://www.ellecanada.com/fashion/shopping/indigenous-fashion-week-toronto-simons-capsule-collection",
         "image" : "http://localhost:8080/log/06.jpg",
         "likes" : 27039,
-        "date" : "MAY 28 2020"
+        "date" : "MAY 28 2020",
+        "comments" : [
+            {
+                "id" : "12374863087",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "17410389987",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "105007963287",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "20200611",
@@ -87,7 +248,30 @@
         "likes" : 16003,
         "date": "JUN 4 2020",
         "outer" : "cozy and warm cardigan",
-        "outerlink" : ""
+        "outerlink" : "",
+        "comments" : [
+            {
+                "id" : "129600987",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "1285230020",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "12345670000",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "2020061561",
@@ -102,7 +286,30 @@
         "shoes" : "pretty high heel",
         "shoeslink" : "",
         "bag" : "shoulder bag",
-        "baglink" :""
+        "baglink" :"",
+        "comments" : [
+            {
+                "id" : "10000987",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "120099087",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "12009998287",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "202006452311",
@@ -115,7 +322,30 @@
         "likes" : 16003,
         "date": "JUN 4 2020",
         "dress" :"no dress",
-        "dresslink" : ""
+        "dresslink" : "",
+        "comments" : [
+            {
+                "id" : "128855229987",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "1774411087",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "1299660087",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "2020061781",
@@ -132,7 +362,30 @@
         "pants" : "awesome jeans",
         "pantslink" :"",
         "bag" :"BUCKET BAG 3515",
-        "baglink" :"https://ca.oakandfort.com/BUCKET-BAG-3515_2?location=&quantity=1&size=One%20Size"
+        "baglink" :"https://ca.oakandfort.com/BUCKET-BAG-3515_2?location=&quantity=1&size=One%20Size",
+        "comments" : [
+            {
+                "id" : "123741789987",
+                "comment" : "I love this look",
+                "commentImage" :  "http://localhost:8080/log/margaret.jpg",
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "12852389987",
+                "comment" : "I love your cardigan!",
+                "commentImage" :  "http://localhost:8080/log/hannah.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            },
+            {
+                "id" : "1234567963287",
+                "comment" : "amazing look!",
+                "commentImage" : "http://localhost:8080/log/erica.jpg",
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
+            }
+        ]
     },
     {
         "id": "20200608529",
@@ -152,22 +405,25 @@
         "baglink" :"https://ca.oakandfort.com/BUCKET-BAG-3515_2?location=&quantity=1&size=One%20Size",
         "comments" : [
             {
-                "comment" : "wowwow",
+                "id" : "123456789987",
+                "comment" : "I love this look!",
                 "commentImage" :  "http://localhost:8080/log/margaret.jpg",
-                "commentUser" : "jessica",
-                "commentDate" : "JUN 27 2020"
+                "commentUser" : "Margaret Zhang",
+                "commentDate" : "2020.06.21"
             },
             {
-                "comment" : "hello",
+                "id" : "12355387",
+                "comment" : "like your bag! it's cute",
                 "commentImage" :  "http://localhost:8080/log/hannah.jpg",
-                "commentUser" : "jessica",
-                "commentDate" : "JUN 27 2020"
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
             },
             {
-                "comment" : "whaaattttt",
+                "id" : "125689789987",
+                "comment" : "amazing",
                 "commentImage" : "http://localhost:8080/log/erica.jpg",
-                "commentUser" : "jessica",
-                "commentDate" : "JUN 27 2020"
+                "commentUser" : "Erica Ngao",
+                "commentDate" : "2020.06.21"
             }
         ]
     }

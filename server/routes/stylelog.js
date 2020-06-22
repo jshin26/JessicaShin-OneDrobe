@@ -35,17 +35,6 @@ router.get('/log', (req, res) => {
     res.json(stylelogData);
 })
 
-// router.get('/log/:id', (req, res) => {
-//     if(stylelogData.find(log => log.id === req.params.id)) {
-//         let currLog = req.params.id
-//             ? stylelogData.find(log => log.id === req.params.id)
-//             : stylelogData;
-
-//         res.json(currLog);
-//     } else {
-//         res.status(404).json("There are no matching product. Please check product id.")
-//     }
-// })
 router.get('/log/:id', (req, res) => {
     if(stylelogData.find(log => log.id === req.params.id)) {
         let currLog = req.params.id
@@ -55,29 +44,20 @@ router.get('/log/:id', (req, res) => {
         res.json(currLog);
     } else {
         res.status(404).json("There are no matching product. Please check product id.")
-    }
-    // if(stylelogData.find(log => log.id === req.params.id)) {
-    //     let currLog = req.params.id
-    //     ? stylelogData.find(log => log.id === req.params.id)
-    //     : stylelogData
-
-    //     if (currLog.length !== 0) {
-    //         const logId = currLog.id
-    //         const logComments = currLog.comments
-    //         res.status(201).json({logId, logComments})
-    //     }
-    // }
-    
+    }    
 })
 
-// let currBrand = req.params.id
-//         ? brandData.find(brand => brand.id === req.params.id)
-//         : brandData;
-    
-//     if (currBrand.length !== 0) {
-//         const productById = productData.filter(item => item.brandId === req.params.id);
-//         res.status(201).json({currBrand, productById})
-//     }
+router.get('/log/:id/comments', (req, res) => {
+    if(stylelogData.find(log => log.id === req.params.id)) {
+        let currLog = req.params.id
+            ? stylelogData.find(log => log.id === req.params.id)
+            : stylelogData;
+
+        res.json(currLog.comments);
+    } else {
+        res.status(404).json("There are no matching product. Please check product id.")
+    }    
+})
 
 router.put('/log/:id',(req, res) => {
     let currLog = req.params.id
@@ -102,6 +82,27 @@ router.post('/log', (req, res, next) => {
     res.json({
         newLog: newLog
     })
+})
+
+router.post('/log/:id', (req, res, next) => {
+    if(stylelogData.find(log => log.id === req.params.id)) {
+        let currLog = req.params.id
+            ? stylelogData.find(log => log.id === req.params.id)
+            : stylelogData;
+
+        const newComment = {
+            "id": uuidv4(),
+            "commentUser" : req.body.commentUser,
+            "commentImage" : req.body.commentImage,
+            "comment" : req.body.comment,
+            "commentDate" : req.body.commentDate,
+        }
+        currLog.comments.push(req.body);
+
+        res.json(currLog);
+    } else {
+        res.status(404).json("There are no matching product. Please check product id.")
+    }
 })
 
 // router.delete('/log/:id', (req, res) => {

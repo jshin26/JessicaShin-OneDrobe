@@ -23,7 +23,7 @@ const CommentComponent = (props) => {
             <div className="comment__box">
 
                 <div className="comment--left">
-                    <img className="comment__image" src={commentImage}/>
+                    <img className="comment__image" src={commentImage} alt={commentUser}/>
                 </div>
 
                 <div className="comment--right">
@@ -46,7 +46,7 @@ const CommentComponent = (props) => {
 
 const StyleLogDetail = (props) => {
  
-    let {displaycomments, id, likeHandle, title, image, userImage, author, date, likes, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = props;
+    let {displaycomments, commentPostHandle, commentPostImg, id, likeHandle, title, image, userImage, author, date, likes, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = props;
 
     return (
         <article className="log-detail">
@@ -82,52 +82,58 @@ const StyleLogDetail = (props) => {
                 <div className="log__products">
                     {/* click icon to view on the brand website! */}
                     <div className={outer? "log__products-box" : "displaynone"}>
-                        <a href={outerlink} target="_blank">
+                        <a href={outerlink} target="_blank" rel="noopener noreferrer">
                             <img className="log__products-img" src={outerI} alt="outer"/>
                         </a>
                         <p>{outer}</p>
                     </div>
                     <div className={top? "log__products-box" : "displaynone"}>
-                        <a target="_blank" href={toplink}>
+                        <a target="_blank" href={toplink} rel="noopener noreferrer">
                             <img className="log__products-img" src={topI} alt="outer"/>
                         </a>
                         <p>{top}</p>
                     </div>
                     <div className={pants? "log__products-box" : "displaynone"}>
-                        <a target="_blank" href={pantslink}>
+                        <a target="_blank" href={pantslink} rel="noopener noreferrer">
                             <img className="log__products-img" src={pantsI} alt="outer"/>
                         </a>
                         <p>{pants}</p>
                     </div>
                     <div className={skirt? "log__products-box" : "displaynone"}>
-                        <a target="_blank" href={skirtlink}>
+                        <a target="_blank" href={skirtlink} rel="noopener noreferrer">
                             <img className="log__products-img" src={skirtI} alt="outer"/>
                         </a>
                         <p>{skirt}</p>
                     </div>
                     <div className={dress? "log__products-box" : "displaynone"}>
-                        <a target="_blank" href={dresslink}>
+                        <a target="_blank" href={dresslink} rel="noopener noreferrer">
                             <img className="log__products-img" src={dressI} alt="outer"/>
                         </a>
                         <p>{dress}</p>
                     </div>
                     <div className={shoes? "log__products-box" : "displaynone"}>
-                        <a target="_blank" href={shoeslink}>
+                        <a target="_blank" href={shoeslink} rel="noopener noreferrer">
                             <img className="log__products-img" src={shoesI} alt="outer"/>
                         </a>
                         <p>{shoes}</p>
                     </div>
                     <div className={bag? "log__products-box" : "displaynone"}>
-                        <a target="_blank" href={baglink}>
+                        <a target="_blank" href={baglink} rel="noopener noreferrer">
                             <img className="log__products-img" src={bagI} alt="outer"/>
                         </a>
                         <p>{bag}</p>
                     </div>
                 </div>
 
-                <div>
-                    <form>
-                        <input type="text"></input>
+                <p className="log-detail__form-title">leave comments!</p>
+
+                <div className="log-detail__form">
+                    <div className="log-detail__form--left">
+                        <img className="log-detail__form-img" src={commentPostImg} alt=""/>
+                    </div>
+                    <form className="log-detail__form-submit" onSubmit={(event) => commentPostHandle(event, id)}>
+                        <input className="log-detail__form-input" type="text" name="commentvalue"></input>
+                        <button className="log-detail__form-btn btn" type="submit">submit</button>
                     </form>
                 </div>
 
@@ -141,7 +147,7 @@ const StyleLogDetail = (props) => {
                                 commentImage={content.commentImage}
                             />
                         )
-                    })}
+                    }).reverse()}
                 </div>
 
             </div>

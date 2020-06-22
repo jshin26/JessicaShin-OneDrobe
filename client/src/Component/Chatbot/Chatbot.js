@@ -33,7 +33,7 @@ const steps = [
             },
             {
                 value: 2,
-                label: '2. Can I buy through onedrobe',
+                label: '2. Can I buy through onedrobe?',
                 trigger: 'question2'
             },
             {

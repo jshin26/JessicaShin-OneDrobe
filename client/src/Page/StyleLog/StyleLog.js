@@ -75,6 +75,27 @@ class StyleLog extends React.Component {
         }
     }
 
+    commentPostHandle = (e, logId) => {
+        e.preventDefault();
+        axios
+            .post(`${API_URL}/log/log/${logId}`, {
+                "id": uuidv4(),
+                "commentUser": firebase.auth().currentUser.displayName,
+                "commentImage" : firebase.auth().currentUser.photoURL,
+                "comment" : e.target.commentvalue.value,
+                "commentDate" : Date.now()
+            })
+            .then(res=> {
+                console.log(res);
+                this.mountFn();
+
+            })
+            .catch(err=>{
+                console.log(err)
+            })
+            e.target.reset();
+    }
+
     likeHandle = (e, logId) => {
         axios
             .put(`${API_URL}/log/log/${logId}`)
@@ -134,6 +155,9 @@ class StyleLog extends React.Component {
                                 baglink={content.baglink}
                                 displaycomments={content.comments}
                                 likeHandle={(event) => this.likeHandle(event, content.id)}
+                                commentPostHandle={(event) => this.commentPostHandle(event, content.id)}
+                                commentPostImg={firebase.auth().currentUser.photoURL}
+                                comments={content.comments}
                             />
                         }).reverse()}
                     </div>

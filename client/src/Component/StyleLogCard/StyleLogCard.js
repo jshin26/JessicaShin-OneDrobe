@@ -52,7 +52,7 @@ class StyleLogCard extends React.Component {
 
     render () {
 
-        let {displaycomments, id, title, image, userImage, author, date, likes, likeHandle, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = this.props;
+        let {displaycomments, commentPostHandle, commentPostImg, comments, id, title, image, userImage, author, date, likes, likeHandle, outer, outerlink, top, toplink, pants, pantslink, dress, dresslink, skirt, skirtlink, shoes, shoeslink, bag, baglink} = this.props;
 
         return (
             <React.Fragment>
@@ -83,7 +83,7 @@ class StyleLogCard extends React.Component {
                                 </div>
                                 <div className="log__number-box">
                                     <img className="log__number-icon" src={comment} alt="comments"/>
-                                    <p className="log__number-text">0</p>
+                                    {/* <p className="log__number-text">{comments.length()}</p> */}
                                 </div>
                             </div>                            
                         </div>
@@ -124,6 +124,9 @@ class StyleLogCard extends React.Component {
                         baglink={baglink}
                         likeHandle={likeHandle}
                         displaycomments={displaycomments}
+                        commentPostHandle={commentPostHandle}
+                        commentPostImg={commentPostImg}
+                        comments={comments}
                     />
                 </ReactModal>
             </React.Fragment>

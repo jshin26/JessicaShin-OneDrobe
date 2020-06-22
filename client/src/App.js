@@ -8,7 +8,6 @@ import Home from './Page/Home/Home';
 import Product from './Page/Product/Product';
 import Brands from './Page/Brands/Brands';
 import StyleLog from './Page/StyleLog/StyleLog';
-
 import SignIn from './Component/SignIn/SignIn';
 
 firebase.initializeApp({

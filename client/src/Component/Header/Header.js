@@ -61,9 +61,11 @@ class Header extends React.Component {
                     {this.state.open &&
                         <div className="side__user-detail">
                             <img className="side__user-image" src={userImage} alt="user profile"/>
-                            <p>{userName}</p>
-                            <p>{userEmail}</p>
-                            <button className="side__user-btn" onClick={signout} >log out</button>
+                            <div className="side__user--right">
+                                {/* <p>{userName}</p> */}
+                                <p>{userEmail}</p>
+                                <button className="side__user-btn" onClick={signout} >log out</button>
+                            </div>
                         </div>
                     }
 
