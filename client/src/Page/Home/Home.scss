@@ -27,7 +27,6 @@
             bottom: 0;
             left: 0;
             right: 6%;
-            z-index: 2;
         }
     }
     &--flex {
@@ -58,21 +57,12 @@
         @include desktop {
             width: 100%;
             margin: auto;
-            // animation: titlemoving 3s infinite forwards;
             position: absolute;
-            top: 100px;
+            top: 0;
             right: 0;
             left: 0;
             bottom: 0;
         }
-    }
-    &__img2 {
-        // animation: titlemoving 3s infinite forwards;
-        // position: absolute;
-        // top: 10%;
-        // right: 0;
-        // left: 20%;
-        // bottom: 0;
     }
     &__search {
         @include flex (row, center, center);
@@ -83,6 +73,8 @@
         text-decoration: none;
         padding: 8px; 
         cursor: pointer;
+        position: absolute;
+        bottom: 5%;
         @include desktop {
             padding: 10px; 
         }

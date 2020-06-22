@@ -18,10 +18,10 @@ app.use(express.json());
 app.use(express.static('asset'));
 app.use('/uploads', express.static('uploads'));
 app.use(express.static('client/build'));
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../', 'client', 'build', 'index.html'));
-    
-})
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../', 'client', 'build', 'index.html'));
+//     "heroku-postbuild" : "cd client && npm install && npm run build"
+// })
 
 app.use('/product', productRoute);
 app.use('/', productRoute);

@@ -7,32 +7,46 @@ import Chatbot from '../Chatbot/Chatbot';
 
 class ChatModal extends React.Component {
     state = {
-        showModal: false
+        showChatbot: false
     }
 
-    handleOpenModal = () => {
+    handleOpenChatbot = () => {
         this.setState({
-            showModal: true
+            showChatbot: true
         })
     }
-    handleCloseModal = () => {
+    handleCloseChatbot = () => {
         this.setState({
-            showModal: false
+            showChatbot: false
         })
     }
+
+    // componentDidMount() {
+    //     document.addEventListener("click", this.closeChatBotHandle);
+    // }
+    // componentWillUnmount() {
+    //     document.removeEventListener("click", this.closeChatBotHandle);
+    // }
+    // closeChatBotHandle = (e) => {
+    //     if (e.target.classList[0] !== "modal__bgr-btn") {
+    //         this.setState({
+    //             showChatbot: false
+    //         })
+    //     }
+    // }
 
     render () {
         return (
             <div className="modal-ctn">
-                <button className="modal__btn" onClick={this.handleOpenModal} >
+                <button className="modal__btn" onClick={this.handleOpenChatbot} >
                     <p>need help?</p>
                     <img src={chat} alt="chat icon" />
                 </button>
 
                 <ReactModal
-                    isOpen={this.state.showModal}
+                    isOpen={this.state.showChatbot}
                     contentLabel="onRequestClose Example"
-                    onRequestClose={this.handleCloseModal}
+                    onRequestClose={this.handleCloseChatbot}
                     className="modal"
                     overlayClassName="overlay"
                 >
@@ -41,7 +55,7 @@ class ChatModal extends React.Component {
                         <Chatbot />
                     
                         <div className="modal__bgr-btn">
-                            <button onClick={this.handleCloseModal}>Close</button>
+                            <button onClick={this.handleCloseChatbot}>Close</button>
                         </div>
                     </div>
                 </ReactModal>
