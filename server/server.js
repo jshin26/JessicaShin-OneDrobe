@@ -3,6 +3,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const path = require('path')
 
 const port = process.env.PORT || 8080;
 const productRoute = require('./routes/product');
@@ -16,6 +17,11 @@ app.use(express.json());
 
 app.use(express.static('asset'));
 app.use('/uploads', express.static('uploads'));
+app.use(express.static('client/build'));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../', 'client', 'build', 'index.html'));
+    
+})
 
 app.use('/product', productRoute);
 app.use('/', productRoute);
